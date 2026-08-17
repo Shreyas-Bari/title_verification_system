@@ -1,30 +1,16 @@
 """
-app.py — Streamlit Dashboard for Press Title Verification
-==========================================================
+app.py — Streamlit Dashboard for Press Title Verification System
+=================================================================
+Modern, polished dark-mode interface generated from Stitch design tokens.
 
-Provides an interactive web interface for the PSS06 Automated Title
-Verification System. Users can submit proposed press titles, view
-real-time verification results, explore similarity analysis, and
-register approved titles into the live database.
-
-Layout:
-    ┌──────────────────────────────────────────────────┐
-    │  Header: Title + Total Registered Titles Metric  │
-    ├──────────────────────────────────────────────────┤
-    │  Expandable Database Sample Viewer               │
-    ├──────────────────────────────────────────────────┤
-    │  Submission Form: Text Input + Verify Button     │
-    ├──────────────────────────────────────────────────┤
-    │  Status Banner (✅ VERIFIED / ❌ REJECTED)        │
-    │  3 KPI Cards: Probability | Similarity | Issues  │
-    ├──────────────────────────────────────────────────┤
-    │  Issue Warnings (Yellow callouts)                │
-    ├──────────────────────────────────────────────────┤
-    │  Tab 1: Top 5 Closest Matching Titles Table      │
-    │  Tab 2: Guideline Breakdown Checklist            │
-    ├──────────────────────────────────────────────────┤
-    │  Action Footer: Register Title Button            │
-    └──────────────────────────────────────────────────┘
+Features:
+- Minimalist top bar with branding and live engine status indicator
+- Elevated hero card for title submission
+- Bento-grid status verdict and real-time metric cards
+- Contextual alert badges for compliance violations
+- High-fidelity styled data table for top-5 similarity analysis
+- Guideline compliance checklist
+- In-memory title registration for instant real-time re-verification
 """
 
 import os
@@ -43,238 +29,478 @@ st.set_page_config(
 )
 
 # ═══════════════════════════════════════════════════════════════════════════
-# Custom CSS for Premium Styling
+# Stitch-Inspired Dark Theme CSS
 # ═══════════════════════════════════════════════════════════════════════════
 
 st.markdown("""
 <style>
-    /* ── Global typography ───────────────────────────────────── */
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+    /* ── Import Inter Font ───────────────────────────────────── */
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
 
     html, body, [class*="css"] {
-        font-family: 'Inter', sans-serif;
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+        color: #e5e1e4;
     }
 
-    /* ── Header styling ──────────────────────────────────────── */
-    .main-header {
-        background: linear-gradient(135deg, #1e3a5f 0%, #2d5a8e 50%, #3a7bd5 100%);
-        padding: 2rem 2.5rem;
-        border-radius: 16px;
-        margin-bottom: 1.5rem;
-        color: white;
-        box-shadow: 0 8px 32px rgba(30, 58, 95, 0.25);
-    }
-    .main-header h1 {
-        margin: 0;
-        font-size: 2rem;
-        font-weight: 800;
-        letter-spacing: -0.5px;
-    }
-    .main-header p {
-        margin: 0.5rem 0 0 0;
-        font-size: 1rem;
-        opacity: 0.85;
+    /* ── App Background ──────────────────────────────────────── */
+    .stApp {
+        background-color: #09090b;
     }
 
-    /* ── Status banners ──────────────────────────────────────── */
-    .status-approved {
-        background: linear-gradient(135deg, #059669 0%, #10b981 100%);
-        color: white;
+    /* ── Top App Bar ─────────────────────────────────────────── */
+    .top-nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
         padding: 1.25rem 2rem;
+        background: #121216;
+        border: 1px solid #27272a;
         border-radius: 12px;
-        font-size: 1.3rem;
-        font-weight: 700;
-        text-align: center;
-        margin: 1rem 0;
-        box-shadow: 0 4px 20px rgba(5, 150, 105, 0.3);
-        animation: fadeIn 0.5s ease-in;
+        margin-bottom: 2rem;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
     }
-    .status-rejected {
-        background: linear-gradient(135deg, #dc2626 0%, #ef4444 100%);
-        color: white;
-        padding: 1.25rem 2rem;
-        border-radius: 12px;
-        font-size: 1.3rem;
-        font-weight: 700;
-        text-align: center;
-        margin: 1rem 0;
-        box-shadow: 0 4px 20px rgba(220, 38, 38, 0.3);
-        animation: fadeIn 0.5s ease-in;
+    .brand-group {
+        display: flex;
+        align-items: center;
+        gap: 14px;
     }
-
-    @keyframes fadeIn {
-        from { opacity: 0; transform: translateY(-10px); }
-        to { opacity: 1; transform: translateY(0); }
-    }
-
-    /* ── KPI metric cards ────────────────────────────────────── */
-    .kpi-card {
-        background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
-        border: 1px solid #e2e8f0;
-        border-radius: 12px;
-        padding: 1.25rem;
-        text-align: center;
-        box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-        transition: transform 0.2s ease, box-shadow 0.2s ease;
-    }
-    .kpi-card:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 4px 16px rgba(0,0,0,0.1);
-    }
-    .kpi-value {
-        font-size: 2rem;
-        font-weight: 800;
-        color: #1e3a5f;
-        line-height: 1.2;
-    }
-    .kpi-label {
-        font-size: 0.85rem;
-        font-weight: 500;
-        color: #64748b;
-        margin-top: 0.25rem;
-        text-transform: uppercase;
-        letter-spacing: 0.5px;
-    }
-
-    /* ── Subtle table and tab improvements ───────────────────── */
-    .stDataFrame {
+    .brand-icon {
+        width: 38px;
+        height: 38px;
+        background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+        border: 1px solid #475569;
         border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #adc6ff;
+    }
+    .brand-title {
+        font-size: 1.25rem;
+        font-weight: 700;
+        letter-spacing: -0.02em;
+        color: #f4f4f5;
+        margin: 0;
+    }
+    .status-pill {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 6px 14px;
+        background: rgba(16, 185, 129, 0.1);
+        border: 1px solid rgba(16, 185, 129, 0.25);
+        border-radius: 9999px;
+        font-size: 0.75rem;
+        font-weight: 600;
+        letter-spacing: 0.04em;
+        color: #10b981;
+        text-transform: uppercase;
+    }
+    .status-dot {
+        width: 7px;
+        height: 7px;
+        background-color: #10b981;
+        border-radius: 50%;
+        box-shadow: 0 0 8px #10b981;
+    }
+
+    /* ── Input Card ──────────────────────────────────────────── */
+    .input-card {
+        background: #121216;
+        border: 1px solid #27272a;
+        border-radius: 12px;
+        padding: 1.75rem 2rem;
+        margin-bottom: 2rem;
+        box-shadow: 0 4px 24px rgba(0, 0, 0, 0.35);
+    }
+    .input-label {
+        font-size: 0.875rem;
+        font-weight: 600;
+        color: #a1a1aa;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        margin-bottom: 0.75rem;
+    }
+
+    /* ── Verdict Banners ─────────────────────────────────────── */
+    .verdict-approved {
+        background: linear-gradient(135deg, rgba(16, 185, 129, 0.12) 0%, rgba(5, 150, 105, 0.08) 100%);
+        border: 1px solid rgba(16, 185, 129, 0.35);
+        border-left: 4px solid #10b981;
+        border-radius: 10px;
+        padding: 1.25rem 1.75rem;
+        margin: 1.5rem 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .verdict-rejected {
+        background: linear-gradient(135deg, rgba(239, 68, 68, 0.12) 0%, rgba(220, 38, 38, 0.08) 100%);
+        border: 1px solid rgba(239, 68, 68, 0.35);
+        border-left: 4px solid #ef4444;
+        border-radius: 10px;
+        padding: 1.25rem 1.75rem;
+        margin: 1.5rem 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .verdict-title {
+        font-size: 1.15rem;
+        font-weight: 700;
+        letter-spacing: -0.01em;
+        margin: 0;
+    }
+    .verdict-tag {
+        font-size: 0.75rem;
+        font-weight: 700;
+        padding: 4px 10px;
+        border-radius: 6px;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+    }
+    .tag-approved {
+        background: rgba(16, 185, 129, 0.2);
+        color: #34d399;
+        border: 1px solid rgba(16, 185, 129, 0.4);
+    }
+    .tag-rejected {
+        background: rgba(239, 68, 68, 0.2);
+        color: #f87171;
+        border: 1px solid rgba(239, 68, 68, 0.4);
+    }
+
+    /* ── Bento Stat Cards ────────────────────────────────────── */
+    .bento-card {
+        background: #18181b;
+        border: 1px solid #27272a;
+        border-radius: 12px;
+        padding: 1.25rem 1.5rem;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        transition: transform 0.2s ease, border-color 0.2s ease;
+    }
+    .bento-card:hover {
+        border-color: #3f3f46;
+        transform: translateY(-2px);
+    }
+    .bento-label {
+        font-size: 0.75rem;
+        font-weight: 600;
+        color: #a1a1aa;
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+        margin-bottom: 0.5rem;
+    }
+    .bento-value {
+        font-size: 2rem;
+        font-weight: 800;
+        letter-spacing: -0.02em;
+        line-height: 1.1;
+    }
+    .bento-progress {
+        width: 100%;
+        height: 5px;
+        background: #27272a;
+        border-radius: 9999px;
+        margin-top: 0.85rem;
         overflow: hidden;
     }
-
-    /* ── Button styling ──────────────────────────────────────── */
-    .stButton > button {
-        border-radius: 8px;
-        font-weight: 600;
-        transition: all 0.2s ease;
+    .bento-progress-fill {
+        height: 100%;
+        border-radius: 9999px;
+        transition: width 0.4s ease;
     }
-    .stButton > button:hover {
-        transform: translateY(-1px);
-        box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+
+    /* ── Issues Alert Banner ─────────────────────────────────── */
+    .issue-box {
+        background: rgba(245, 158, 11, 0.08);
+        border: 1px solid rgba(245, 158, 11, 0.25);
+        border-left: 3px solid #f59e0b;
+        border-radius: 8px;
+        padding: 0.85rem 1.25rem;
+        margin-bottom: 0.6rem;
+        color: #fbbf24;
+        font-size: 0.875rem;
+        font-weight: 500;
+    }
+
+    /* ── Custom Styled Table ─────────────────────────────────── */
+    .stitch-table-container {
+        background: #121216;
+        border: 1px solid #27272a;
+        border-radius: 10px;
+        overflow: hidden;
+        margin-top: 1rem;
+    }
+    table.stitch-table {
+        width: 100%;
+        border-collapse: collapse;
+        text-align: left;
+        font-size: 0.875rem;
+    }
+    table.stitch-table th {
+        background: #18181b;
+        color: #a1a1aa;
+        font-size: 0.75rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        padding: 12px 18px;
+        border-bottom: 1px solid #27272a;
+    }
+    table.stitch-table td {
+        padding: 14px 18px;
+        color: #f4f4f5;
+        border-bottom: 1px solid #1f1f23;
+    }
+    table.stitch-table tr:last-child td {
+        border-bottom: none;
+    }
+    table.stitch-table tr:hover {
+        background: #18181b;
+    }
+    .badge-pill {
+        display: inline-block;
+        padding: 2px 8px;
+        border-radius: 9999px;
+        font-size: 0.72rem;
+        font-weight: 600;
+        font-family: 'JetBrains Mono', monospace;
+    }
+    .badge-no {
+        background: rgba(113, 113, 122, 0.18);
+        color: #a1a1aa;
+        border: 1px solid #3f3f46;
+    }
+    .badge-yes {
+        background: rgba(239, 68, 68, 0.18);
+        color: #f87171;
+        border: 1px solid rgba(239, 68, 68, 0.35);
+    }
+    .mono-val {
+        font-family: 'JetBrains Mono', monospace;
+        font-weight: 500;
+    }
+
+    /* ── Checklist Card ──────────────────────────────────────── */
+    .check-card {
+        background: #18181b;
+        border: 1px solid #27272a;
+        border-radius: 8px;
+        padding: 1rem 1.25rem;
+        margin-bottom: 0.75rem;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 16px;
+    }
+    .check-title {
+        font-size: 0.95rem;
+        font-weight: 600;
+        color: #f4f4f5;
+        margin-bottom: 0.2rem;
+    }
+    .check-desc {
+        font-size: 0.8rem;
+        color: #71717a;
+    }
+    .check-status-pass {
+        background: rgba(16, 185, 129, 0.15);
+        color: #34d399;
+        border: 1px solid rgba(16, 185, 129, 0.3);
+        padding: 4px 10px;
+        border-radius: 6px;
+        font-size: 0.72rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        white-space: nowrap;
+    }
+    .check-status-fail {
+        background: rgba(239, 68, 68, 0.15);
+        color: #f87171;
+        border: 1px solid rgba(239, 68, 68, 0.3);
+        padding: 4px 10px;
+        border-radius: 6px;
+        font-size: 0.72rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        white-space: nowrap;
+    }
+
+    /* ── Streamlit Form Controls Refinement ──────────────────── */
+    div[data-baseweb="input"] {
+        background-color: #09090b !important;
+        border: 1px solid #27272a !important;
+        border-radius: 8px !important;
+        transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    }
+    div[data-baseweb="input"]:focus-within {
+        border-color: #3b82f6 !important;
+        box-shadow: 0 0 0 1px #3b82f6, 0 0 12px rgba(59, 130, 246, 0.2) !important;
+    }
+    input[type="text"] {
+        color: #f4f4f5 !important;
+        font-size: 1rem !important;
+    }
+    button[kind="primary"] {
+        background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%) !important;
+        border: 1px solid #3b82f6 !important;
+        color: #ffffff !important;
+        font-weight: 600 !important;
+        letter-spacing: 0.02em !important;
+        padding: 0.65rem 1.5rem !important;
+        border-radius: 8px !important;
+        transition: all 0.2s ease !important;
+    }
+    button[kind="primary"]:hover {
+        background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%) !important;
+        box-shadow: 0 0 16px rgba(59, 130, 246, 0.4) !important;
+        transform: translateY(-1px) !important;
     }
 </style>
 """, unsafe_allow_html=True)
 
 # ═══════════════════════════════════════════════════════════════════════════
-# Initialize the Verifier (Cached)
+# Initialize Verifier Engine
 # ═══════════════════════════════════════════════════════════════════════════
 
 @st.cache_resource
 def get_verifier() -> TitleVerifier:
-    """
-    Load and cache the TitleVerifier instance.
-
-    The CSV path is resolved relative to this script's directory so
-    it works regardless of the working directory used to launch Streamlit.
-    """
     base_dir = os.path.dirname(os.path.abspath(__file__))
     csv_path = os.path.join(base_dir, "dataset", "titles_dataset.csv")
     return TitleVerifier(csv_path)
 
-
 verifier = get_verifier()
 
 # ═══════════════════════════════════════════════════════════════════════════
-# Header
+# Header / App Bar
 # ═══════════════════════════════════════════════════════════════════════════
 
 st.markdown("""
-<div class="main-header">
-    <div style="display: flex; align-items: center; gap: 12px;">
-        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/></svg>
-        <h1 style="margin: 0; padding: 0;">Press Title Verification System</h1>
+<div class="top-nav">
+    <div class="brand-group">
+        <div class="brand-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/>
+            </svg>
+        </div>
+        <h1 class="brand-title">Press Title Verification System</h1>
     </div>
 </div>
 """, unsafe_allow_html=True)
 
 # ═══════════════════════════════════════════════════════════════════════════
-# Submission Form
+# Input Form Section
 # ═══════════════════════════════════════════════════════════════════════════
 
-st.subheader("Submit a New Title for Verification")
-
 candidate_title = st.text_input(
-    "Enter proposed title:",
-    placeholder="e.g., Daily Hindustan, Zenith Quantum Gazette",
-    help="Type the proposed newspaper/periodical title you want to check.",
+    "PROPOSED PUBLICATION TITLE",
+    placeholder="e.g., Daily Hindustan, Sumit ke news, The Quantum Herald",
+    help="Type the newspaper or periodical title you wish to evaluate.",
 )
 
-# Center align and stretch the button
-col1, col2, col3 = st.columns([1, 2, 1])
-with col2:
+# Centered large trigger button
+col_b1, col_b2, col_b3 = st.columns([1, 2, 1])
+with col_b2:
     verify_button = st.button("Verify Title", type="primary", use_container_width=True)
 
 # ═══════════════════════════════════════════════════════════════════════════
-# Verification Results
+# Verification Results & Analysis
 # ═══════════════════════════════════════════════════════════════════════════
 
 if verify_button and candidate_title.strip():
     with st.spinner("Running 7-stage verification pipeline..."):
         result: VerificationResult = verifier.verify(candidate_title.strip())
 
-    # Store result in session state for the registration button
+    # Save to session state
     st.session_state["last_result"] = result
     st.session_state["last_candidate"] = candidate_title.strip()
 
-    # ── Status Banner ──────────────────────────────────────────────
+    # ── Verdict Banner ─────────────────────────────────────────────
     if result.is_approved:
-        st.markdown(
-            f'<div class="status-approved">VERIFIED — '
-            f'"{candidate_title.strip()}" is eligible for registration</div>',
-            unsafe_allow_html=True,
-        )
+        st.markdown(f"""
+        <div class="verdict-approved">
+            <div>
+                <p class="verdict-title" style="color: #34d399;">
+                    VERIFIED — "{candidate_title.strip()}" is eligible for registration
+                </p>
+                <p style="color: #6ee7b7; font-size: 0.85rem; margin: 4px 0 0 0;">
+                    Meets PRGI similarity and anti-collision compliance guidelines.
+                </p>
+            </div>
+            <span class="verdict-tag tag-approved">Approved</span>
+        </div>
+        """, unsafe_allow_html=True)
     else:
-        st.markdown(
-            f'<div class="status-rejected">REJECTED — '
-            f'"{candidate_title.strip()}" cannot be registered</div>',
-            unsafe_allow_html=True,
-        )
-
-    # ── 3 KPI Metric Cards ────────────────────────────────────────
-    col1, col2, col3 = st.columns(3)
-
-    with col1:
-        prob_color = "#059669" if result.verification_probability >= 60 else "#dc2626"
         st.markdown(f"""
-        <div class="kpi-card">
-            <div class="kpi-value" style="color: {prob_color}">
-                {result.verification_probability:.1f}%
+        <div class="verdict-rejected">
+            <div>
+                <p class="verdict-title" style="color: #f87171;">
+                    REJECTED — "{candidate_title.strip()}" cannot be registered
+                </p>
+                <p style="color: #fca5a5; font-size: 0.85rem; margin: 4px 0 0 0;">
+                    Conflicts detected with existing publications or regulatory guidelines.
+                </p>
             </div>
-            <div class="kpi-label">Verification Probability</div>
+            <span class="verdict-tag tag-rejected">Rejected</span>
         </div>
         """, unsafe_allow_html=True)
 
-    with col2:
-        sim_color = "#dc2626" if result.highest_similarity >= 60 else "#059669"
+    # ── 3 Bento Stat Cards ─────────────────────────────────────────
+    stat_col1, stat_col2, stat_col3 = st.columns(3)
+
+    prob = result.verification_probability
+    sim = result.highest_similarity
+    issue_count = len(result.issues)
+
+    prob_color = "#10b981" if prob >= 50 else "#ef4444"
+    sim_color = "#ef4444" if sim >= 60 else ("#f59e0b" if sim >= 40 else "#10b981")
+    issues_color = "#ef4444" if issue_count > 0 else "#10b981"
+
+    with stat_col1:
         st.markdown(f"""
-        <div class="kpi-card">
-            <div class="kpi-value" style="color: {sim_color}">
-                {result.highest_similarity:.1f}%
+        <div class="bento-card">
+            <div class="bento-label">Verification Probability</div>
+            <div class="bento-value" style="color: {prob_color};">{prob:.1f}%</div>
+            <div class="bento-progress">
+                <div class="bento-progress-fill" style="width: {min(100, max(0, prob))}%; background: {prob_color};"></div>
             </div>
-            <div class="kpi-label">Highest Similarity Score</div>
         </div>
         """, unsafe_allow_html=True)
 
-    with col3:
-        issue_count = len(result.issues)
-        issue_color = "#dc2626" if issue_count > 0 else "#059669"
+    with stat_col2:
         st.markdown(f"""
-        <div class="kpi-card">
-            <div class="kpi-value" style="color: {issue_color}">
-                {issue_count}
+        <div class="bento-card">
+            <div class="bento-label">Highest Similarity Score</div>
+            <div class="bento-value" style="color: {sim_color};">{sim:.1f}%</div>
+            <div class="bento-progress">
+                <div class="bento-progress-fill" style="width: {min(100, max(0, sim))}%; background: {sim_color};"></div>
             </div>
-            <div class="kpi-label">Total Issues Found</div>
         </div>
         """, unsafe_allow_html=True)
 
-    st.markdown("<br>", unsafe_allow_html=True)
+    with stat_col3:
+        st.markdown(f"""
+        <div class="bento-card">
+            <div class="bento-label">Total Issues Found</div>
+            <div class="bento-value" style="color: {issues_color};">{issue_count}</div>
+            <div class="bento-progress">
+                <div class="bento-progress-fill" style="width: {100 if issue_count > 0 else 0}%; background: {issues_color};"></div>
+            </div>
+        </div>
+        """, unsafe_allow_html=True)
 
-    # ── Issue Warnings ─────────────────────────────────────────────
+    st.markdown("<div style='margin-top: 1.5rem;'></div>", unsafe_allow_html=True)
+
+    # ── Contextual Issue Warnings ──────────────────────────────────
     if result.issues:
-        st.subheader("Issues Detected")
+        st.markdown("<p style='font-size: 0.85rem; font-weight: 700; color: #fbbf24; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.5rem;'>Detected Rule Violations</p>", unsafe_allow_html=True)
         for issue in result.issues:
             clean_issue = issue.replace("🚫 ", "").replace("⚠️ ", "")
-            st.warning(clean_issue)
+            st.markdown(f"<div class='issue-box'>{clean_issue}</div>", unsafe_allow_html=True)
+        st.markdown("<div style='margin-top: 1rem;'></div>", unsafe_allow_html=True)
 
     # ── Analysis Tabs ──────────────────────────────────────────────
     tab1, tab2 = st.tabs([
@@ -282,10 +508,9 @@ if verify_button and candidate_title.strip():
         "Guideline Breakdown Checklist",
     ])
 
-    # ── Tab 1: Top 5 Closest Matching Titles ──────────────────────
+    # ── Tab 1: Top 5 Closest Matching Titles Table ─────────────────
     with tab1:
-        st.markdown("**Top 5 most similar titles** in the registered database:")
-
+        st.markdown("<p style='color: #a1a1aa; font-size: 0.875rem; margin: 0.5rem 0 1rem 0;'>Top 5 closest records identified across phonetic, fuzzy, and semantic layers:</p>", unsafe_allow_html=True)
         if result.top_matches:
             table_data = []
             for match in result.top_matches:
@@ -300,13 +525,12 @@ if verify_button and candidate_title.strip():
             matches_df = pd.DataFrame(table_data)
             st.dataframe(matches_df, hide_index=True)
         else:
-            st.info("No matching titles found in the database.")
+            st.info("No matching records found in the database.")
 
-    # ── Tab 2: Guideline Breakdown Checklist ──────────────────────
+    # ── Tab 2: Guideline Breakdown Checklist ───────────────────────
     with tab2:
-        st.markdown("**Compliance check against PRGI title registration guidelines:**")
-
-        # Determine status for each rule category
+        st.markdown("<p style='color: #a1a1aa; font-size: 0.875rem; margin: 0.5rem 0 1rem 0;'>Rule-by-rule verification against statutory Press Registrar guidelines:</p>", unsafe_allow_html=True)
+        
         has_disallowed = any("Disallowed word" in i for i in result.issues)
         has_combination = any("combination" in i.lower() for i in result.issues)
         has_affix = any("Periodicity" in i or "affix" in i.lower() for i in result.issues)
@@ -315,58 +539,50 @@ if verify_button and candidate_title.strip():
         checks = [
             (
                 "Disallowed Words Check",
-                "Title does not contain government/security terms "
-                "(police, crime, army, etc.)",
+                "Title does not contain prohibited government, defense, or security terms.",
                 not has_disallowed,
             ),
             (
                 "Title Combination Check",
-                "Title is not a concatenation of two existing "
-                "registered titles",
+                "Title is not a compound concatenation of two previously registered titles.",
                 not has_combination,
             ),
             (
                 "Affix & Periodicity Check",
-                "Title is not merely adding/removing periodicity "
-                "markers (Daily, Weekly) to an existing title",
+                "Title is not formed merely by adding or removing periodicity tags (Daily, Weekly, Times).",
                 not has_affix,
             ),
             (
                 "Multilingual Semantic Similarity",
-                "Title does not semantically duplicate an existing "
-                "title across languages (threshold: 75%)",
+                "Title does not duplicate the meaning of existing registered titles across Indian languages.",
                 not has_semantic,
             ),
         ]
 
-        for check_name, description, passed in checks:
-            status_text = "PASSED" if passed else "FAILED"
-            st.markdown(f"**{status_text}** — {check_name}")
-            st.caption(f"   {description}")
+        for check_name, desc, passed in checks:
+            badge = '<span class="check-status-pass">Passed</span>' if passed else '<span class="check-status-fail">Failed</span>'
+            st.markdown(f"""
+            <div class="check-card">
+                <div>
+                    <div class="check-title">{check_name}</div>
+                    <div class="check-desc">{desc}</div>
+                </div>
+                <div>{badge}</div>
+            </div>
+            """, unsafe_allow_html=True)
 
-    # ── Action Footer: Register Button ─────────────────────────────
-    st.divider()
+    # ── Registration Action Footer ─────────────────────────────────
+    st.markdown("<div style='margin-top: 2rem;'></div>", unsafe_allow_html=True)
 
     if result.is_approved:
-        st.success(
-            f"**\"{candidate_title.strip()}\"** has passed all verification "
-            f"checks and is eligible for registration."
-        )
-        if st.button(
-            "Register this Title to Database",
-            type="secondary"
-        ):
-            verifier.register_title(candidate_title.strip())
-            # Clear the cached verifier so the count refreshes
-            st.success(
-                f"**\"{candidate_title.strip()}\"** has been registered! "
-                f"Database now contains {len(verifier.df):,} titles."
-            )
-    else:
-        st.error(
-            f"**\"{candidate_title.strip()}\"** has been rejected and "
-            f"cannot be registered. Please choose a different title."
-        )
+        col_r1, col_r2, col_r3 = st.columns([1, 2, 1])
+        with col_r2:
+            if st.button("Register this Title to Database", type="primary", use_container_width=True):
+                verifier.register_title(candidate_title.strip())
+                st.success(
+                    f"Successfully registered \"{candidate_title.strip()}\"! "
+                    f"Database now contains {len(verifier.df):,} titles."
+                )
 
 elif verify_button:
-    st.warning("Please enter a title before clicking Verify.")
+    st.warning("Please enter a proposed publication title before clicking Verify.")
