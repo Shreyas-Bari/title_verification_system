@@ -37,8 +37,7 @@ from matcher import TitleVerifier, VerificationResult
 # ═══════════════════════════════════════════════════════════════════════════
 
 st.set_page_config(
-    page_title="PSS06 — Press Title Verification System",
-    page_icon="📰",
+    page_title="Press Title Verification System",
     layout="wide",
     initial_sidebar_state="collapsed",
 )
@@ -181,31 +180,18 @@ verifier = get_verifier()
 
 st.markdown("""
 <div class="main-header">
-    <h1>📰 Press Title Verification System</h1>
-    <p>PSS06 — Automated title similarity and compliance checking for the Press Registrar General of India</p>
+    <div style="display: flex; align-items: center; gap: 12px;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/></svg>
+        <h1 style="margin: 0; padding: 0;">Press Title Verification System</h1>
+    </div>
 </div>
 """, unsafe_allow_html=True)
-
-# Total registered titles metric
-total_titles = len(verifier.df)
-st.metric(label="📊 Total Registered Titles in Database", value=f"{total_titles:,}")
-
-# ═══════════════════════════════════════════════════════════════════════════
-# Database Sample Viewer (Expandable)
-# ═══════════════════════════════════════════════════════════════════════════
-
-with st.expander("🗂️ View Database Sample", expanded=False):
-    st.markdown("A random sample of **20 titles** from the registered database:")
-    sample_df = verifier.df.sample(n=min(20, len(verifier.df)), random_state=42)
-    st.dataframe(sample_df, use_container_width=True, hide_index=True)
-
-st.divider()
 
 # ═══════════════════════════════════════════════════════════════════════════
 # Submission Form
 # ═══════════════════════════════════════════════════════════════════════════
 
-st.subheader("🔎 Submit a New Title for Verification")
+st.subheader("Submit a New Title for Verification")
 
 candidate_title = st.text_input(
     "Enter proposed title:",
@@ -213,14 +199,17 @@ candidate_title = st.text_input(
     help="Type the proposed newspaper/periodical title you want to check.",
 )
 
-verify_button = st.button("🔍 Verify Title", type="primary", use_container_width=True)
+# Center align and stretch the button
+col1, col2, col3 = st.columns([1, 2, 1])
+with col2:
+    verify_button = st.button("Verify Title", type="primary", use_container_width=True)
 
 # ═══════════════════════════════════════════════════════════════════════════
 # Verification Results
 # ═══════════════════════════════════════════════════════════════════════════
 
 if verify_button and candidate_title.strip():
-    with st.spinner("⏳ Running 7-stage verification pipeline..."):
+    with st.spinner("Running 7-stage verification pipeline..."):
         result: VerificationResult = verifier.verify(candidate_title.strip())
 
     # Store result in session state for the registration button
@@ -230,13 +219,13 @@ if verify_button and candidate_title.strip():
     # ── Status Banner ──────────────────────────────────────────────
     if result.is_approved:
         st.markdown(
-            f'<div class="status-approved">✅ VERIFIED — '
+            f'<div class="status-approved">VERIFIED — '
             f'"{candidate_title.strip()}" is eligible for registration</div>',
             unsafe_allow_html=True,
         )
     else:
         st.markdown(
-            f'<div class="status-rejected">❌ REJECTED — '
+            f'<div class="status-rejected">REJECTED — '
             f'"{candidate_title.strip()}" cannot be registered</div>',
             unsafe_allow_html=True,
         )
@@ -282,14 +271,15 @@ if verify_button and candidate_title.strip():
 
     # ── Issue Warnings ─────────────────────────────────────────────
     if result.issues:
-        st.subheader("⚠️ Issues Detected")
+        st.subheader("Issues Detected")
         for issue in result.issues:
-            st.warning(issue)
+            clean_issue = issue.replace("🚫 ", "").replace("⚠️ ", "")
+            st.warning(clean_issue)
 
     # ── Analysis Tabs ──────────────────────────────────────────────
     tab1, tab2 = st.tabs([
-        "📊 Closest Matching Titles",
-        "📋 Guideline Breakdown Checklist",
+        "Closest Matching Titles",
+        "Guideline Breakdown Checklist",
     ])
 
     # ── Tab 1: Top 5 Closest Matching Titles ──────────────────────
@@ -302,13 +292,13 @@ if verify_button and candidate_title.strip():
                 table_data.append({
                     "Existing Title": match.title,
                     "Fuzzy Match %": f"{match.fuzzy_score:.1f}%",
-                    "Phonetic Match": "✅ Yes" if match.phonetic_match else "❌ No",
+                    "Phonetic Match": "Yes" if match.phonetic_match else "No",
                     "Semantic Score %": f"{match.semantic_score * 100:.1f}%",
                     "Combined Similarity %": f"{match.combined_score:.1f}%",
                 })
 
             matches_df = pd.DataFrame(table_data)
-            st.dataframe(matches_df, use_container_width=True, hide_index=True)
+            st.dataframe(matches_df, hide_index=True)
         else:
             st.info("No matching titles found in the database.")
 
@@ -350,9 +340,8 @@ if verify_button and candidate_title.strip():
         ]
 
         for check_name, description, passed in checks:
-            icon = "✅" if passed else "❌"
             status_text = "PASSED" if passed else "FAILED"
-            st.markdown(f"**{icon} {check_name}** — {status_text}")
+            st.markdown(f"**{status_text}** — {check_name}")
             st.caption(f"   {description}")
 
     # ── Action Footer: Register Button ─────────────────────────────
@@ -360,25 +349,24 @@ if verify_button and candidate_title.strip():
 
     if result.is_approved:
         st.success(
-            f"🎉 **\"{candidate_title.strip()}\"** has passed all verification "
+            f"**\"{candidate_title.strip()}\"** has passed all verification "
             f"checks and is eligible for registration."
         )
         if st.button(
-            "📝 Register this Title to Database",
-            type="secondary",
-            use_container_width=True,
+            "Register this Title to Database",
+            type="secondary"
         ):
             verifier.register_title(candidate_title.strip())
             # Clear the cached verifier so the count refreshes
             st.success(
-                f"✅ **\"{candidate_title.strip()}\"** has been registered! "
+                f"**\"{candidate_title.strip()}\"** has been registered! "
                 f"Database now contains {len(verifier.df):,} titles."
             )
     else:
         st.error(
-            f"🚫 **\"{candidate_title.strip()}\"** has been rejected and "
+            f"**\"{candidate_title.strip()}\"** has been rejected and "
             f"cannot be registered. Please choose a different title."
         )
 
 elif verify_button:
-    st.warning("⚠️ Please enter a title before clicking Verify.")
+    st.warning("Please enter a title before clicking Verify.")
