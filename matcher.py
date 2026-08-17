@@ -39,6 +39,7 @@ from rapidfuzz import fuzz
 from sentence_transformers import SentenceTransformer, util
 import torch
 import streamlit as st
+import rule_store
 
 
 # ═══════════════════════════════════════════════════════════════════════════
@@ -94,23 +95,8 @@ class VerificationResult:
 # Constants — Rule Configuration
 # ═══════════════════════════════════════════════════════════════════════════
 
-# Stage 1: Words that are absolutely forbidden in any press title.
-# Matching is done via TOKEN-LEVEL set intersection to avoid false
-# substring hits (e.g., "accident" must NOT trigger "cid").
-DISALLOWED_WORDS = {
-    "police", "crime", "corruption", "cbi", "cid",
-    "army", "military", "intelligence", "anti-terror", "encounter",
-}
-
-# Stage 3: Common prefixes and suffixes/periodicity markers that should
-# be stripped before comparing the remaining "core" of a title.
-STRIP_PREFIXES = {"the", "india", "new", "national", "united"}
-
-STRIP_SUFFIXES = {
-    "daily", "weekly", "monthly", "today", "live",
-    "report", "journal", "bulletin", "update",
-    "saptahik", "dainik", "masik",
-}
+# Runtime rules are loaded from rule_store.py so admin changes affect the next
+# verification request without restarting Streamlit.
 
 
 # ═══════════════════════════════════════════════════════════════════════════
@@ -245,6 +231,15 @@ class TitleVerifier:
             self._model = load_semantic_model()
         return self._model
 
+    def reload_rules(self) -> bool:
+        """
+        Compatibility hook for callers after admin rule changes.
+
+        Rules are loaded from rule_store during each verification stage, so
+        there is no verifier-local rule cache to refresh.
+        """
+        return True
+
     # -------------------------------------------------------------------
     # Stage 1: Disallowed Word Filter
     # -------------------------------------------------------------------
@@ -272,9 +267,18 @@ class TitleVerifier:
         """
         # Tokenize: split on whitespace, convert to lowercase
         candidate_tokens = set(candidate.lower().split())
+        normalized_candidate = " ".join(candidate.lower().split())
+        disallowed_words = rule_store.get_disallowed_words()
 
         # Set intersection: O(min(|A|, |B|)) — very efficient
-        found = candidate_tokens & DISALLOWED_WORDS
+        found = {
+            word for word in disallowed_words
+            if (
+                word in candidate_tokens
+                if " " not in word
+                else f" {word} " in f" {normalized_candidate} "
+            )
+        }
 
         issues = []
         for word in sorted(found):
@@ -314,6 +318,7 @@ class TitleVerifier:
         """
         tokens = candidate.strip().split()
         issues = []
+        strip_prefixes = rule_store.get_prefixes()
 
         if len(tokens) < 2:
             return issues
@@ -329,13 +334,13 @@ class TitleVerifier:
             # Also check with common prefixes prepended, e.g.,
             # "Hindu" should match "The Hindu" in the database.
             if not left_match:
-                for prefix in STRIP_PREFIXES:
+                for prefix in strip_prefixes:
                     if f"{prefix} {left_part}" in self.titles_lower_set:
                         left_match = True
                         break
 
             if not right_match:
-                for prefix in STRIP_PREFIXES:
+                for prefix in strip_prefixes:
                     if f"{prefix} {right_part}" in self.titles_lower_set:
                         right_match = True
                         break
@@ -379,11 +384,13 @@ class TitleVerifier:
             List of issue strings describing affix collisions.
         """
         candidate_tokens = candidate.lower().split()
+        strip_prefixes = rule_store.get_prefixes()
+        strip_suffixes = rule_store.get_suffixes()
 
         # Strip prefixes and suffixes/periodicity markers
         stripped_tokens = [
             t for t in candidate_tokens
-            if t not in STRIP_PREFIXES and t not in STRIP_SUFFIXES
+            if t not in strip_prefixes and t not in strip_suffixes
         ]
 
         if not stripped_tokens or stripped_tokens == candidate_tokens:
@@ -397,7 +404,7 @@ class TitleVerifier:
             existing_tokens = existing_title.lower().split()
             existing_stripped = [
                 t for t in existing_tokens
-                if t not in STRIP_PREFIXES and t not in STRIP_SUFFIXES
+                if t not in strip_prefixes and t not in strip_suffixes
             ]
 
             if not existing_stripped:
