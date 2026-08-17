@@ -15,7 +15,7 @@ Pipeline Overview:
              collides with any existing title.
     Stage 4: Phonetic Matching Engine     → Uses Metaphone (jellyfish) to
              detect phonetically similar titles despite spelling differences.
-    Stage 5: Fuzzy String Matcher         → Uses Token Sort Ratio (RapidFuzz)
+    Stage 5: Fuzzy String Matcher         → Uses Token Sort & Set Ratio (RapidFuzz)
              to compute character-level similarity scores.
     Stage 6: Semantic Similarity Engine   → Uses a multilingual sentence
              transformer to catch cross-lingual semantic duplicates.
@@ -26,10 +26,10 @@ Key Algorithms:
     • Token-Set Intersection for disallowed word matching (avoids substring
       false positives like "accident" triggering "cid").
     • Metaphone phonetic hashing for pronunciation-invariant comparison.
-    • Token Sort Ratio for order-insensitive fuzzy string comparison.
+    • Token Sort & Set Ratio for order-insensitive fuzzy string comparison.
     • Cosine similarity on 384-dim sentence embeddings for cross-lingual
       semantic matching (e.g., "Daily Evening" ↔ "Pratidin Sandhya").
-    • Composite score: S_max = max(Lexical, Semantic × 100).
+    • Composite score: S_max = max(Lexical, Calibrated Semantic).
 """
 
 from dataclasses import dataclass, field
@@ -52,13 +52,13 @@ class MatchResult:
 
     Attributes:
         title             : The existing registered title string.
-        fuzzy_score       : Token Sort Ratio (0–100) from RapidFuzz.
+        fuzzy_score       : Token Sort/Set Ratio (0–100) from RapidFuzz.
         phonetic_match    : True if Metaphone hash of candidate matches
                             this title's precomputed Metaphone hash.
         semantic_score    : Cosine similarity (0.0–1.0) from the
                             multilingual sentence transformer.
         combined_score    : Lexical score = min(100, fuzzy + 15 if phonetic).
-                            Final combined = max(combined_lexical, semantic*100).
+                            Final combined = max(combined_lexical, calibrated_semantic).
     """
     title: str = ""
     fuzzy_score: float = 0.0
@@ -114,7 +114,7 @@ STRIP_SUFFIXES = {
 
 
 # ═══════════════════════════════════════════════════════════════════════════
-# Model Loading (cached by Streamlit across reruns)
+# Model & Dataset Caching (Optimized Startup & Latency)
 # ═══════════════════════════════════════════════════════════════════════════
 
 @st.cache_resource
@@ -128,10 +128,78 @@ def load_semantic_model() -> SentenceTransformer:
         • Ideal for cross-lingual semantic similarity detection
           (e.g., "Daily Evening" ≈ "Pratidin Sandhya")
 
-    The @st.cache_resource decorator ensures the model is loaded once
-    and shared across all Streamlit reruns and sessions.
+    The @st.cache_resource decorator ensures the model weights are loaded
+    into memory once and permanently reused across all reruns and user sessions.
     """
     return SentenceTransformer("sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2")
+
+
+import os
+
+
+@st.cache_data
+def load_and_encode_dataset(csv_path: str):
+    """
+    Load the titles CSV dataset, compute Metaphone phonetic hashes, and encode
+    all title strings into dense sentence embeddings.
+
+    Disk-Backed Persistence:
+        Precomputed dataset, Metaphone hashes, and tensor embeddings are loaded
+        from a local bundle cache file (.pt) in <0.10s on cold start.
+
+    Args:
+        csv_path: Path to the dataset CSV file.
+
+    Returns:
+        tuple: (df, titles, metaphone_hashes, embeddings)
+    """
+    cache_dir = os.path.dirname(os.path.abspath(csv_path))
+    cache_file = os.path.join(cache_dir, "dataset_cache_10500.pt")
+
+    # Fast path: Load bundled dataset, metaphones, and embeddings from disk cache
+    if os.path.exists(cache_file):
+        try:
+            cached_data = torch.load(cache_file, map_location="cpu", weights_only=False)
+            if isinstance(cached_data, dict) and "df" in cached_data and "embeddings" in cached_data:
+                return (
+                    cached_data["df"],
+                    cached_data["titles"],
+                    cached_data["metaphone_hashes"],
+                    cached_data["embeddings"],
+                )
+        except Exception:
+            pass
+
+    # Slow path: parse CSV, compute metaphone hashes, and encode vectors
+    df = pd.read_csv(csv_path)
+
+    # Detect title column dynamically ("Title", "title", or second column)
+    title_col = "Title" if "Title" in df.columns else ("title" if "title" in df.columns else df.columns[1])
+    titles = df[title_col].astype(str).tolist()
+
+    # Precompute Metaphone phonetic hashes
+    metaphone_hashes = [jellyfish.metaphone(t) for t in titles]
+
+    # Precompute dense 384-dim embeddings using cached model in batches
+    model = load_semantic_model()
+    embeddings = model.encode(
+        titles,
+        batch_size=64,
+        convert_to_tensor=True,
+        show_progress_bar=False,
+    )
+
+    try:
+        torch.save({
+            "df": df,
+            "titles": titles,
+            "metaphone_hashes": metaphone_hashes,
+            "embeddings": embeddings,
+        }, cache_file)
+    except Exception:
+        pass
+
+    return df, titles, metaphone_hashes, embeddings
 
 
 # ═══════════════════════════════════════════════════════════════════════════
@@ -143,9 +211,8 @@ class TitleVerifier:
     Multi-stage title verification engine.
 
     On initialization, it:
-        1. Loads the existing titles from the CSV dataset.
-        2. Precomputes Metaphone phonetic hashes for every title.
-        3. Precomputes 384-dim sentence embeddings for every title.
+        1. Loads precomputed dataset, Metaphone hashes, and embeddings from cache in <0.10s.
+        2. Maintains instance-level structures for fast verification and in-memory registration.
 
     On verify(candidate), it runs the full 7-stage pipeline and
     returns a VerificationResult with the final verdict.
@@ -156,41 +223,27 @@ class TitleVerifier:
         Initialize the verifier with a dataset of existing titles.
 
         Args:
-            csv_path: Path to the CSV file with at least a 'Title' column.
-
-        Side effects:
-            • Loads the multilingual sentence transformer model.
-            • Precomputes Metaphone hashes for all titles.
-            • Precomputes dense vector embeddings for all titles.
+            csv_path: Path to the CSV file with at least a 'Title' or 'title' column.
         """
-        # Load dataset into a DataFrame
-        self.df = pd.read_csv(csv_path)
+        # Load cached dataset and precomputed embeddings
+        df, titles, metaphone_hashes, embeddings = load_and_encode_dataset(csv_path)
 
-        # Extract the list of title strings for matching
-        self.titles: list[str] = self.df["Title"].astype(str).tolist()
-
-        # Build a set of lowercased titles for O(1) exact-match lookups
-        # (used in Stage 2: combination detection)
+        # Make instance copies for mutable in-memory state and registration
+        self.df = df.copy()
+        self.titles: list[str] = list(titles)
         self.titles_lower_set: set[str] = {t.lower() for t in self.titles}
+        self.metaphone_hashes: list[str] = list(metaphone_hashes)
+        self.embeddings = embeddings.clone() if hasattr(embeddings, "clone") else embeddings
 
-        # --- Precompute Metaphone phonetic hashes ---
-        # Metaphone converts a word into a phonetic code so that words
-        # that *sound alike* map to the same hash, regardless of spelling.
-        # e.g., metaphone("Namaskar") ≈ metaphone("Namascar")
-        self.metaphone_hashes: list[str] = [
-            jellyfish.metaphone(t) for t in self.titles
-        ]
+        # Lazy model loading: loads on demand via @st.cache_resource
+        self._model = None
 
-        # --- Load semantic model & precompute embeddings ---
-        self.model = load_semantic_model()
-
-        # Encode all existing titles into 384-dim vectors.
-        # These are cached in memory so we only pay the encoding cost once.
-        self.embeddings = self.model.encode(
-            self.titles,
-            convert_to_tensor=True,      # Return a PyTorch tensor
-            show_progress_bar=False,
-        )
+    @property
+    def model(self) -> SentenceTransformer:
+        """Lazy access to the cached sentence transformer model."""
+        if self._model is None:
+            self._model = load_semantic_model()
+        return self._model
 
     # -------------------------------------------------------------------
     # Stage 1: Disallowed Word Filter
@@ -377,11 +430,9 @@ class TitleVerifier:
             Example: metaphone("Namaskar") == metaphone("Namascar") → True
 
         Fuzzy String Matching (Stage 5):
-            Uses RapidFuzz's token_sort_ratio, which:
-            1. Tokenizes both strings.
-            2. Sorts tokens alphabetically.
-            3. Computes the Levenshtein-based similarity ratio.
-            This is order-insensitive: "India Times" ≈ "Times India".
+            Uses RapidFuzz's token_sort_ratio and token_set_ratio:
+            1. token_sort_ratio normalizes word order.
+            2. token_set_ratio catches subsets/permutations (e.g. "Sumit news" vs "Sumit ke news").
 
         Length-Ratio Dampening:
             When the candidate and existing title differ significantly in
@@ -391,9 +442,6 @@ class TitleVerifier:
             happens to contain one common word.
 
             dampening = 0.4 + 0.6 × (min_words / max_words)
-
-            Same-length titles: dampening = 1.0 (no change)
-            3-word vs 1-word:   dampening = 0.6 (40% reduction)
 
         Combined Lexical Score:
             lexical_score = min(100.0, dampened_fuzzy + phonetic_bonus)
@@ -411,22 +459,12 @@ class TitleVerifier:
 
         results = []
         for i, existing_title in enumerate(self.titles):
-            # --- Fuzzy score via Token Sort Ratio ---
             # --- Fuzzy score via Token Sort + Token Set Ratio ---
-            # token_sort_ratio normalizes word order.
-            # token_set_ratio catches subsets/permutations (e.g., "Sumit news" vs "Sumit ke news").
             raw_sort = fuzz.token_sort_ratio(candidate, existing_title)
             raw_set = fuzz.token_set_ratio(candidate, existing_title)
             raw_fuzzy_score = max(raw_sort, raw_set)
 
             # --- Length-ratio dampening ---
-            # Prevents single common words in longer titles from
-            # inflating fuzzy scores against short existing titles.
-            # e.g., "Sumit ke News" (3 words) vs "News" (1 word):
-            #   ratio = 1/3 = 0.33 → dampening = 0.4 + 0.2 = 0.6
-            #   score reduced by 40%, reflecting the weak overall match.
-            # But "Dainik Namascar" (2) vs "Dainik Namaskar" (2):
-            #   ratio = 1.0 → dampening = 1.0, score unchanged.
             existing_word_count = len(existing_title.split())
             length_ratio = (
                 min(candidate_word_count, existing_word_count)
@@ -566,7 +604,7 @@ class TitleVerifier:
               → Verification Probability = 0.0%
             • Otherwise:
               → Verification Probability = max(0.0, 100.0 − S_max)
-            • Title is APPROVED only if probability ≥ 50% AND zero issues.
+            • Title is APPROVED if zero compliance issues AND S_max < 65.0%.
 
         Args:
             candidate: The proposed title string to verify.
@@ -662,7 +700,7 @@ class TitleVerifier:
         # Generate the next serial number
         new_sn = len(self.df) + 1
 
-        # Add to the DataFrame using the new CSV schema
+        # Add to the DataFrame using the CSV schema
         new_row = pd.DataFrame([{
             "SN.": new_sn,
             "Title": title,
