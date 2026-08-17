@@ -156,7 +156,7 @@ class TitleVerifier:
         Initialize the verifier with a dataset of existing titles.
 
         Args:
-            csv_path: Path to the CSV file with at least a 'title' column.
+            csv_path: Path to the CSV file with at least a 'Title' column.
 
         Side effects:
             • Loads the multilingual sentence transformer model.
@@ -167,7 +167,7 @@ class TitleVerifier:
         self.df = pd.read_csv(csv_path)
 
         # Extract the list of title strings for matching
-        self.titles: list[str] = self.df["title"].tolist()
+        self.titles: list[str] = self.df["Title"].astype(str).tolist()
 
         # Build a set of lowercased titles for O(1) exact-match lookups
         # (used in Stage 2: combination detection)
@@ -612,7 +612,8 @@ class TitleVerifier:
     # In-Memory Registration (Section 5.B.7)
     # -------------------------------------------------------------------
     def register_title(self, title: str, language: str = "English",
-                       category: str = "Newspaper", year: int = 2025):
+                       periodicity: str = "", publisher: str = "",
+                       owner: str = "", state: str = "", district: str = ""):
         """
         Register an approved title into the in-memory database so that
         subsequent verification checks immediately detect it.
@@ -624,21 +625,29 @@ class TitleVerifier:
             4. Compute and append its sentence embedding.
 
         Args:
-            title    : The approved title string to register.
-            language : Language of the publication (default: "English").
-            category : Publication category (default: "Newspaper").
-            year     : Registration year (default: 2025).
+            title       : The approved title string to register.
+            language    : Language of the publication (default: "English").
+            periodicity : Publication periodicity (e.g. "Daily", "Weekly").
+            publisher   : Publisher name.
+            owner       : Owner name.
+            state       : Publication state.
+            district    : Publication district.
         """
-        # Generate the next title_id
-        new_id = f"T{len(self.df) + 1:05d}"
+        # Generate the next serial number
+        new_sn = len(self.df) + 1
 
-        # Add to the DataFrame
+        # Add to the DataFrame using the new CSV schema
         new_row = pd.DataFrame([{
-            "title_id": new_id,
-            "title": title,
-            "language": language,
-            "category": category,
-            "registration_year": year,
+            "SN.": new_sn,
+            "Title": title,
+            "Registration Number": "",
+            "Registration Date": "",
+            "Language": language,
+            "Periodicity": periodicity,
+            "Publisher": publisher,
+            "Owner": owner,
+            "Publication State": state,
+            "Publication District": district,
         }])
         self.df = pd.concat([self.df, new_row], ignore_index=True)
 
