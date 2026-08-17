@@ -17,6 +17,242 @@ import os
 import streamlit as st
 import pandas as pd
 from matcher import TitleVerifier, VerificationResult
+import rule_store
+
+
+ADMIN_PINS = {"1234", "PRGI-ADMIN"}
+RULE_CATEGORIES = [
+    "Law Enforcement",
+    "Defense & Armed Forces",
+    "Government / Statutory",
+    "Anti-Corruption",
+    "Investigation Agencies",
+    "National Symbols",
+    "Custom",
+]
+
+
+def _show_rule_store_error() -> None:
+    error = rule_store.get_last_error()
+    if error:
+        st.error(error)
+
+
+def _after_rule_change(verifier: TitleVerifier) -> None:
+    if hasattr(verifier, "reload_rules"):
+        verifier.reload_rules()
+
+
+def _render_admin_login() -> None:
+    st.subheader("Protected PRGI Admin Panel")
+    st.caption("Enter the admin credential to manage verification rules.")
+    with st.form("admin_login_form"):
+        pin = st.text_input("Admin PIN", type="password")
+        submitted = st.form_submit_button("Unlock Admin Panel", type="primary")
+    if submitted:
+        if pin in ADMIN_PINS:
+            st.session_state["prgi_admin_authenticated"] = True
+            st.rerun()
+        else:
+            st.error("Invalid admin credential.")
+
+
+def _render_rules_overview() -> None:
+    detailed_words = rule_store.get_disallowed_words_detailed()
+    prefixes = rule_store.get_prefixes()
+    suffixes = rule_store.get_suffixes()
+    _show_rule_store_error()
+
+    col1, col2, col3 = st.columns(3)
+    col1.metric("Disallowed Words", len(detailed_words))
+    col2.metric("Prefixes", len(prefixes))
+    col3.metric("Periodicity Terms", len(suffixes))
+
+
+def _render_add_disallowed_word(verifier: TitleVerifier) -> None:
+    st.subheader("Add Disallowed Word")
+    with st.form("add_disallowed_word_form", clear_on_submit=True):
+        word = st.text_input("Word or phrase", placeholder="e.g., classified")
+        category = st.selectbox("Category", RULE_CATEGORIES)
+        submitted = st.form_submit_button("Add to Blocklist", type="primary")
+
+    if submitted:
+        if rule_store.add_disallowed_word(word, category):
+            _after_rule_change(verifier)
+            st.success(f"Added '{word.strip().lower()}' to the blocklist.")
+            if hasattr(st, "toast"):
+                st.toast("Rule saved.")
+        else:
+            _show_rule_store_error()
+
+
+def _render_active_disallowed_words(verifier: TitleVerifier) -> None:
+    st.subheader("Active Disallowed Words")
+    rows = rule_store.get_disallowed_words_detailed()
+    search = st.text_input("Search words", key="admin_word_search")
+    filtered_rows = [
+        row for row in rows
+        if not search
+        or search.lower() in row.get("word", "").lower()
+        or search.lower() in row.get("category", "").lower()
+    ]
+
+    if filtered_rows:
+        display_df = pd.DataFrame(filtered_rows).rename(columns={
+            "word": "Word",
+            "category": "Category",
+            "date_added": "Date Added",
+        })
+        st.dataframe(display_df, hide_index=True, use_container_width=True)
+    else:
+        st.info("No matching disallowed words found.")
+
+    with st.expander("Remove a disallowed word"):
+        words = [row["word"] for row in filtered_rows]
+        selected_word = st.selectbox("Word", words, disabled=not words)
+        confirm = st.checkbox("Confirm removal", key="confirm_word_removal")
+        if st.button("Remove Selected Word", disabled=not words or not confirm):
+            if rule_store.remove_disallowed_word(selected_word):
+                _after_rule_change(verifier)
+                st.success(f"Removed '{selected_word}'.")
+                st.rerun()
+            else:
+                _show_rule_store_error()
+
+
+def _render_token_manager(
+    title: str,
+    input_label: str,
+    add_func,
+    remove_func,
+    get_func,
+    verifier: TitleVerifier,
+    key_prefix: str,
+) -> None:
+    st.subheader(title)
+    active_items = sorted(get_func())
+    st.dataframe(pd.DataFrame({input_label: active_items}), hide_index=True, use_container_width=True)
+
+    add_col, remove_col = st.columns(2)
+    with add_col:
+        with st.form(f"add_{key_prefix}_form", clear_on_submit=True):
+            value = st.text_input(f"Add {input_label.lower()}", key=f"add_{key_prefix}_input")
+            submitted = st.form_submit_button(f"Add {input_label}")
+        if submitted:
+            if add_func(value):
+                _after_rule_change(verifier)
+                st.success(f"Added '{value.strip().lower()}'.")
+                st.rerun()
+            else:
+                _show_rule_store_error()
+
+    with remove_col:
+        selected = st.selectbox(
+            f"Remove {input_label.lower()}",
+            active_items,
+            disabled=not active_items,
+            key=f"remove_{key_prefix}_select",
+        )
+        confirm = st.checkbox("Confirm removal", key=f"confirm_{key_prefix}_removal")
+        if st.button(f"Remove {input_label}", disabled=not active_items or not confirm, key=f"remove_{key_prefix}_button"):
+            if remove_func(selected):
+                _after_rule_change(verifier)
+                st.success(f"Removed '{selected}'.")
+                st.rerun()
+            else:
+                _show_rule_store_error()
+
+
+def _render_live_sandbox(verifier: TitleVerifier) -> None:
+    st.subheader("Live Rule Sandbox")
+    with st.form("rule_sandbox_form"):
+        title = st.text_input("Enter a publication/title to test", placeholder="e.g., The Daily Hacker")
+        submitted = st.form_submit_button("Test Rule", type="primary")
+
+    if submitted:
+        if not title.strip():
+            st.warning("Enter a title to test.")
+            return
+        with st.spinner("Running the verification pipeline..."):
+            result = verifier.verify(title.strip())
+        if result.is_approved:
+            st.success("PASS / ALLOWED")
+        else:
+            st.error("HARD REJECT / BLOCKED")
+        if result.issues:
+            st.write("Triggered rule details:")
+            for issue in result.issues:
+                st.warning(issue)
+        else:
+            st.info("No rule issue was reported by the matcher.")
+
+
+def _render_reset_defaults(verifier: TitleVerifier) -> None:
+    st.subheader("Reset to PRGI Statutory Defaults")
+    st.warning("This removes custom rules and restores the baseline PRGI rule configuration.")
+    confirm_text = st.text_input("Type RESET to confirm", key="reset_rules_confirm")
+    if st.button("Reset to PRGI Statutory Defaults", disabled=confirm_text != "RESET"):
+        if rule_store.reset_to_defaults():
+            _after_rule_change(verifier)
+            st.success("Rules reset to PRGI statutory defaults.")
+            st.rerun()
+        else:
+            _show_rule_store_error()
+
+
+def render_admin_panel(verifier: TitleVerifier) -> None:
+    st.markdown("## PRGI Admin Panel")
+    if not st.session_state.get("prgi_admin_authenticated", False):
+        _render_admin_login()
+        return
+
+    lock_col, status_col = st.columns([1, 4])
+    with lock_col:
+        if st.button("Logout / Lock Admin Panel"):
+            st.session_state["prgi_admin_authenticated"] = False
+            st.rerun()
+    with status_col:
+        st.caption("Authenticated rule-management session.")
+
+    overview_tab, words_tab, prefixes_tab, suffixes_tab, sandbox_tab, reset_tab = st.tabs([
+        "Rules Overview",
+        "Disallowed Words",
+        "Prefix Manager",
+        "Periodicity Manager",
+        "Live Sandbox",
+        "Reset Defaults",
+    ])
+
+    with overview_tab:
+        _render_rules_overview()
+    with words_tab:
+        _render_add_disallowed_word(verifier)
+        st.divider()
+        _render_active_disallowed_words(verifier)
+    with prefixes_tab:
+        _render_token_manager(
+            "Prefix Manager",
+            "Prefix",
+            rule_store.add_prefix,
+            rule_store.remove_prefix,
+            rule_store.get_prefixes,
+            verifier,
+            "prefix",
+        )
+    with suffixes_tab:
+        _render_token_manager(
+            "Periodicity / Suffix Manager",
+            "Periodicity Term",
+            rule_store.add_suffix,
+            rule_store.remove_suffix,
+            rule_store.get_suffixes,
+            verifier,
+            "suffix",
+        )
+    with sandbox_tab:
+        _render_live_sandbox(verifier)
+    with reset_tab:
+        _render_reset_defaults(verifier)
 
 # ═══════════════════════════════════════════════════════════════════════════
 # Page Configuration
@@ -294,6 +530,17 @@ def get_verifier(version: str = "v3_calibrated_matcher") -> TitleVerifier:
     return TitleVerifier(csv_path)
 
 verifier = get_verifier("v3_calibrated_matcher")
+
+navigation = st.radio(
+    "Application Section",
+    ["Public Verifier", "PRGI Admin Panel"],
+    horizontal=True,
+    label_visibility="collapsed",
+)
+
+if navigation == "PRGI Admin Panel":
+    render_admin_panel(verifier)
+    st.stop()
 
 # ═══════════════════════════════════════════════════════════════════════════
 # Header / App Bar

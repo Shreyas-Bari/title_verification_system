@@ -1,0 +1,85 @@
+{
+  "disallowed_words": [
+    {
+      "word": "police",
+      "category": "Law Enforcement",
+      "date_added": "2026-08-18"
+    },
+    {
+      "word": "crime",
+      "category": "Law Enforcement",
+      "date_added": "2026-08-18"
+    },
+    {
+      "word": "corruption",
+      "category": "Anti-Corruption",
+      "date_added": "2026-08-18"
+    },
+    {
+      "word": "cbi",
+      "category": "Investigation Agencies",
+      "date_added": "2026-08-18"
+    },
+    {
+      "word": "cid",
+      "category": "Investigation Agencies",
+      "date_added": "2026-08-18"
+    },
+    {
+      "word": "army",
+      "category": "Defense & Armed Forces",
+      "date_added": "2026-08-18"
+    },
+    {
+      "word": "military",
+      "category": "Defense & Armed Forces",
+      "date_added": "2026-08-18"
+    },
+    {
+      "word": "intelligence",
+      "category": "Investigation Agencies",
+      "date_added": "2026-08-18"
+    },
+    {
+      "word": "anti-terror",
+      "category": "Defense & Armed Forces",
+      "date_added": "2026-08-18"
+    },
+    {
+      "word": "encounter",
+      "category": "Law Enforcement",
+      "date_added": "2026-08-18"
+    },
+    {
+      "word": "emblem",
+      "category": "National Symbols",
+      "date_added": "2026-08-18"
+    },
+    {
+      "word": "apple",
+      "category": "Law Enforcement",
+      "date_added": "2026-08-18"
+    }
+  ],
+  "restricted_prefixes": [
+    "the",
+    "india",
+    "new",
+    "national",
+    "united"
+  ],
+  "restricted_suffixes": [
+    "daily",
+    "weekly",
+    "monthly",
+    "today",
+    "live",
+    "report",
+    "journal",
+    "bulletin",
+    "update",
+    "saptahik",
+    "dainik",
+    "masik"
+  ]
+}
