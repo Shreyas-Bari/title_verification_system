@@ -1,0 +1,3079 @@
+title_id,title,language,category,registration_year
+T00001,Ahmedabad Awaaz,Urdu,Newspaper,2000
+T00002,Ahmedabad Bhaskar,Bengali,Magazine,2007
+T00003,Ahmedabad Dainik Namaskar,Marathi,Digest,2003
+T00004,Ahmedabad Darpan,Urdu,Digest,2017
+T00005,Ahmedabad Express,Hindi,Bulletin,2013
+T00006,Ahmedabad Herald,English,Newspaper,2002
+T00007,Ahmedabad Indian Express,Gujarati,Magazine,2016
+T00008,Ahmedabad Jagran,Punjabi,Newspaper,2017
+T00009,Ahmedabad Kesari,Gujarati,Digest,2020
+T00010,Ahmedabad News,Malayalam,Journal,2007
+T00011,Ahmedabad Patrika,Kannada,Bulletin,2008
+T00012,Ahmedabad Post,English,Magazine,2022
+T00013,Ahmedabad Prabhat,Telugu,Periodical,2008
+T00014,Ahmedabad Prakash,Marathi,Magazine,2024
+T00015,Ahmedabad Pratidin Sandhya,Tamil,Newspaper,2002
+T00016,Ahmedabad Samachar,Telugu,Newspaper,2011
+T00017,Ahmedabad Sandesh,Tamil,Bulletin,2008
+T00018,Ahmedabad Sandhya,English,Digest,2014
+T00019,Ahmedabad The Hindu,Malayalam,Newspaper,2012
+T00020,Ahmedabad Times,Hindi,Bulletin,2009
+T00021,Ahmedabad Tribune,Urdu,Bulletin,2011
+T00022,Ahmedabad Vartha,Punjabi,Magazine,2022
+T00023,Ahmedabad Vichar,Hindi,Newspaper,2021
+T00024,Awaaz,Gujarati,Periodical,2002
+T00025,Awaaz Bulletin,Gujarati,Newspaper,2012
+T00026,Awaaz Daily,Bengali,Journal,2020
+T00027,Awaaz Journal,Tamil,Magazine,2011
+T00028,Awaaz Live,Tamil,Magazine,2021
+T00029,Awaaz Monthly,Bengali,Digest,2021
+T00030,Awaaz Report,Urdu,Newspaper,2019
+T00031,Awaaz Today,Urdu,Magazine,2017
+T00032,Awaaz Update,Gujarati,Magazine,2014
+T00033,Awaaz Weekly,Telugu,Periodical,2020
+T00034,Bangalore Awaaz,Malayalam,Magazine,2021
+T00035,Bangalore Bhaskar,Tamil,Newspaper,2007
+T00036,Bangalore Dainik Namaskar,English,Periodical,2012
+T00037,Bangalore Darpan,Bengali,Newspaper,2006
+T00038,Bangalore Express,Punjabi,Digest,2010
+T00039,Bangalore Herald,Gujarati,Digest,2015
+T00040,Bangalore Indian Express,Telugu,Digest,2014
+T00041,Bangalore Jagran,Marathi,Periodical,2004
+T00042,Bangalore Kesari,Gujarati,Digest,2017
+T00043,Bangalore News,Malayalam,Periodical,2023
+T00044,Bangalore Patrika,Punjabi,Journal,2018
+T00045,Bangalore Post,Telugu,Periodical,2007
+T00046,Bangalore Prabhat,Marathi,Bulletin,2015
+T00047,Bangalore Prakash,Hindi,Newspaper,2003
+T00048,Bangalore Pratidin Sandhya,Marathi,Digest,2005
+T00049,Bangalore Samachar,Urdu,Journal,2019
+T00050,Bangalore Sandesh,Hindi,Journal,2012
+T00051,Bangalore Sandhya,Punjabi,Journal,2016
+T00052,Bangalore The Hindu,Bengali,Bulletin,2000
+T00053,Bangalore Times,Urdu,Digest,2003
+T00054,Bangalore Tribune,Urdu,Bulletin,2024
+T00055,Bangalore Vartha,Bengali,Digest,2010
+T00056,Bangalore Vichar,Hindi,Periodical,2013
+T00057,Bharat Awaaz,Marathi,Journal,2000
+T00058,Bharat Awaaz Bulletin,Bengali,Bulletin,2024
+T00059,Bharat Awaaz Daily,Marathi,Bulletin,2003
+T00060,Bharat Awaaz Journal,Urdu,Periodical,2020
+T00061,Bharat Awaaz Live,Malayalam,Bulletin,2006
+T00062,Bharat Awaaz Monthly,Marathi,Periodical,2024
+T00063,Bharat Awaaz Report,Marathi,Bulletin,2024
+T00064,Bharat Awaaz Today,Malayalam,Newspaper,2019
+T00065,Bharat Awaaz Update,Tamil,Journal,2000
+T00066,Bharat Awaaz Weekly,Hindi,Periodical,2009
+T00067,Bharat Bhaskar,Gujarati,Newspaper,2007
+T00068,Bharat Bhaskar Bulletin,Punjabi,Newspaper,2002
+T00069,Bharat Bhaskar Daily,Kannada,Newspaper,2024
+T00070,Bharat Bhaskar Journal,Malayalam,Magazine,2004
+T00071,Bharat Bhaskar Live,Urdu,Journal,2017
+T00072,Bharat Bhaskar Monthly,Marathi,Periodical,2016
+T00073,Bharat Bhaskar Report,Punjabi,Journal,2006
+T00074,Bharat Bhaskar Today,Malayalam,Digest,2022
+T00075,Bharat Bhaskar Update,Gujarati,Digest,2009
+T00076,Bharat Bhaskar Weekly,Telugu,Digest,2020
+T00077,Bharat Dainik Namaskar,Tamil,Journal,2016
+T00078,Bharat Dainik Namaskar Bulletin,Kannada,Newspaper,2007
+T00079,Bharat Dainik Namaskar Daily,Gujarati,Newspaper,2010
+T00080,Bharat Dainik Namaskar Journal,English,Bulletin,2017
+T00081,Bharat Dainik Namaskar Live,Gujarati,Bulletin,2007
+T00082,Bharat Dainik Namaskar Monthly,English,Newspaper,2022
+T00083,Bharat Dainik Namaskar Report,Urdu,Newspaper,2007
+T00084,Bharat Dainik Namaskar Today,Hindi,Newspaper,2010
+T00085,Bharat Dainik Namaskar Update,Hindi,Bulletin,2007
+T00086,Bharat Dainik Namaskar Weekly,Bengali,Digest,2015
+T00087,Bharat Darpan,Gujarati,Bulletin,2004
+T00088,Bharat Darpan Bulletin,Punjabi,Bulletin,2015
+T00089,Bharat Darpan Daily,Gujarati,Journal,2013
+T00090,Bharat Darpan Journal,Gujarati,Newspaper,2003
+T00091,Bharat Darpan Live,Urdu,Journal,2011
+T00092,Bharat Darpan Monthly,Telugu,Journal,2014
+T00093,Bharat Darpan Report,English,Digest,2020
+T00094,Bharat Darpan Today,Urdu,Newspaper,2001
+T00095,Bharat Darpan Update,Telugu,Digest,2010
+T00096,Bharat Darpan Weekly,Hindi,Magazine,2006
+T00097,Bharat Express,Gujarati,Bulletin,2014
+T00098,Bharat Express Bulletin,Marathi,Journal,2005
+T00099,Bharat Express Daily,Bengali,Journal,2007
+T00100,Bharat Express Journal,Hindi,Journal,2017
+T00101,Bharat Express Live,Hindi,Newspaper,2020
+T00102,Bharat Express Monthly,Malayalam,Newspaper,2002
+T00103,Bharat Express Report,Gujarati,Magazine,2013
+T00104,Bharat Express Today,Kannada,Journal,2006
+T00105,Bharat Express Update,Telugu,Newspaper,2005
+T00106,Bharat Express Weekly,Telugu,Newspaper,2012
+T00107,Bharat Herald,Bengali,Journal,2009
+T00108,Bharat Herald Bulletin,Telugu,Digest,2023
+T00109,Bharat Herald Daily,Malayalam,Digest,2022
+T00110,Bharat Herald Journal,Kannada,Magazine,2006
+T00111,Bharat Herald Live,Bengali,Magazine,2001
+T00112,Bharat Herald Monthly,Punjabi,Digest,2017
+T00113,Bharat Herald Report,English,Digest,2010
+T00114,Bharat Herald Today,English,Newspaper,2018
+T00115,Bharat Herald Update,Kannada,Bulletin,2016
+T00116,Bharat Herald Weekly,Marathi,Newspaper,2016
+T00117,Bharat Indian Express,Hindi,Magazine,2002
+T00118,Bharat Indian Express Bulletin,Punjabi,Newspaper,2021
+T00119,Bharat Indian Express Daily,Gujarati,Journal,2003
+T00120,Bharat Indian Express Journal,Punjabi,Magazine,2018
+T00121,Bharat Indian Express Live,Punjabi,Newspaper,2019
+T00122,Bharat Indian Express Monthly,Hindi,Journal,2021
+T00123,Bharat Indian Express Report,Punjabi,Bulletin,2016
+T00124,Bharat Indian Express Today,Tamil,Periodical,2006
+T00125,Bharat Indian Express Update,Urdu,Digest,2010
+T00126,Bharat Indian Express Weekly,Gujarati,Periodical,2012
+T00127,Bharat Jagran,Marathi,Digest,2020
+T00128,Bharat Jagran Bulletin,Bengali,Journal,2010
+T00129,Bharat Jagran Daily,Hindi,Newspaper,2014
+T00130,Bharat Jagran Journal,Punjabi,Bulletin,2003
+T00131,Bharat Jagran Live,Hindi,Bulletin,2006
+T00132,Bharat Jagran Monthly,Malayalam,Periodical,2004
+T00133,Bharat Jagran Report,Tamil,Newspaper,2007
+T00134,Bharat Jagran Today,Tamil,Periodical,2005
+T00135,Bharat Jagran Update,Kannada,Bulletin,2022
+T00136,Bharat Jagran Weekly,Bengali,Bulletin,2020
+T00137,Bharat Kesari,Malayalam,Newspaper,2021
+T00138,Bharat Kesari Bulletin,Malayalam,Periodical,2021
+T00139,Bharat Kesari Daily,Hindi,Magazine,2008
+T00140,Bharat Kesari Journal,Hindi,Newspaper,2023
+T00141,Bharat Kesari Live,Malayalam,Magazine,2008
+T00142,Bharat Kesari Monthly,Bengali,Bulletin,2006
+T00143,Bharat Kesari Report,Tamil,Magazine,2021
+T00144,Bharat Kesari Today,Urdu,Periodical,2016
+T00145,Bharat Kesari Update,Kannada,Periodical,2001
+T00146,Bharat Kesari Weekly,Hindi,Digest,2013
+T00147,Bharat News,Bengali,Newspaper,2000
+T00148,Bharat News Bulletin,Tamil,Magazine,2020
+T00149,Bharat News Daily,Bengali,Magazine,2023
+T00150,Bharat News Journal,Kannada,Bulletin,2022
+T00151,Bharat News Live,Telugu,Bulletin,2000
+T00152,Bharat News Monthly,Hindi,Newspaper,2022
+T00153,Bharat News Report,Marathi,Bulletin,2001
+T00154,Bharat News Today,Tamil,Bulletin,2017
+T00155,Bharat News Update,Marathi,Journal,2004
+T00156,Bharat News Weekly,English,Periodical,2011
+T00157,Bharat Patrika,English,Periodical,2006
+T00158,Bharat Patrika Bulletin,Urdu,Magazine,2021
+T00159,Bharat Patrika Daily,Hindi,Periodical,2024
+T00160,Bharat Patrika Journal,Malayalam,Journal,2019
+T00161,Bharat Patrika Live,Marathi,Magazine,2005
+T00162,Bharat Patrika Monthly,Marathi,Journal,2000
+T00163,Bharat Patrika Report,Marathi,Digest,2010
+T00164,Bharat Patrika Today,Telugu,Digest,2023
+T00165,Bharat Patrika Update,Gujarati,Periodical,2005
+T00166,Bharat Patrika Weekly,Hindi,Journal,2001
+T00167,Bharat Post,Kannada,Magazine,2006
+T00168,Bharat Post Bulletin,Kannada,Periodical,2009
+T00169,Bharat Post Daily,Gujarati,Magazine,2000
+T00170,Bharat Post Journal,Urdu,Magazine,2012
+T00171,Bharat Post Live,Tamil,Periodical,2002
+T00172,Bharat Post Monthly,Bengali,Periodical,2020
+T00173,Bharat Post Report,Malayalam,Journal,2021
+T00174,Bharat Post Today,Malayalam,Periodical,2000
+T00175,Bharat Post Update,Hindi,Periodical,2005
+T00176,Bharat Post Weekly,Punjabi,Periodical,2001
+T00177,Bharat Prabhat,Hindi,Bulletin,2013
+T00178,Bharat Prabhat Bulletin,Tamil,Digest,2010
+T00179,Bharat Prabhat Daily,Telugu,Bulletin,2016
+T00180,Bharat Prabhat Journal,Hindi,Journal,2018
+T00181,Bharat Prabhat Live,Gujarati,Periodical,2001
+T00182,Bharat Prabhat Monthly,Telugu,Newspaper,2016
+T00183,Bharat Prabhat Report,Malayalam,Digest,2023
+T00184,Bharat Prabhat Today,Urdu,Magazine,2011
+T00185,Bharat Prabhat Update,Telugu,Newspaper,2021
+T00186,Bharat Prabhat Weekly,Tamil,Bulletin,2010
+T00187,Bharat Prakash,Urdu,Newspaper,2023
+T00188,Bharat Prakash Bulletin,Bengali,Bulletin,2009
+T00189,Bharat Prakash Daily,Urdu,Journal,2010
+T00190,Bharat Prakash Journal,Telugu,Digest,2009
+T00191,Bharat Prakash Live,Malayalam,Magazine,2006
+T00192,Bharat Prakash Monthly,Telugu,Digest,2012
+T00193,Bharat Prakash Report,Urdu,Digest,2005
+T00194,Bharat Prakash Today,Punjabi,Bulletin,2009
+T00195,Bharat Prakash Update,Telugu,Bulletin,2000
+T00196,Bharat Prakash Weekly,Bengali,Periodical,2006
+T00197,Bharat Pratidin Sandhya,Telugu,Bulletin,2019
+T00198,Bharat Pratidin Sandhya Bulletin,Urdu,Periodical,2014
+T00199,Bharat Pratidin Sandhya Daily,Kannada,Journal,2021
+T00200,Bharat Pratidin Sandhya Journal,Gujarati,Bulletin,2015
+T00201,Bharat Pratidin Sandhya Live,Marathi,Digest,2002
+T00202,Bharat Pratidin Sandhya Monthly,Bengali,Bulletin,2021
+T00203,Bharat Pratidin Sandhya Report,Urdu,Bulletin,2010
+T00204,Bharat Pratidin Sandhya Today,Hindi,Magazine,2021
+T00205,Bharat Pratidin Sandhya Update,Bengali,Magazine,2006
+T00206,Bharat Pratidin Sandhya Weekly,Marathi,Newspaper,2001
+T00207,Bharat Samachar,Gujarati,Journal,2019
+T00208,Bharat Samachar Bulletin,Hindi,Journal,2013
+T00209,Bharat Samachar Daily,Urdu,Bulletin,2006
+T00210,Bharat Samachar Journal,Telugu,Journal,2012
+T00211,Bharat Samachar Live,Gujarati,Magazine,2020
+T00212,Bharat Samachar Monthly,English,Newspaper,2024
+T00213,Bharat Samachar Report,Telugu,Magazine,2005
+T00214,Bharat Samachar Today,Malayalam,Journal,2001
+T00215,Bharat Samachar Update,Malayalam,Magazine,2003
+T00216,Bharat Samachar Weekly,Kannada,Magazine,2014
+T00217,Bharat Sandesh,Urdu,Bulletin,2017
+T00218,Bharat Sandesh Bulletin,Punjabi,Periodical,2024
+T00219,Bharat Sandesh Daily,Kannada,Bulletin,2023
+T00220,Bharat Sandesh Journal,Malayalam,Journal,2017
+T00221,Bharat Sandesh Live,Kannada,Magazine,2023
+T00222,Bharat Sandesh Monthly,Kannada,Journal,2008
+T00223,Bharat Sandesh Report,Gujarati,Digest,2008
+T00224,Bharat Sandesh Today,Malayalam,Journal,2020
+T00225,Bharat Sandesh Update,Gujarati,Periodical,2014
+T00226,Bharat Sandesh Weekly,Hindi,Digest,2009
+T00227,Bharat Sandhya,Gujarati,Periodical,2010
+T00228,Bharat Sandhya Bulletin,Tamil,Bulletin,2002
+T00229,Bharat Sandhya Daily,Marathi,Magazine,2007
+T00230,Bharat Sandhya Journal,Telugu,Digest,2004
+T00231,Bharat Sandhya Live,Gujarati,Newspaper,2013
+T00232,Bharat Sandhya Monthly,Telugu,Periodical,2017
+T00233,Bharat Sandhya Report,Kannada,Journal,2001
+T00234,Bharat Sandhya Today,Gujarati,Journal,2012
+T00235,Bharat Sandhya Update,Punjabi,Digest,2000
+T00236,Bharat Sandhya Weekly,Punjabi,Journal,2015
+T00237,Bharat The Hindu,English,Periodical,2009
+T00238,Bharat The Hindu Bulletin,Telugu,Journal,2017
+T00239,Bharat The Hindu Daily,Malayalam,Bulletin,2007
+T00240,Bharat The Hindu Journal,Kannada,Magazine,2008
+T00241,Bharat The Hindu Live,Telugu,Journal,2000
+T00242,Bharat The Hindu Monthly,Telugu,Periodical,2021
+T00243,Bharat The Hindu Report,Urdu,Journal,2023
+T00244,Bharat The Hindu Today,Marathi,Journal,2004
+T00245,Bharat The Hindu Update,Punjabi,Bulletin,2000
+T00246,Bharat The Hindu Weekly,Telugu,Bulletin,2018
+T00247,Bharat Times,Urdu,Newspaper,2002
+T00248,Bharat Times Bulletin,Urdu,Journal,2004
+T00249,Bharat Times Daily,Kannada,Magazine,2001
+T00250,Bharat Times Journal,Bengali,Journal,2010
+T00251,Bharat Times Live,Gujarati,Journal,2010
+T00252,Bharat Times Monthly,Tamil,Journal,2008
+T00253,Bharat Times Report,Telugu,Periodical,2002
+T00254,Bharat Times Today,Kannada,Newspaper,2023
+T00255,Bharat Times Update,Malayalam,Newspaper,2011
+T00256,Bharat Times Weekly,Gujarati,Digest,2002
+T00257,Bharat Tribune,Urdu,Newspaper,2024
+T00258,Bharat Tribune Bulletin,English,Magazine,2006
+T00259,Bharat Tribune Daily,English,Bulletin,2004
+T00260,Bharat Tribune Journal,Gujarati,Magazine,2015
+T00261,Bharat Tribune Live,Urdu,Newspaper,2018
+T00262,Bharat Tribune Monthly,Gujarati,Journal,2022
+T00263,Bharat Tribune Report,Bengali,Periodical,2005
+T00264,Bharat Tribune Today,Punjabi,Bulletin,2023
+T00265,Bharat Tribune Update,Hindi,Magazine,2009
+T00266,Bharat Tribune Weekly,Hindi,Bulletin,2000
+T00267,Bharat Vartha,Bengali,Bulletin,2021
+T00268,Bharat Vartha Bulletin,Telugu,Journal,2022
+T00269,Bharat Vartha Daily,Gujarati,Newspaper,2018
+T00270,Bharat Vartha Journal,Urdu,Magazine,2003
+T00271,Bharat Vartha Live,Bengali,Digest,2019
+T00272,Bharat Vartha Monthly,Hindi,Bulletin,2001
+T00273,Bharat Vartha Report,Tamil,Bulletin,2013
+T00274,Bharat Vartha Today,Urdu,Periodical,2002
+T00275,Bharat Vartha Update,Malayalam,Digest,2010
+T00276,Bharat Vartha Weekly,English,Journal,2015
+T00277,Bharat Vichar,Hindi,Journal,2011
+T00278,Bharat Vichar Bulletin,Urdu,Journal,2022
+T00279,Bharat Vichar Daily,Marathi,Journal,2005
+T00280,Bharat Vichar Journal,Malayalam,Digest,2008
+T00281,Bharat Vichar Live,Punjabi,Bulletin,2024
+T00282,Bharat Vichar Monthly,Kannada,Journal,2013
+T00283,Bharat Vichar Report,Punjabi,Periodical,2010
+T00284,Bharat Vichar Today,Gujarati,Newspaper,2008
+T00285,Bharat Vichar Update,Kannada,Magazine,2024
+T00286,Bharat Vichar Weekly,Kannada,Bulletin,2019
+T00287,Bhaskar,Urdu,Journal,2010
+T00288,Bhaskar Bulletin,English,Journal,2010
+T00289,Bhaskar Daily,Marathi,Journal,2006
+T00290,Bhaskar Journal,Tamil,Periodical,2010
+T00291,Bhaskar Live,Bengali,Bulletin,2022
+T00292,Bhaskar Monthly,Bengali,Bulletin,2000
+T00293,Bhaskar Report,Malayalam,Magazine,2002
+T00294,Bhaskar Today,Gujarati,Digest,2013
+T00295,Bhaskar Update,Kannada,Bulletin,2024
+T00296,Bhaskar Weekly,Gujarati,Digest,2015
+T00297,Bhopal Awaaz,Urdu,Digest,2015
+T00298,Bhopal Bhaskar,Kannada,Newspaper,2002
+T00299,Bhopal Dainik Namaskar,Bengali,Magazine,2012
+T00300,Bhopal Darpan,Gujarati,Periodical,2021
+T00301,Bhopal Express,Punjabi,Periodical,2015
+T00302,Bhopal Herald,Malayalam,Bulletin,2011
+T00303,Bhopal Indian Express,Telugu,Digest,2017
+T00304,Bhopal Jagran,Tamil,Periodical,2022
+T00305,Bhopal Kesari,Kannada,Periodical,2009
+T00306,Bhopal News,Bengali,Magazine,2003
+T00307,Bhopal Patrika,Gujarati,Periodical,2003
+T00308,Bhopal Post,Malayalam,Digest,2005
+T00309,Bhopal Prabhat,Gujarati,Magazine,2023
+T00310,Bhopal Prakash,Kannada,Periodical,2023
+T00311,Bhopal Pratidin Sandhya,Punjabi,Bulletin,2019
+T00312,Bhopal Samachar,Bengali,Newspaper,2006
+T00313,Bhopal Sandesh,Bengali,Magazine,2011
+T00314,Bhopal Sandhya,Marathi,Periodical,2000
+T00315,Bhopal The Hindu,Malayalam,Magazine,2008
+T00316,Bhopal Times,English,Newspaper,2017
+T00317,Bhopal Tribune,Bengali,Digest,2004
+T00318,Bhopal Vartha,Urdu,Journal,2003
+T00319,Bhopal Vichar,English,Bulletin,2009
+T00320,Chandigarh Awaaz,Kannada,Journal,2014
+T00321,Chandigarh Bhaskar,Tamil,Magazine,2001
+T00322,Chandigarh Dainik Namaskar,Bengali,Journal,2003
+T00323,Chandigarh Darpan,Hindi,Journal,2015
+T00324,Chandigarh Express,Hindi,Bulletin,2020
+T00325,Chandigarh Herald,Urdu,Newspaper,2004
+T00326,Chandigarh Indian Express,Marathi,Bulletin,2009
+T00327,Chandigarh Jagran,Hindi,Magazine,2003
+T00328,Chandigarh Kesari,Malayalam,Journal,2019
+T00329,Chandigarh News,Punjabi,Bulletin,2007
+T00330,Chandigarh Patrika,Malayalam,Journal,2014
+T00331,Chandigarh Post,Kannada,Periodical,2018
+T00332,Chandigarh Prabhat,Telugu,Periodical,2018
+T00333,Chandigarh Prakash,Punjabi,Newspaper,2019
+T00334,Chandigarh Pratidin Sandhya,Hindi,Magazine,2020
+T00335,Chandigarh Samachar,Gujarati,Periodical,2021
+T00336,Chandigarh Sandesh,Hindi,Magazine,2007
+T00337,Chandigarh Sandhya,Marathi,Bulletin,2002
+T00338,Chandigarh The Hindu,Marathi,Newspaper,2013
+T00339,Chandigarh Times,Kannada,Digest,2019
+T00340,Chandigarh Tribune,Kannada,Periodical,2001
+T00341,Chandigarh Vartha,Gujarati,Periodical,2022
+T00342,Chandigarh Vichar,Bengali,Digest,2014
+T00343,Chennai Awaaz,Hindi,Digest,2007
+T00344,Chennai Bhaskar,Bengali,Digest,2018
+T00345,Chennai Dainik Namaskar,Urdu,Magazine,2013
+T00346,Chennai Darpan,Hindi,Bulletin,2007
+T00347,Chennai Darpan Daily,Urdu,Magazine,2008
+T00348,Chennai Darpan Monthly,Marathi,Newspaper,2001
+T00349,Chennai Darpan Today,Marathi,Periodical,2019
+T00350,Chennai Darpan Weekly,Punjabi,Periodical,2014
+T00351,Chennai Express,Hindi,Journal,2022
+T00352,Chennai Express Daily,Bengali,Digest,2012
+T00353,Chennai Express Monthly,Bengali,Bulletin,2017
+T00354,Chennai Express Today,Kannada,Journal,2002
+T00355,Chennai Express Weekly,Punjabi,Newspaper,2013
+T00356,Chennai Herald,Tamil,Bulletin,2008
+T00357,Chennai Herald Daily,English,Newspaper,2007
+T00358,Chennai Herald Monthly,Urdu,Bulletin,2018
+T00359,Chennai Herald Today,English,Digest,2008
+T00360,Chennai Herald Weekly,Punjabi,Newspaper,2024
+T00361,Chennai Indian Express,Marathi,Journal,2016
+T00362,Chennai Jagran,Urdu,Journal,2008
+T00363,Chennai Kesari,Marathi,Bulletin,2013
+T00364,Chennai News,Urdu,Journal,2002
+T00365,Chennai News Daily,Kannada,Periodical,2013
+T00366,Chennai News Monthly,Tamil,Periodical,2021
+T00367,Chennai News Today,Hindi,Magazine,2010
+T00368,Chennai News Weekly,Telugu,Digest,2015
+T00369,Chennai Patrika,Bengali,Digest,2012
+T00370,Chennai Post,Malayalam,Newspaper,2014
+T00371,Chennai Post Daily,Hindi,Periodical,2008
+T00372,Chennai Post Monthly,Tamil,Newspaper,2024
+T00373,Chennai Post Today,Telugu,Bulletin,2000
+T00374,Chennai Post Weekly,Urdu,Bulletin,2014
+T00375,Chennai Prabhat,Telugu,Newspaper,2006
+T00376,Chennai Prakash,Malayalam,Periodical,2019
+T00377,Chennai Pratidin Sandhya,Kannada,Digest,2014
+T00378,Chennai Samachar,English,Magazine,2008
+T00379,Chennai Samachar Daily,Malayalam,Magazine,2009
+T00380,Chennai Samachar Monthly,Kannada,Digest,2015
+T00381,Chennai Samachar Today,Hindi,Newspaper,2020
+T00382,Chennai Samachar Weekly,Punjabi,Magazine,2022
+T00383,Chennai Sandesh,Marathi,Periodical,2017
+T00384,Chennai Sandesh Daily,English,Bulletin,2013
+T00385,Chennai Sandesh Monthly,Hindi,Magazine,2003
+T00386,Chennai Sandesh Today,Kannada,Newspaper,2020
+T00387,Chennai Sandesh Weekly,Marathi,Journal,2022
+T00388,Chennai Sandhya,Bengali,Bulletin,2022
+T00389,Chennai The Hindu,Bengali,Journal,2015
+T00390,Chennai Times,Kannada,Magazine,2014
+T00391,Chennai Times Daily,Malayalam,Magazine,2012
+T00392,Chennai Times Monthly,Gujarati,Bulletin,2016
+T00393,Chennai Times Today,Marathi,Newspaper,2008
+T00394,Chennai Times Weekly,Telugu,Periodical,2016
+T00395,Chennai Tribune,Bengali,Newspaper,2009
+T00396,Chennai Tribune Daily,Bengali,Bulletin,2018
+T00397,Chennai Tribune Monthly,Urdu,Journal,2004
+T00398,Chennai Tribune Today,Kannada,Bulletin,2015
+T00399,Chennai Tribune Weekly,Tamil,Periodical,2017
+T00400,Chennai Vartha,Malayalam,Journal,2014
+T00401,Chennai Vichar,Tamil,Magazine,2022
+T00402,Chennai Vichar Daily,Gujarati,Bulletin,2012
+T00403,Chennai Vichar Monthly,Gujarati,Journal,2001
+T00404,Chennai Vichar Today,Tamil,Digest,2015
+T00405,Chennai Vichar Weekly,Telugu,Journal,2021
+T00406,Daily Awaaz,Urdu,Magazine,2015
+T00407,Daily Awaaz Bulletin,English,Magazine,2016
+T00408,Daily Awaaz Daily,Punjabi,Periodical,2003
+T00409,Daily Awaaz Journal,Kannada,Newspaper,2016
+T00410,Daily Awaaz Live,Kannada,Newspaper,2023
+T00411,Daily Awaaz Monthly,Marathi,Journal,2020
+T00412,Daily Awaaz Report,Marathi,Newspaper,2015
+T00413,Daily Awaaz Today,Bengali,Periodical,2019
+T00414,Daily Awaaz Update,Telugu,Digest,2002
+T00415,Daily Awaaz Weekly,Tamil,Digest,2017
+T00416,Daily Bhaskar,Telugu,Periodical,2020
+T00417,Daily Bhaskar Bulletin,Kannada,Bulletin,2001
+T00418,Daily Bhaskar Daily,Punjabi,Newspaper,2007
+T00419,Daily Bhaskar Journal,Urdu,Digest,2009
+T00420,Daily Bhaskar Live,Gujarati,Digest,2002
+T00421,Daily Bhaskar Monthly,Telugu,Newspaper,2024
+T00422,Daily Bhaskar Report,Urdu,Digest,2003
+T00423,Daily Bhaskar Today,Kannada,Magazine,2022
+T00424,Daily Bhaskar Update,Bengali,Newspaper,2001
+T00425,Daily Bhaskar Weekly,Tamil,Newspaper,2009
+T00426,Daily Dainik Namaskar,Tamil,Periodical,2013
+T00427,Daily Dainik Namaskar Bulletin,Marathi,Magazine,2016
+T00428,Daily Dainik Namaskar Daily,Telugu,Bulletin,2021
+T00429,Daily Dainik Namaskar Journal,Marathi,Magazine,2005
+T00430,Daily Dainik Namaskar Live,Hindi,Bulletin,2012
+T00431,Daily Dainik Namaskar Monthly,Punjabi,Digest,2007
+T00432,Daily Dainik Namaskar Report,Kannada,Bulletin,2004
+T00433,Daily Dainik Namaskar Today,Gujarati,Journal,2020
+T00434,Daily Dainik Namaskar Update,Bengali,Journal,2008
+T00435,Daily Dainik Namaskar Weekly,Urdu,Newspaper,2014
+T00436,Daily Darpan,Bengali,Digest,2017
+T00437,Daily Darpan Bulletin,Marathi,Newspaper,2014
+T00438,Daily Darpan Daily,Tamil,Bulletin,2009
+T00439,Daily Darpan Journal,Urdu,Journal,2022
+T00440,Daily Darpan Live,Bengali,Journal,2009
+T00441,Daily Darpan Monthly,Gujarati,Journal,2015
+T00442,Daily Darpan Report,Hindi,Magazine,2012
+T00443,Daily Darpan Today,Punjabi,Periodical,2018
+T00444,Daily Darpan Update,Bengali,Digest,2009
+T00445,Daily Darpan Weekly,English,Digest,2012
+T00446,Daily Express,Bengali,Newspaper,2018
+T00447,Daily Express Bulletin,Urdu,Digest,2001
+T00448,Daily Express Daily,Punjabi,Digest,2015
+T00449,Daily Express Journal,Bengali,Magazine,2019
+T00450,Daily Express Live,Tamil,Magazine,2020
+T00451,Daily Express Monthly,Gujarati,Bulletin,2008
+T00452,Daily Express Report,Urdu,Digest,2024
+T00453,Daily Express Today,Urdu,Digest,2004
+T00454,Daily Express Update,Urdu,Newspaper,2020
+T00455,Daily Express Weekly,Urdu,Newspaper,2009
+T00456,Daily Herald,Kannada,Newspaper,2018
+T00457,Daily Herald Bulletin,Tamil,Digest,2004
+T00458,Daily Herald Daily,Hindi,Periodical,2010
+T00459,Daily Herald Journal,Telugu,Magazine,2006
+T00460,Daily Herald Live,Marathi,Bulletin,2011
+T00461,Daily Herald Monthly,Malayalam,Bulletin,2008
+T00462,Daily Herald Report,Marathi,Periodical,2015
+T00463,Daily Herald Today,Bengali,Digest,2010
+T00464,Daily Herald Update,Hindi,Journal,2002
+T00465,Daily Herald Weekly,Marathi,Magazine,2021
+T00466,Daily Indian Express,Urdu,Journal,2017
+T00467,Daily Indian Express Bulletin,Tamil,Newspaper,2012
+T00468,Daily Indian Express Daily,English,Periodical,2017
+T00469,Daily Indian Express Journal,Hindi,Journal,2011
+T00470,Daily Indian Express Live,Urdu,Digest,2021
+T00471,Daily Indian Express Monthly,Bengali,Bulletin,2012
+T00472,Daily Indian Express Report,Urdu,Periodical,2003
+T00473,Daily Indian Express Today,Urdu,Magazine,2015
+T00474,Daily Indian Express Update,English,Bulletin,2017
+T00475,Daily Indian Express Weekly,Tamil,Bulletin,2007
+T00476,Daily Jagran,Urdu,Newspaper,2020
+T00477,Daily Jagran Bulletin,Kannada,Digest,2009
+T00478,Daily Jagran Daily,Urdu,Journal,2003
+T00479,Daily Jagran Journal,Marathi,Newspaper,2001
+T00480,Daily Jagran Live,Bengali,Journal,2003
+T00481,Daily Jagran Monthly,Hindi,Magazine,2017
+T00482,Daily Jagran Report,Marathi,Journal,2014
+T00483,Daily Jagran Today,Tamil,Digest,2023
+T00484,Daily Jagran Update,Malayalam,Journal,2018
+T00485,Daily Jagran Weekly,Marathi,Journal,2020
+T00486,Daily Kesari,Hindi,Journal,2019
+T00487,Daily Kesari Bulletin,Telugu,Periodical,2001
+T00488,Daily Kesari Daily,Tamil,Magazine,2014
+T00489,Daily Kesari Journal,Kannada,Magazine,2011
+T00490,Daily Kesari Live,Hindi,Digest,2011
+T00491,Daily Kesari Monthly,Malayalam,Digest,2011
+T00492,Daily Kesari Report,English,Journal,2008
+T00493,Daily Kesari Today,Gujarati,Newspaper,2014
+T00494,Daily Kesari Update,Hindi,Digest,2006
+T00495,Daily Kesari Weekly,Urdu,Digest,2019
+T00496,Daily News,English,Newspaper,2010
+T00497,Daily News Bulletin,Gujarati,Magazine,2018
+T00498,Daily News Daily,Gujarati,Newspaper,2024
+T00499,Daily News Journal,Malayalam,Magazine,2018
+T00500,Daily News Live,Gujarati,Magazine,2010
+T00501,Daily News Monthly,Marathi,Bulletin,2000
+T00502,Daily News Report,Bengali,Magazine,2004
+T00503,Daily News Today,Malayalam,Periodical,2005
+T00504,Daily News Update,Hindi,Digest,2000
+T00505,Daily News Weekly,Marathi,Newspaper,2011
+T00506,Daily Patrika,Gujarati,Bulletin,2010
+T00507,Daily Patrika Bulletin,English,Magazine,2008
+T00508,Daily Patrika Daily,English,Magazine,2023
+T00509,Daily Patrika Journal,Telugu,Bulletin,2003
+T00510,Daily Patrika Live,Hindi,Journal,2014
+T00511,Daily Patrika Monthly,Tamil,Bulletin,2018
+T00512,Daily Patrika Report,Hindi,Journal,2016
+T00513,Daily Patrika Today,Gujarati,Bulletin,2001
+T00514,Daily Patrika Update,Urdu,Bulletin,2009
+T00515,Daily Patrika Weekly,Kannada,Digest,2000
+T00516,Daily Post,English,Journal,2012
+T00517,Daily Post Bulletin,Telugu,Digest,2003
+T00518,Daily Post Daily,Kannada,Digest,2014
+T00519,Daily Post Journal,Hindi,Newspaper,2010
+T00520,Daily Post Live,Punjabi,Magazine,2002
+T00521,Daily Post Monthly,Marathi,Periodical,2019
+T00522,Daily Post Report,Urdu,Bulletin,2017
+T00523,Daily Post Today,Tamil,Journal,2019
+T00524,Daily Post Update,Malayalam,Periodical,2014
+T00525,Daily Post Weekly,Malayalam,Bulletin,2013
+T00526,Daily Prabhat,Hindi,Digest,2003
+T00527,Daily Prabhat Bulletin,Urdu,Digest,2024
+T00528,Daily Prabhat Daily,Malayalam,Digest,2006
+T00529,Daily Prabhat Journal,Telugu,Journal,2007
+T00530,Daily Prabhat Live,Telugu,Periodical,2014
+T00531,Daily Prabhat Monthly,Telugu,Journal,2023
+T00532,Daily Prabhat Report,Hindi,Periodical,2013
+T00533,Daily Prabhat Today,Tamil,Digest,2008
+T00534,Daily Prabhat Update,Tamil,Magazine,2021
+T00535,Daily Prabhat Weekly,Kannada,Newspaper,2002
+T00536,Daily Prakash,Hindi,Newspaper,2013
+T00537,Daily Prakash Bulletin,Hindi,Digest,2023
+T00538,Daily Prakash Daily,Tamil,Magazine,2017
+T00539,Daily Prakash Journal,English,Bulletin,2017
+T00540,Daily Prakash Live,Malayalam,Periodical,2021
+T00541,Daily Prakash Monthly,Hindi,Journal,2011
+T00542,Daily Prakash Report,Urdu,Journal,2023
+T00543,Daily Prakash Today,English,Periodical,2019
+T00544,Daily Prakash Update,Bengali,Periodical,2003
+T00545,Daily Prakash Weekly,Punjabi,Bulletin,2006
+T00546,Daily Pratidin Sandhya,Marathi,Digest,2015
+T00547,Daily Pratidin Sandhya Bulletin,Gujarati,Newspaper,2011
+T00548,Daily Pratidin Sandhya Daily,Malayalam,Periodical,2003
+T00549,Daily Pratidin Sandhya Journal,Bengali,Bulletin,2007
+T00550,Daily Pratidin Sandhya Live,Telugu,Bulletin,2024
+T00551,Daily Pratidin Sandhya Monthly,Punjabi,Bulletin,2021
+T00552,Daily Pratidin Sandhya Report,Urdu,Bulletin,2000
+T00553,Daily Pratidin Sandhya Today,Punjabi,Digest,2022
+T00554,Daily Pratidin Sandhya Update,Bengali,Newspaper,2005
+T00555,Daily Pratidin Sandhya Weekly,Bengali,Digest,2024
+T00556,Daily Samachar,Bengali,Periodical,2011
+T00557,Daily Samachar Bulletin,English,Magazine,2004
+T00558,Daily Samachar Daily,Punjabi,Digest,2012
+T00559,Daily Samachar Journal,Hindi,Magazine,2023
+T00560,Daily Samachar Live,Urdu,Newspaper,2002
+T00561,Daily Samachar Monthly,Malayalam,Magazine,2012
+T00562,Daily Samachar Report,Telugu,Journal,2010
+T00563,Daily Samachar Today,Marathi,Periodical,2009
+T00564,Daily Samachar Update,Tamil,Bulletin,2019
+T00565,Daily Samachar Weekly,Hindi,Newspaper,2004
+T00566,Daily Sandesh,Marathi,Bulletin,2001
+T00567,Daily Sandesh Bulletin,Urdu,Newspaper,2008
+T00568,Daily Sandesh Daily,Kannada,Digest,2013
+T00569,Daily Sandesh Journal,Kannada,Bulletin,2014
+T00570,Daily Sandesh Live,Telugu,Periodical,2006
+T00571,Daily Sandesh Monthly,Malayalam,Newspaper,2011
+T00572,Daily Sandesh Report,Telugu,Newspaper,2009
+T00573,Daily Sandesh Today,Urdu,Digest,2018
+T00574,Daily Sandesh Update,Kannada,Bulletin,2021
+T00575,Daily Sandesh Weekly,Bengali,Newspaper,2007
+T00576,Daily Sandhya,Telugu,Bulletin,2001
+T00577,Daily Sandhya Bulletin,English,Magazine,2009
+T00578,Daily Sandhya Daily,Gujarati,Magazine,2024
+T00579,Daily Sandhya Journal,Bengali,Periodical,2010
+T00580,Daily Sandhya Live,Hindi,Newspaper,2015
+T00581,Daily Sandhya Monthly,Telugu,Magazine,2004
+T00582,Daily Sandhya Report,Telugu,Bulletin,2022
+T00583,Daily Sandhya Today,Gujarati,Bulletin,2017
+T00584,Daily Sandhya Update,Urdu,Periodical,2002
+T00585,Daily Sandhya Weekly,Telugu,Digest,2001
+T00586,Daily The Hindu,Telugu,Newspaper,2014
+T00587,Daily The Hindu Bulletin,Hindi,Periodical,2018
+T00588,Daily The Hindu Daily,Telugu,Bulletin,2012
+T00589,Daily The Hindu Journal,Urdu,Journal,2009
+T00590,Daily The Hindu Live,Hindi,Journal,2000
+T00591,Daily The Hindu Monthly,Tamil,Magazine,2019
+T00592,Daily The Hindu Report,Kannada,Digest,2011
+T00593,Daily The Hindu Today,Hindi,Journal,2003
+T00594,Daily The Hindu Update,Gujarati,Journal,2018
+T00595,Daily The Hindu Weekly,Telugu,Bulletin,2002
+T00596,Daily Times,Telugu,Periodical,2023
+T00597,Daily Times Bulletin,Tamil,Magazine,2010
+T00598,Daily Times Daily,Marathi,Newspaper,2016
+T00599,Daily Times Journal,Urdu,Newspaper,2016
+T00600,Daily Times Live,Malayalam,Magazine,2024
+T00601,Daily Times Monthly,Tamil,Periodical,2023
+T00602,Daily Times Report,Urdu,Magazine,2007
+T00603,Daily Times Today,Hindi,Magazine,2008
+T00604,Daily Times Update,Gujarati,Magazine,2019
+T00605,Daily Times Weekly,Marathi,Digest,2002
+T00606,Daily Tribune,Marathi,Digest,2015
+T00607,Daily Tribune Bulletin,Kannada,Bulletin,2024
+T00608,Daily Tribune Daily,Punjabi,Journal,2021
+T00609,Daily Tribune Journal,Punjabi,Digest,2020
+T00610,Daily Tribune Live,Punjabi,Periodical,2020
+T00611,Daily Tribune Monthly,Tamil,Magazine,2014
+T00612,Daily Tribune Report,Hindi,Journal,2014
+T00613,Daily Tribune Today,Urdu,Periodical,2008
+T00614,Daily Tribune Update,Punjabi,Newspaper,2011
+T00615,Daily Tribune Weekly,Malayalam,Newspaper,2009
+T00616,Daily Vartha,Kannada,Journal,2001
+T00617,Daily Vartha Bulletin,English,Periodical,2009
+T00618,Daily Vartha Daily,Hindi,Digest,2002
+T00619,Daily Vartha Journal,Punjabi,Bulletin,2016
+T00620,Daily Vartha Live,Telugu,Journal,2018
+T00621,Daily Vartha Monthly,Malayalam,Digest,2001
+T00622,Daily Vartha Report,Kannada,Bulletin,2020
+T00623,Daily Vartha Today,Gujarati,Periodical,2019
+T00624,Daily Vartha Update,Kannada,Bulletin,2004
+T00625,Daily Vartha Weekly,English,Journal,2003
+T00626,Daily Vichar,Tamil,Digest,2002
+T00627,Daily Vichar Bulletin,Malayalam,Digest,2005
+T00628,Daily Vichar Daily,English,Magazine,2022
+T00629,Daily Vichar Journal,Kannada,Journal,2016
+T00630,Daily Vichar Live,Malayalam,Bulletin,2005
+T00631,Daily Vichar Monthly,Tamil,Periodical,2009
+T00632,Daily Vichar Report,Telugu,Journal,2024
+T00633,Daily Vichar Today,Tamil,Digest,2019
+T00634,Daily Vichar Update,English,Digest,2020
+T00635,Daily Vichar Weekly,Tamil,Newspaper,2010
+T00636,Dainik Namaskar,Hindi,Bulletin,2021
+T00637,Dainik Namaskar Bulletin,Telugu,Periodical,2008
+T00638,Dainik Namaskar Daily,Urdu,Bulletin,2004
+T00639,Dainik Namaskar Journal,Tamil,Newspaper,2018
+T00640,Dainik Namaskar Live,Urdu,Magazine,2011
+T00641,Dainik Namaskar Monthly,Bengali,Digest,2022
+T00642,Dainik Namaskar Report,Urdu,Journal,2004
+T00643,Dainik Namaskar Today,Punjabi,Digest,2002
+T00644,Dainik Namaskar Update,Bengali,Bulletin,2012
+T00645,Dainik Namaskar Weekly,Urdu,Periodical,2004
+T00646,Darpan,Urdu,Digest,2023
+T00647,Darpan Bulletin,Urdu,Bulletin,2002
+T00648,Darpan Daily,Urdu,Digest,2013
+T00649,Darpan Journal,Malayalam,Periodical,2000
+T00650,Darpan Live,Tamil,Periodical,2005
+T00651,Darpan Monthly,Gujarati,Periodical,2024
+T00652,Darpan Report,Kannada,Magazine,2007
+T00653,Darpan Today,Marathi,Magazine,2002
+T00654,Darpan Update,Bengali,Newspaper,2016
+T00655,Darpan Weekly,Malayalam,Digest,2016
+T00656,Delhi Awaaz,English,Digest,2010
+T00657,Delhi Bhaskar,Punjabi,Magazine,2019
+T00658,Delhi Dainik Namaskar,Telugu,Magazine,2005
+T00659,Delhi Darpan,Marathi,Digest,2024
+T00660,Delhi Darpan Daily,Punjabi,Magazine,2023
+T00661,Delhi Darpan Monthly,Kannada,Newspaper,2013
+T00662,Delhi Darpan Today,Tamil,Digest,2023
+T00663,Delhi Darpan Weekly,Gujarati,Journal,2019
+T00664,Delhi Express,Bengali,Digest,2014
+T00665,Delhi Express Daily,Gujarati,Bulletin,2007
+T00666,Delhi Express Monthly,Bengali,Journal,2006
+T00667,Delhi Express Today,Tamil,Digest,2018
+T00668,Delhi Express Weekly,Kannada,Journal,2024
+T00669,Delhi Herald,Bengali,Journal,2016
+T00670,Delhi Herald Daily,Malayalam,Journal,2005
+T00671,Delhi Herald Monthly,Gujarati,Bulletin,2004
+T00672,Delhi Herald Today,Bengali,Newspaper,2020
+T00673,Delhi Herald Weekly,Kannada,Periodical,2017
+T00674,Delhi Indian Express,Hindi,Digest,2016
+T00675,Delhi Jagran,Hindi,Periodical,2002
+T00676,Delhi Kesari,Marathi,Periodical,2014
+T00677,Delhi News,Malayalam,Magazine,2013
+T00678,Delhi News Daily,Hindi,Magazine,2014
+T00679,Delhi News Monthly,Tamil,Newspaper,2013
+T00680,Delhi News Today,English,Journal,2016
+T00681,Delhi News Weekly,Tamil,Magazine,2012
+T00682,Delhi Patrika,Hindi,Periodical,2007
+T00683,Delhi Post,English,Periodical,2003
+T00684,Delhi Post Daily,Urdu,Periodical,2004
+T00685,Delhi Post Monthly,Marathi,Newspaper,2009
+T00686,Delhi Post Today,Kannada,Digest,2004
+T00687,Delhi Post Weekly,Kannada,Journal,2019
+T00688,Delhi Prabhat,English,Newspaper,2000
+T00689,Delhi Prakash,Bengali,Magazine,2004
+T00690,Delhi Pratidin Sandhya,Malayalam,Digest,2019
+T00691,Delhi Samachar,Malayalam,Journal,2003
+T00692,Delhi Samachar Daily,Bengali,Magazine,2009
+T00693,Delhi Samachar Monthly,Hindi,Newspaper,2007
+T00694,Delhi Samachar Today,Telugu,Digest,2019
+T00695,Delhi Samachar Weekly,Kannada,Newspaper,2003
+T00696,Delhi Sandesh,Kannada,Bulletin,2017
+T00697,Delhi Sandesh Daily,English,Digest,2016
+T00698,Delhi Sandesh Monthly,Punjabi,Magazine,2022
+T00699,Delhi Sandesh Today,Marathi,Periodical,2013
+T00700,Delhi Sandesh Weekly,English,Bulletin,2011
+T00701,Delhi Sandhya,Gujarati,Bulletin,2013
+T00702,Delhi The Hindu,Marathi,Digest,2021
+T00703,Delhi Times,Hindi,Bulletin,2011
+T00704,Delhi Times Daily,Hindi,Bulletin,2017
+T00705,Delhi Times Monthly,Malayalam,Bulletin,2017
+T00706,Delhi Times Today,English,Journal,2015
+T00707,Delhi Times Weekly,English,Digest,2012
+T00708,Delhi Tribune,Tamil,Periodical,2023
+T00709,Delhi Tribune Daily,English,Periodical,2002
+T00710,Delhi Tribune Monthly,Tamil,Magazine,2023
+T00711,Delhi Tribune Today,Urdu,Digest,2003
+T00712,Delhi Tribune Weekly,Punjabi,Digest,2024
+T00713,Delhi Vartha,Tamil,Magazine,2001
+T00714,Delhi Vichar,Tamil,Bulletin,2010
+T00715,Delhi Vichar Daily,Urdu,Magazine,2024
+T00716,Delhi Vichar Monthly,Urdu,Journal,2022
+T00717,Delhi Vichar Today,Kannada,Digest,2005
+T00718,Delhi Vichar Weekly,Marathi,Newspaper,2022
+T00719,Express,Kannada,Newspaper,2009
+T00720,Express Bulletin,Gujarati,Newspaper,2006
+T00721,Express Daily,English,Periodical,2009
+T00722,Express Journal,Malayalam,Journal,2017
+T00723,Express Live,Kannada,Periodical,2001
+T00724,Express Monthly,Urdu,Magazine,2009
+T00725,Express Report,Tamil,Newspaper,2020
+T00726,Express Today,Tamil,Periodical,2003
+T00727,Express Update,Tamil,Journal,2012
+T00728,Express Weekly,Kannada,Journal,2010
+T00729,Guwahati Awaaz,Marathi,Journal,2022
+T00730,Guwahati Bhaskar,Kannada,Periodical,2016
+T00731,Guwahati Dainik Namaskar,Bengali,Newspaper,2023
+T00732,Guwahati Darpan,Telugu,Newspaper,2013
+T00733,Guwahati Express,Punjabi,Magazine,2017
+T00734,Guwahati Herald,Bengali,Periodical,2003
+T00735,Guwahati Indian Express,Hindi,Periodical,2021
+T00736,Guwahati Jagran,Bengali,Periodical,2014
+T00737,Guwahati Kesari,Punjabi,Digest,2013
+T00738,Guwahati News,Marathi,Digest,2014
+T00739,Guwahati Patrika,Tamil,Journal,2001
+T00740,Guwahati Post,Tamil,Bulletin,2013
+T00741,Guwahati Prabhat,Bengali,Digest,2001
+T00742,Guwahati Prakash,Hindi,Digest,2020
+T00743,Guwahati Pratidin Sandhya,Telugu,Periodical,2016
+T00744,Guwahati Samachar,Urdu,Magazine,2000
+T00745,Guwahati Sandesh,Marathi,Bulletin,2021
+T00746,Guwahati Sandhya,Kannada,Newspaper,2004
+T00747,Guwahati The Hindu,Hindi,Magazine,2024
+T00748,Guwahati Times,Urdu,Periodical,2011
+T00749,Guwahati Tribune,Telugu,Bulletin,2001
+T00750,Guwahati Vartha,Punjabi,Magazine,2021
+T00751,Guwahati Vichar,Kannada,Periodical,2011
+T00752,Herald,Kannada,Newspaper,2018
+T00753,Herald Bulletin,Marathi,Bulletin,2011
+T00754,Herald Daily,Telugu,Periodical,2020
+T00755,Herald Journal,Bengali,Magazine,2003
+T00756,Herald Live,English,Digest,2005
+T00757,Herald Monthly,Kannada,Bulletin,2012
+T00758,Herald Report,Malayalam,Newspaper,2008
+T00759,Herald Today,Bengali,Digest,2014
+T00760,Herald Update,Gujarati,Bulletin,2009
+T00761,Herald Weekly,Kannada,Magazine,2003
+T00762,Hindustan,Marathi,Newspaper,2014
+T00763,Hyderabad Awaaz,Marathi,Digest,2014
+T00764,Hyderabad Bhaskar,Hindi,Digest,2010
+T00765,Hyderabad Dainik Namaskar,Urdu,Periodical,2022
+T00766,Hyderabad Darpan,Hindi,Bulletin,2017
+T00767,Hyderabad Express,Bengali,Periodical,2005
+T00768,Hyderabad Herald,Urdu,Magazine,2011
+T00769,Hyderabad Indian Express,Malayalam,Magazine,2003
+T00770,Hyderabad Jagran,Gujarati,Magazine,2007
+T00771,Hyderabad Kesari,Kannada,Newspaper,2011
+T00772,Hyderabad News,Malayalam,Bulletin,2011
+T00773,Hyderabad Patrika,Kannada,Bulletin,2004
+T00774,Hyderabad Post,Punjabi,Newspaper,2002
+T00775,Hyderabad Prabhat,Bengali,Journal,2022
+T00776,Hyderabad Prakash,Kannada,Bulletin,2013
+T00777,Hyderabad Pratidin Sandhya,Telugu,Bulletin,2002
+T00778,Hyderabad Samachar,Marathi,Periodical,2020
+T00779,Hyderabad Sandesh,Hindi,Journal,2014
+T00780,Hyderabad Sandhya,Urdu,Bulletin,2011
+T00781,Hyderabad The Hindu,Marathi,Bulletin,2020
+T00782,Hyderabad Times,Punjabi,Magazine,2024
+T00783,Hyderabad Tribune,Marathi,Journal,2016
+T00784,Hyderabad Vartha,English,Newspaper,2016
+T00785,Hyderabad Vichar,Marathi,Periodical,2005
+T00786,India Awaaz,Marathi,Periodical,2022
+T00787,India Awaaz Bulletin,Gujarati,Periodical,2016
+T00788,India Awaaz Daily,Bengali,Newspaper,2008
+T00789,India Awaaz Journal,Gujarati,Digest,2017
+T00790,India Awaaz Live,Bengali,Magazine,2020
+T00791,India Awaaz Monthly,Bengali,Bulletin,2017
+T00792,India Awaaz Report,Hindi,Bulletin,2020
+T00793,India Awaaz Today,Marathi,Bulletin,2018
+T00794,India Awaaz Update,Marathi,Magazine,2021
+T00795,India Awaaz Weekly,Punjabi,Digest,2019
+T00796,India Bhaskar,Tamil,Bulletin,2001
+T00797,India Bhaskar Bulletin,English,Newspaper,2001
+T00798,India Bhaskar Daily,Urdu,Bulletin,2008
+T00799,India Bhaskar Journal,Urdu,Magazine,2024
+T00800,India Bhaskar Live,Punjabi,Journal,2019
+T00801,India Bhaskar Monthly,Urdu,Newspaper,2015
+T00802,India Bhaskar Report,Urdu,Bulletin,2009
+T00803,India Bhaskar Today,Urdu,Periodical,2015
+T00804,India Bhaskar Update,Gujarati,Digest,2012
+T00805,India Bhaskar Weekly,Bengali,Journal,2002
+T00806,India Dainik Namaskar,English,Magazine,2014
+T00807,India Dainik Namaskar Bulletin,Telugu,Journal,2014
+T00808,India Dainik Namaskar Daily,Gujarati,Periodical,2019
+T00809,India Dainik Namaskar Journal,Marathi,Periodical,2022
+T00810,India Dainik Namaskar Live,Tamil,Digest,2011
+T00811,India Dainik Namaskar Monthly,Telugu,Magazine,2024
+T00812,India Dainik Namaskar Report,Tamil,Bulletin,2017
+T00813,India Dainik Namaskar Today,Hindi,Periodical,2007
+T00814,India Dainik Namaskar Update,Kannada,Newspaper,2008
+T00815,India Dainik Namaskar Weekly,Kannada,Magazine,2004
+T00816,India Darpan,Hindi,Newspaper,2009
+T00817,India Darpan Bulletin,Telugu,Bulletin,2013
+T00818,India Darpan Daily,Gujarati,Magazine,2010
+T00819,India Darpan Journal,Punjabi,Digest,2010
+T00820,India Darpan Live,Gujarati,Magazine,2015
+T00821,India Darpan Monthly,Malayalam,Journal,2015
+T00822,India Darpan Report,Bengali,Journal,2000
+T00823,India Darpan Today,Hindi,Journal,2016
+T00824,India Darpan Update,Kannada,Magazine,2006
+T00825,India Darpan Weekly,Punjabi,Periodical,2001
+T00826,India Express,English,Periodical,2015
+T00827,India Express Bulletin,Punjabi,Digest,2021
+T00828,India Express Daily,Kannada,Periodical,2017
+T00829,India Express Journal,English,Newspaper,2013
+T00830,India Express Live,Marathi,Periodical,2023
+T00831,India Express Monthly,Tamil,Journal,2011
+T00832,India Express Report,English,Journal,2001
+T00833,India Express Today,Punjabi,Bulletin,2006
+T00834,India Express Update,Tamil,Bulletin,2009
+T00835,India Express Weekly,Hindi,Journal,2016
+T00836,India Herald,Kannada,Bulletin,2008
+T00837,India Herald Bulletin,Punjabi,Digest,2019
+T00838,India Herald Daily,Hindi,Magazine,2003
+T00839,India Herald Journal,Telugu,Periodical,2010
+T00840,India Herald Live,Malayalam,Periodical,2024
+T00841,India Herald Monthly,Marathi,Magazine,2019
+T00842,India Herald Report,Malayalam,Journal,2016
+T00843,India Herald Today,English,Newspaper,2001
+T00844,India Herald Update,Marathi,Digest,2010
+T00845,India Herald Weekly,Kannada,Bulletin,2014
+T00846,India Indian Express,Marathi,Bulletin,2016
+T00847,India Indian Express Bulletin,Marathi,Periodical,2019
+T00848,India Indian Express Daily,Tamil,Magazine,2012
+T00849,India Indian Express Journal,Punjabi,Digest,2009
+T00850,India Indian Express Live,Punjabi,Periodical,2016
+T00851,India Indian Express Monthly,Malayalam,Bulletin,2015
+T00852,India Indian Express Report,Punjabi,Periodical,2015
+T00853,India Indian Express Today,English,Periodical,2010
+T00854,India Indian Express Update,Urdu,Newspaper,2013
+T00855,India Indian Express Weekly,Punjabi,Periodical,2023
+T00856,India Jagran,Urdu,Newspaper,2019
+T00857,India Jagran Bulletin,Kannada,Periodical,2020
+T00858,India Jagran Daily,Punjabi,Bulletin,2007
+T00859,India Jagran Journal,English,Bulletin,2015
+T00860,India Jagran Live,Marathi,Bulletin,2020
+T00861,India Jagran Monthly,Punjabi,Journal,2004
+T00862,India Jagran Report,Urdu,Magazine,2001
+T00863,India Jagran Today,Punjabi,Digest,2003
+T00864,India Jagran Update,Gujarati,Newspaper,2014
+T00865,India Jagran Weekly,Tamil,Journal,2004
+T00866,India Kesari,Telugu,Digest,2006
+T00867,India Kesari Bulletin,Telugu,Bulletin,2024
+T00868,India Kesari Daily,Punjabi,Journal,2023
+T00869,India Kesari Journal,English,Digest,2004
+T00870,India Kesari Live,Malayalam,Magazine,2017
+T00871,India Kesari Monthly,Tamil,Digest,2015
+T00872,India Kesari Report,Malayalam,Journal,2010
+T00873,India Kesari Today,Marathi,Journal,2017
+T00874,India Kesari Update,Tamil,Bulletin,2011
+T00875,India Kesari Weekly,Urdu,Digest,2021
+T00876,India News,Urdu,Digest,2008
+T00877,India News Bulletin,Punjabi,Journal,2006
+T00878,India News Daily,Gujarati,Periodical,2017
+T00879,India News Journal,Bengali,Magazine,2009
+T00880,India News Live,Bengali,Digest,2006
+T00881,India News Monthly,Kannada,Periodical,2015
+T00882,India News Report,Tamil,Bulletin,2023
+T00883,India News Today,Bengali,Periodical,2003
+T00884,India News Update,Punjabi,Digest,2017
+T00885,India News Weekly,Telugu,Journal,2011
+T00886,India Patrika,Marathi,Periodical,2001
+T00887,India Patrika Bulletin,Bengali,Digest,2002
+T00888,India Patrika Daily,Tamil,Journal,2020
+T00889,India Patrika Journal,Bengali,Digest,2015
+T00890,India Patrika Live,Gujarati,Magazine,2017
+T00891,India Patrika Monthly,Bengali,Bulletin,2022
+T00892,India Patrika Report,Bengali,Magazine,2003
+T00893,India Patrika Today,Punjabi,Digest,2018
+T00894,India Patrika Update,Gujarati,Magazine,2001
+T00895,India Patrika Weekly,Urdu,Bulletin,2007
+T00896,India Post,Urdu,Magazine,2001
+T00897,India Post Bulletin,Hindi,Journal,2010
+T00898,India Post Daily,Kannada,Newspaper,2021
+T00899,India Post Journal,Marathi,Newspaper,2017
+T00900,India Post Live,Marathi,Journal,2020
+T00901,India Post Monthly,Kannada,Journal,2020
+T00902,India Post Report,Gujarati,Periodical,2010
+T00903,India Post Today,Bengali,Digest,2001
+T00904,India Post Update,Hindi,Digest,2018
+T00905,India Post Weekly,Gujarati,Bulletin,2023
+T00906,India Prabhat,English,Magazine,2013
+T00907,India Prabhat Bulletin,Marathi,Newspaper,2012
+T00908,India Prabhat Daily,Kannada,Magazine,2023
+T00909,India Prabhat Journal,Bengali,Newspaper,2000
+T00910,India Prabhat Live,Bengali,Bulletin,2019
+T00911,India Prabhat Monthly,Hindi,Periodical,2009
+T00912,India Prabhat Report,Kannada,Digest,2017
+T00913,India Prabhat Today,Malayalam,Journal,2004
+T00914,India Prabhat Update,Malayalam,Journal,2008
+T00915,India Prabhat Weekly,Gujarati,Newspaper,2010
+T00916,India Prakash,Marathi,Digest,2014
+T00917,India Prakash Bulletin,Urdu,Periodical,2022
+T00918,India Prakash Daily,Marathi,Newspaper,2023
+T00919,India Prakash Journal,Tamil,Periodical,2018
+T00920,India Prakash Live,Urdu,Magazine,2005
+T00921,India Prakash Monthly,Punjabi,Digest,2012
+T00922,India Prakash Report,Telugu,Bulletin,2010
+T00923,India Prakash Today,Hindi,Journal,2021
+T00924,India Prakash Update,Hindi,Magazine,2004
+T00925,India Prakash Weekly,Kannada,Periodical,2007
+T00926,India Pratidin Sandhya,English,Periodical,2012
+T00927,India Pratidin Sandhya Bulletin,Gujarati,Journal,2024
+T00928,India Pratidin Sandhya Daily,Bengali,Periodical,2009
+T00929,India Pratidin Sandhya Journal,Punjabi,Digest,2018
+T00930,India Pratidin Sandhya Live,English,Periodical,2020
+T00931,India Pratidin Sandhya Monthly,Tamil,Digest,2007
+T00932,India Pratidin Sandhya Report,English,Digest,2003
+T00933,India Pratidin Sandhya Today,Kannada,Periodical,2005
+T00934,India Pratidin Sandhya Update,Telugu,Digest,2016
+T00935,India Pratidin Sandhya Weekly,Bengali,Digest,2003
+T00936,India Samachar,Urdu,Periodical,2011
+T00937,India Samachar Bulletin,Punjabi,Magazine,2007
+T00938,India Samachar Daily,Marathi,Journal,2004
+T00939,India Samachar Journal,Kannada,Digest,2019
+T00940,India Samachar Live,Tamil,Journal,2022
+T00941,India Samachar Monthly,Malayalam,Journal,2024
+T00942,India Samachar Report,Malayalam,Digest,2006
+T00943,India Samachar Today,Gujarati,Digest,2024
+T00944,India Samachar Update,Punjabi,Newspaper,2016
+T00945,India Samachar Weekly,Kannada,Bulletin,2022
+T00946,India Sandesh,Tamil,Newspaper,2018
+T00947,India Sandesh Bulletin,Hindi,Newspaper,2017
+T00948,India Sandesh Daily,Malayalam,Magazine,2018
+T00949,India Sandesh Journal,Malayalam,Magazine,2005
+T00950,India Sandesh Live,Tamil,Bulletin,2014
+T00951,India Sandesh Monthly,Hindi,Digest,2006
+T00952,India Sandesh Report,Punjabi,Journal,2002
+T00953,India Sandesh Today,Malayalam,Journal,2001
+T00954,India Sandesh Update,Kannada,Magazine,2016
+T00955,India Sandesh Weekly,Telugu,Journal,2018
+T00956,India Sandhya,English,Bulletin,2014
+T00957,India Sandhya Bulletin,Urdu,Periodical,2023
+T00958,India Sandhya Daily,English,Journal,2008
+T00959,India Sandhya Journal,English,Digest,2006
+T00960,India Sandhya Live,Punjabi,Newspaper,2001
+T00961,India Sandhya Monthly,Telugu,Periodical,2022
+T00962,India Sandhya Report,Hindi,Bulletin,2001
+T00963,India Sandhya Today,Hindi,Journal,2001
+T00964,India Sandhya Update,Bengali,Journal,2005
+T00965,India Sandhya Weekly,Marathi,Digest,2023
+T00966,India The Hindu,Urdu,Journal,2011
+T00967,India The Hindu Bulletin,Telugu,Journal,2012
+T00968,India The Hindu Daily,Telugu,Newspaper,2021
+T00969,India The Hindu Journal,Urdu,Bulletin,2004
+T00970,India The Hindu Live,Urdu,Periodical,2003
+T00971,India The Hindu Monthly,Marathi,Bulletin,2012
+T00972,India The Hindu Report,Malayalam,Magazine,2023
+T00973,India The Hindu Today,Gujarati,Newspaper,2024
+T00974,India The Hindu Update,English,Periodical,2014
+T00975,India The Hindu Weekly,Urdu,Digest,2017
+T00976,India Times,Telugu,Bulletin,2012
+T00977,India Times Bulletin,Gujarati,Magazine,2014
+T00978,India Times Daily,Tamil,Magazine,2008
+T00979,India Times Journal,Gujarati,Digest,2024
+T00980,India Times Live,Hindi,Newspaper,2021
+T00981,India Times Monthly,Telugu,Bulletin,2024
+T00982,India Times Report,English,Magazine,2006
+T00983,India Times Today,Hindi,Newspaper,2019
+T00984,India Times Update,English,Journal,2019
+T00985,India Times Weekly,Urdu,Digest,2001
+T00986,India Tribune,Gujarati,Digest,2001
+T00987,India Tribune Bulletin,Telugu,Journal,2007
+T00988,India Tribune Daily,Malayalam,Magazine,2024
+T00989,India Tribune Journal,English,Magazine,2016
+T00990,India Tribune Live,Bengali,Magazine,2023
+T00991,India Tribune Monthly,Punjabi,Periodical,2018
+T00992,India Tribune Report,Punjabi,Digest,2010
+T00993,India Tribune Today,Gujarati,Periodical,2004
+T00994,India Tribune Update,Urdu,Bulletin,2007
+T00995,India Tribune Weekly,Telugu,Periodical,2008
+T00996,India Vartha,English,Bulletin,2018
+T00997,India Vartha Bulletin,Marathi,Digest,2021
+T00998,India Vartha Daily,Telugu,Bulletin,2015
+T00999,India Vartha Journal,English,Periodical,2020
+T01000,India Vartha Live,Urdu,Journal,2016
+T01001,India Vartha Monthly,Tamil,Digest,2013
+T01002,India Vartha Report,Telugu,Magazine,2009
+T01003,India Vartha Today,Telugu,Magazine,2024
+T01004,India Vartha Update,Malayalam,Journal,2007
+T01005,India Vartha Weekly,Gujarati,Periodical,2022
+T01006,India Vichar,Marathi,Journal,2001
+T01007,India Vichar Bulletin,Malayalam,Journal,2013
+T01008,India Vichar Daily,Malayalam,Bulletin,2004
+T01009,India Vichar Journal,Telugu,Magazine,2008
+T01010,India Vichar Live,Gujarati,Periodical,2020
+T01011,India Vichar Monthly,Hindi,Journal,2011
+T01012,India Vichar Report,Hindi,Bulletin,2023
+T01013,India Vichar Today,Gujarati,Newspaper,2008
+T01014,India Vichar Update,Telugu,Digest,2019
+T01015,India Vichar Weekly,Punjabi,Newspaper,2002
+T01016,Indian Express,Gujarati,Bulletin,2023
+T01017,Indian Express Bulletin,Urdu,Bulletin,2006
+T01018,Indian Express Daily,Kannada,Magazine,2010
+T01019,Indian Express Journal,Bengali,Newspaper,2006
+T01020,Indian Express Live,Gujarati,Digest,2003
+T01021,Indian Express Monthly,Kannada,Magazine,2022
+T01022,Indian Express Report,Punjabi,Digest,2006
+T01023,Indian Express Today,Telugu,Magazine,2017
+T01024,Indian Express Update,Tamil,Periodical,2012
+T01025,Indian Express Weekly,Kannada,Bulletin,2020
+T01026,Jagran,Tamil,Periodical,2008
+T01027,Jagran Bulletin,Tamil,Bulletin,2015
+T01028,Jagran Daily,Kannada,Newspaper,2023
+T01029,Jagran Journal,Kannada,Periodical,2006
+T01030,Jagran Live,Tamil,Periodical,2013
+T01031,Jagran Monthly,English,Bulletin,2007
+T01032,Jagran Report,Marathi,Newspaper,2008
+T01033,Jagran Today,Malayalam,Bulletin,2018
+T01034,Jagran Update,Telugu,Periodical,2004
+T01035,Jagran Weekly,Gujarati,Periodical,2007
+T01036,Jaipur Awaaz,Telugu,Bulletin,2007
+T01037,Jaipur Bhaskar,Kannada,Bulletin,2020
+T01038,Jaipur Dainik Namaskar,Urdu,Periodical,2008
+T01039,Jaipur Darpan,Kannada,Digest,2020
+T01040,Jaipur Express,Kannada,Journal,2005
+T01041,Jaipur Herald,Tamil,Magazine,2004
+T01042,Jaipur Indian Express,Malayalam,Journal,2005
+T01043,Jaipur Jagran,Malayalam,Digest,2001
+T01044,Jaipur Kesari,Malayalam,Newspaper,2002
+T01045,Jaipur News,Urdu,Newspaper,2024
+T01046,Jaipur Patrika,English,Journal,2004
+T01047,Jaipur Post,Urdu,Magazine,2002
+T01048,Jaipur Prabhat,Marathi,Newspaper,2006
+T01049,Jaipur Prakash,Malayalam,Journal,2011
+T01050,Jaipur Pratidin Sandhya,English,Bulletin,2020
+T01051,Jaipur Samachar,Urdu,Bulletin,2015
+T01052,Jaipur Sandesh,Urdu,Journal,2000
+T01053,Jaipur Sandhya,English,Bulletin,2017
+T01054,Jaipur The Hindu,Telugu,Newspaper,2000
+T01055,Jaipur Times,Malayalam,Digest,2008
+T01056,Jaipur Tribune,Malayalam,Periodical,2000
+T01057,Jaipur Vartha,Malayalam,Digest,2021
+T01058,Jaipur Vichar,Telugu,Magazine,2003
+T01059,Kesari,Hindi,Bulletin,2004
+T01060,Kesari Bulletin,Gujarati,Magazine,2019
+T01061,Kesari Daily,Malayalam,Periodical,2011
+T01062,Kesari Journal,Bengali,Journal,2002
+T01063,Kesari Live,Tamil,Journal,2014
+T01064,Kesari Monthly,Punjabi,Magazine,2022
+T01065,Kesari Report,Gujarati,Periodical,2021
+T01066,Kesari Today,Hindi,Digest,2020
+T01067,Kesari Update,English,Newspaper,2012
+T01068,Kesari Weekly,Telugu,Journal,2017
+T01069,Kolkata Awaaz,Kannada,Newspaper,2020
+T01070,Kolkata Bhaskar,English,Digest,2005
+T01071,Kolkata Dainik Namaskar,Hindi,Journal,2013
+T01072,Kolkata Darpan,Urdu,Periodical,2018
+T01073,Kolkata Darpan Daily,Hindi,Bulletin,2001
+T01074,Kolkata Darpan Monthly,Gujarati,Magazine,2022
+T01075,Kolkata Darpan Today,Punjabi,Journal,2008
+T01076,Kolkata Darpan Weekly,English,Newspaper,2021
+T01077,Kolkata Express,Bengali,Bulletin,2018
+T01078,Kolkata Express Daily,Urdu,Newspaper,2005
+T01079,Kolkata Express Monthly,Tamil,Newspaper,2006
+T01080,Kolkata Express Today,Punjabi,Magazine,2024
+T01081,Kolkata Express Weekly,Telugu,Newspaper,2009
+T01082,Kolkata Herald,Marathi,Bulletin,2007
+T01083,Kolkata Herald Daily,Punjabi,Journal,2021
+T01084,Kolkata Herald Monthly,Malayalam,Periodical,2012
+T01085,Kolkata Herald Today,Marathi,Digest,2023
+T01086,Kolkata Herald Weekly,Hindi,Bulletin,2023
+T01087,Kolkata Indian Express,Tamil,Newspaper,2003
+T01088,Kolkata Jagran,Telugu,Magazine,2002
+T01089,Kolkata Kesari,Tamil,Bulletin,2024
+T01090,Kolkata News,Punjabi,Bulletin,2012
+T01091,Kolkata News Daily,Tamil,Newspaper,2020
+T01092,Kolkata News Monthly,Bengali,Journal,2015
+T01093,Kolkata News Today,Gujarati,Periodical,2017
+T01094,Kolkata News Weekly,Telugu,Journal,2005
+T01095,Kolkata Patrika,Urdu,Bulletin,2021
+T01096,Kolkata Post,Telugu,Newspaper,2024
+T01097,Kolkata Post Daily,Punjabi,Periodical,2007
+T01098,Kolkata Post Monthly,Hindi,Newspaper,2008
+T01099,Kolkata Post Today,Marathi,Journal,2022
+T01100,Kolkata Post Weekly,Urdu,Magazine,2023
+T01101,Kolkata Prabhat,Telugu,Periodical,2011
+T01102,Kolkata Prakash,Hindi,Newspaper,2000
+T01103,Kolkata Pratidin Sandhya,Bengali,Journal,2011
+T01104,Kolkata Samachar,Bengali,Newspaper,2004
+T01105,Kolkata Samachar Daily,Hindi,Magazine,2013
+T01106,Kolkata Samachar Monthly,Kannada,Bulletin,2017
+T01107,Kolkata Samachar Today,Malayalam,Journal,2003
+T01108,Kolkata Samachar Weekly,English,Newspaper,2011
+T01109,Kolkata Sandesh,Malayalam,Newspaper,2019
+T01110,Kolkata Sandesh Daily,Punjabi,Periodical,2012
+T01111,Kolkata Sandesh Monthly,English,Periodical,2013
+T01112,Kolkata Sandesh Today,Telugu,Newspaper,2023
+T01113,Kolkata Sandesh Weekly,Malayalam,Magazine,2018
+T01114,Kolkata Sandhya,Malayalam,Magazine,2021
+T01115,Kolkata The Hindu,Telugu,Magazine,2004
+T01116,Kolkata Times,Bengali,Periodical,2008
+T01117,Kolkata Times Daily,Kannada,Magazine,2002
+T01118,Kolkata Times Monthly,Marathi,Journal,2008
+T01119,Kolkata Times Today,Telugu,Periodical,2015
+T01120,Kolkata Times Weekly,Hindi,Periodical,2008
+T01121,Kolkata Tribune,Gujarati,Digest,2020
+T01122,Kolkata Tribune Daily,Kannada,Bulletin,2019
+T01123,Kolkata Tribune Monthly,Gujarati,Journal,2003
+T01124,Kolkata Tribune Today,Marathi,Periodical,2000
+T01125,Kolkata Tribune Weekly,Telugu,Periodical,2019
+T01126,Kolkata Vartha,Telugu,Periodical,2014
+T01127,Kolkata Vichar,Tamil,Journal,2020
+T01128,Kolkata Vichar Daily,Punjabi,Magazine,2009
+T01129,Kolkata Vichar Monthly,Tamil,Bulletin,2022
+T01130,Kolkata Vichar Today,Gujarati,Journal,2010
+T01131,Kolkata Vichar Weekly,Marathi,Journal,2010
+T01132,Lucknow Awaaz,Bengali,Digest,2022
+T01133,Lucknow Bhaskar,Urdu,Journal,2018
+T01134,Lucknow Dainik Namaskar,Gujarati,Periodical,2012
+T01135,Lucknow Darpan,Bengali,Journal,2011
+T01136,Lucknow Express,Hindi,Bulletin,2006
+T01137,Lucknow Herald,Punjabi,Bulletin,2005
+T01138,Lucknow Indian Express,Urdu,Bulletin,2000
+T01139,Lucknow Jagran,Kannada,Digest,2006
+T01140,Lucknow Kesari,Kannada,Periodical,2022
+T01141,Lucknow News,Hindi,Journal,2021
+T01142,Lucknow Patrika,Kannada,Magazine,2020
+T01143,Lucknow Post,Bengali,Magazine,2008
+T01144,Lucknow Prabhat,Urdu,Magazine,2022
+T01145,Lucknow Prakash,Telugu,Journal,2002
+T01146,Lucknow Pratidin Sandhya,Kannada,Bulletin,2015
+T01147,Lucknow Samachar,Punjabi,Journal,2017
+T01148,Lucknow Sandesh,Malayalam,Digest,2013
+T01149,Lucknow Sandhya,Malayalam,Newspaper,2011
+T01150,Lucknow The Hindu,Malayalam,Bulletin,2020
+T01151,Lucknow Times,Hindi,Newspaper,2024
+T01152,Lucknow Tribune,Gujarati,Digest,2021
+T01153,Lucknow Vartha,Tamil,Magazine,2020
+T01154,Lucknow Vichar,Punjabi,Newspaper,2018
+T01155,Modern Awaaz,Urdu,Digest,2020
+T01156,Modern Awaaz Bulletin,Telugu,Periodical,2013
+T01157,Modern Awaaz Daily,Hindi,Newspaper,2003
+T01158,Modern Awaaz Journal,Bengali,Magazine,2016
+T01159,Modern Awaaz Live,Malayalam,Bulletin,2018
+T01160,Modern Awaaz Monthly,Punjabi,Magazine,2014
+T01161,Modern Awaaz Report,Tamil,Journal,2014
+T01162,Modern Awaaz Today,Urdu,Bulletin,2022
+T01163,Modern Awaaz Update,Malayalam,Magazine,2011
+T01164,Modern Awaaz Weekly,English,Journal,2003
+T01165,Modern Bhaskar,Bengali,Journal,2002
+T01166,Modern Bhaskar Bulletin,Hindi,Digest,2004
+T01167,Modern Bhaskar Daily,Tamil,Periodical,2010
+T01168,Modern Bhaskar Journal,Kannada,Magazine,2016
+T01169,Modern Bhaskar Live,Kannada,Periodical,2015
+T01170,Modern Bhaskar Monthly,Hindi,Journal,2023
+T01171,Modern Bhaskar Report,Kannada,Periodical,2002
+T01172,Modern Bhaskar Today,Bengali,Newspaper,2022
+T01173,Modern Bhaskar Update,Hindi,Newspaper,2010
+T01174,Modern Bhaskar Weekly,Urdu,Newspaper,2021
+T01175,Modern Dainik Namaskar,Marathi,Digest,2007
+T01176,Modern Dainik Namaskar Bulletin,Malayalam,Magazine,2017
+T01177,Modern Dainik Namaskar Daily,Marathi,Periodical,2017
+T01178,Modern Dainik Namaskar Journal,Telugu,Journal,2007
+T01179,Modern Dainik Namaskar Live,Telugu,Digest,2005
+T01180,Modern Dainik Namaskar Monthly,Marathi,Digest,2021
+T01181,Modern Dainik Namaskar Report,Telugu,Journal,2000
+T01182,Modern Dainik Namaskar Today,Punjabi,Magazine,2014
+T01183,Modern Dainik Namaskar Update,Punjabi,Journal,2012
+T01184,Modern Dainik Namaskar Weekly,English,Digest,2006
+T01185,Modern Darpan,Gujarati,Periodical,2024
+T01186,Modern Darpan Bulletin,Hindi,Bulletin,2003
+T01187,Modern Darpan Daily,Malayalam,Magazine,2011
+T01188,Modern Darpan Journal,Tamil,Magazine,2014
+T01189,Modern Darpan Live,Hindi,Periodical,2021
+T01190,Modern Darpan Monthly,Kannada,Bulletin,2020
+T01191,Modern Darpan Report,Tamil,Bulletin,2012
+T01192,Modern Darpan Today,Punjabi,Journal,2018
+T01193,Modern Darpan Update,Hindi,Periodical,2011
+T01194,Modern Darpan Weekly,Kannada,Bulletin,2005
+T01195,Modern Express,Urdu,Digest,2009
+T01196,Modern Express Bulletin,Punjabi,Bulletin,2002
+T01197,Modern Express Daily,Urdu,Magazine,2010
+T01198,Modern Express Journal,Hindi,Magazine,2009
+T01199,Modern Express Live,Hindi,Magazine,2011
+T01200,Modern Express Monthly,Marathi,Bulletin,2012
+T01201,Modern Express Report,Telugu,Bulletin,2004
+T01202,Modern Express Today,Punjabi,Journal,2013
+T01203,Modern Express Update,Marathi,Journal,2020
+T01204,Modern Express Weekly,Malayalam,Digest,2020
+T01205,Modern Herald,Marathi,Bulletin,2005
+T01206,Modern Herald Bulletin,Kannada,Periodical,2004
+T01207,Modern Herald Daily,Marathi,Periodical,2014
+T01208,Modern Herald Journal,Punjabi,Newspaper,2011
+T01209,Modern Herald Live,English,Journal,2004
+T01210,Modern Herald Monthly,Gujarati,Journal,2017
+T01211,Modern Herald Report,Malayalam,Digest,2015
+T01212,Modern Herald Today,Telugu,Digest,2015
+T01213,Modern Herald Update,Telugu,Digest,2014
+T01214,Modern Herald Weekly,Kannada,Magazine,2002
+T01215,Modern Indian Express,Punjabi,Newspaper,2024
+T01216,Modern Indian Express Bulletin,Gujarati,Periodical,2001
+T01217,Modern Indian Express Daily,Bengali,Magazine,2017
+T01218,Modern Indian Express Journal,Bengali,Magazine,2024
+T01219,Modern Indian Express Live,Kannada,Bulletin,2023
+T01220,Modern Indian Express Monthly,Kannada,Bulletin,2016
+T01221,Modern Indian Express Report,Hindi,Bulletin,2003
+T01222,Modern Indian Express Today,Bengali,Bulletin,2011
+T01223,Modern Indian Express Update,Malayalam,Newspaper,2024
+T01224,Modern Indian Express Weekly,Kannada,Bulletin,2006
+T01225,Modern Jagran,Telugu,Newspaper,2023
+T01226,Modern Jagran Bulletin,Urdu,Magazine,2009
+T01227,Modern Jagran Daily,English,Journal,2008
+T01228,Modern Jagran Journal,Tamil,Newspaper,2014
+T01229,Modern Jagran Live,Hindi,Magazine,2006
+T01230,Modern Jagran Monthly,Punjabi,Digest,2011
+T01231,Modern Jagran Report,Punjabi,Digest,2013
+T01232,Modern Jagran Today,Marathi,Bulletin,2004
+T01233,Modern Jagran Update,Gujarati,Magazine,2001
+T01234,Modern Jagran Weekly,Punjabi,Periodical,2017
+T01235,Modern Kesari,Bengali,Bulletin,2017
+T01236,Modern Kesari Bulletin,Marathi,Periodical,2022
+T01237,Modern Kesari Daily,Bengali,Periodical,2018
+T01238,Modern Kesari Journal,Bengali,Bulletin,2021
+T01239,Modern Kesari Live,Hindi,Magazine,2024
+T01240,Modern Kesari Monthly,Telugu,Newspaper,2008
+T01241,Modern Kesari Report,Urdu,Magazine,2022
+T01242,Modern Kesari Today,Marathi,Magazine,2004
+T01243,Modern Kesari Update,Tamil,Magazine,2024
+T01244,Modern Kesari Weekly,Urdu,Journal,2015
+T01245,Modern News,Marathi,Bulletin,2020
+T01246,Modern News Bulletin,Bengali,Digest,2013
+T01247,Modern News Daily,Telugu,Journal,2002
+T01248,Modern News Journal,Urdu,Newspaper,2012
+T01249,Modern News Live,Malayalam,Digest,2008
+T01250,Modern News Monthly,Tamil,Journal,2015
+T01251,Modern News Report,Tamil,Bulletin,2000
+T01252,Modern News Today,Hindi,Digest,2014
+T01253,Modern News Update,Urdu,Digest,2022
+T01254,Modern News Weekly,Tamil,Newspaper,2017
+T01255,Modern Patrika,Telugu,Magazine,2013
+T01256,Modern Patrika Bulletin,Gujarati,Journal,2008
+T01257,Modern Patrika Daily,Tamil,Periodical,2010
+T01258,Modern Patrika Journal,Malayalam,Bulletin,2004
+T01259,Modern Patrika Live,Punjabi,Journal,2010
+T01260,Modern Patrika Monthly,Urdu,Newspaper,2001
+T01261,Modern Patrika Report,Hindi,Digest,2014
+T01262,Modern Patrika Today,English,Newspaper,2005
+T01263,Modern Patrika Update,Kannada,Journal,2000
+T01264,Modern Patrika Weekly,Telugu,Magazine,2022
+T01265,Modern Post,Marathi,Digest,2009
+T01266,Modern Post Bulletin,Marathi,Periodical,2002
+T01267,Modern Post Daily,Urdu,Periodical,2008
+T01268,Modern Post Journal,Hindi,Periodical,2021
+T01269,Modern Post Live,Urdu,Magazine,2001
+T01270,Modern Post Monthly,Telugu,Digest,2009
+T01271,Modern Post Report,Gujarati,Journal,2020
+T01272,Modern Post Today,Hindi,Digest,2003
+T01273,Modern Post Update,English,Magazine,2015
+T01274,Modern Post Weekly,Hindi,Magazine,2018
+T01275,Modern Prabhat,Gujarati,Bulletin,2021
+T01276,Modern Prabhat Bulletin,Kannada,Newspaper,2000
+T01277,Modern Prabhat Daily,Tamil,Newspaper,2013
+T01278,Modern Prabhat Journal,Marathi,Journal,2002
+T01279,Modern Prabhat Live,Gujarati,Journal,2002
+T01280,Modern Prabhat Monthly,Hindi,Newspaper,2010
+T01281,Modern Prabhat Report,Tamil,Periodical,2004
+T01282,Modern Prabhat Today,Telugu,Magazine,2020
+T01283,Modern Prabhat Update,Urdu,Magazine,2002
+T01284,Modern Prabhat Weekly,Malayalam,Bulletin,2000
+T01285,Modern Prakash,Punjabi,Digest,2005
+T01286,Modern Prakash Bulletin,Kannada,Periodical,2023
+T01287,Modern Prakash Daily,Gujarati,Digest,2023
+T01288,Modern Prakash Journal,Marathi,Journal,2019
+T01289,Modern Prakash Live,Urdu,Journal,2006
+T01290,Modern Prakash Monthly,Hindi,Newspaper,2004
+T01291,Modern Prakash Report,Hindi,Bulletin,2023
+T01292,Modern Prakash Today,Telugu,Periodical,2013
+T01293,Modern Prakash Update,Tamil,Magazine,2007
+T01294,Modern Prakash Weekly,Bengali,Digest,2002
+T01295,Modern Pratidin Sandhya,Gujarati,Bulletin,2019
+T01296,Modern Pratidin Sandhya Bulletin,Punjabi,Digest,2019
+T01297,Modern Pratidin Sandhya Daily,Bengali,Digest,2000
+T01298,Modern Pratidin Sandhya Journal,Urdu,Periodical,2006
+T01299,Modern Pratidin Sandhya Live,Malayalam,Bulletin,2016
+T01300,Modern Pratidin Sandhya Monthly,Gujarati,Digest,2012
+T01301,Modern Pratidin Sandhya Report,Bengali,Digest,2001
+T01302,Modern Pratidin Sandhya Today,Gujarati,Journal,2012
+T01303,Modern Pratidin Sandhya Update,Hindi,Magazine,2015
+T01304,Modern Pratidin Sandhya Weekly,Urdu,Bulletin,2002
+T01305,Modern Samachar,Malayalam,Newspaper,2011
+T01306,Modern Samachar Bulletin,Tamil,Magazine,2012
+T01307,Modern Samachar Daily,Punjabi,Journal,2011
+T01308,Modern Samachar Journal,Malayalam,Digest,2005
+T01309,Modern Samachar Live,Kannada,Newspaper,2000
+T01310,Modern Samachar Monthly,Punjabi,Newspaper,2000
+T01311,Modern Samachar Report,Bengali,Magazine,2001
+T01312,Modern Samachar Today,English,Journal,2016
+T01313,Modern Samachar Update,Bengali,Digest,2022
+T01314,Modern Samachar Weekly,Malayalam,Journal,2013
+T01315,Modern Sandesh,Telugu,Newspaper,2020
+T01316,Modern Sandesh Bulletin,Malayalam,Bulletin,2019
+T01317,Modern Sandesh Daily,Marathi,Periodical,2002
+T01318,Modern Sandesh Journal,Bengali,Newspaper,2016
+T01319,Modern Sandesh Live,Gujarati,Magazine,2017
+T01320,Modern Sandesh Monthly,Tamil,Journal,2018
+T01321,Modern Sandesh Report,Urdu,Digest,2021
+T01322,Modern Sandesh Today,Urdu,Newspaper,2009
+T01323,Modern Sandesh Update,Telugu,Digest,2007
+T01324,Modern Sandesh Weekly,English,Magazine,2002
+T01325,Modern Sandhya,Telugu,Newspaper,2014
+T01326,Modern Sandhya Bulletin,Punjabi,Bulletin,2001
+T01327,Modern Sandhya Daily,Bengali,Digest,2023
+T01328,Modern Sandhya Journal,Urdu,Digest,2005
+T01329,Modern Sandhya Live,Hindi,Newspaper,2022
+T01330,Modern Sandhya Monthly,Marathi,Digest,2000
+T01331,Modern Sandhya Report,Marathi,Journal,2011
+T01332,Modern Sandhya Today,Malayalam,Bulletin,2023
+T01333,Modern Sandhya Update,Bengali,Magazine,2011
+T01334,Modern Sandhya Weekly,Marathi,Digest,2024
+T01335,Modern The Hindu,Bengali,Digest,2003
+T01336,Modern The Hindu Bulletin,English,Periodical,2013
+T01337,Modern The Hindu Daily,Bengali,Bulletin,2002
+T01338,Modern The Hindu Journal,Bengali,Digest,2018
+T01339,Modern The Hindu Live,Urdu,Newspaper,2015
+T01340,Modern The Hindu Monthly,Kannada,Bulletin,2011
+T01341,Modern The Hindu Report,English,Journal,2018
+T01342,Modern The Hindu Today,Marathi,Periodical,2005
+T01343,Modern The Hindu Update,Bengali,Newspaper,2018
+T01344,Modern The Hindu Weekly,Urdu,Digest,2003
+T01345,Modern Times,Gujarati,Digest,2016
+T01346,Modern Times Bulletin,English,Newspaper,2000
+T01347,Modern Times Daily,Gujarati,Newspaper,2015
+T01348,Modern Times Journal,Tamil,Journal,2004
+T01349,Modern Times Live,Marathi,Newspaper,2017
+T01350,Modern Times Monthly,Urdu,Journal,2007
+T01351,Modern Times Report,Tamil,Magazine,2013
+T01352,Modern Times Today,Tamil,Periodical,2002
+T01353,Modern Times Update,Punjabi,Periodical,2003
+T01354,Modern Times Weekly,Malayalam,Digest,2001
+T01355,Modern Tribune,Marathi,Magazine,2016
+T01356,Modern Tribune Bulletin,English,Journal,2002
+T01357,Modern Tribune Daily,Kannada,Periodical,2024
+T01358,Modern Tribune Journal,Bengali,Periodical,2002
+T01359,Modern Tribune Live,Malayalam,Journal,2000
+T01360,Modern Tribune Monthly,Tamil,Magazine,2009
+T01361,Modern Tribune Report,Punjabi,Periodical,2023
+T01362,Modern Tribune Today,Punjabi,Magazine,2014
+T01363,Modern Tribune Update,Tamil,Bulletin,2015
+T01364,Modern Tribune Weekly,Gujarati,Digest,2017
+T01365,Modern Vartha,Gujarati,Magazine,2000
+T01366,Modern Vartha Bulletin,Telugu,Newspaper,2007
+T01367,Modern Vartha Daily,Malayalam,Periodical,2020
+T01368,Modern Vartha Journal,English,Periodical,2000
+T01369,Modern Vartha Live,Urdu,Journal,2023
+T01370,Modern Vartha Monthly,Bengali,Newspaper,2006
+T01371,Modern Vartha Report,Malayalam,Magazine,2013
+T01372,Modern Vartha Today,Kannada,Newspaper,2004
+T01373,Modern Vartha Update,Bengali,Newspaper,2001
+T01374,Modern Vartha Weekly,Gujarati,Bulletin,2013
+T01375,Modern Vichar,Tamil,Journal,2023
+T01376,Modern Vichar Bulletin,Hindi,Bulletin,2003
+T01377,Modern Vichar Daily,Malayalam,Magazine,2020
+T01378,Modern Vichar Journal,Telugu,Newspaper,2018
+T01379,Modern Vichar Live,Punjabi,Newspaper,2013
+T01380,Modern Vichar Monthly,Urdu,Magazine,2007
+T01381,Modern Vichar Report,Bengali,Periodical,2010
+T01382,Modern Vichar Today,Telugu,Digest,2023
+T01383,Modern Vichar Update,Tamil,Periodical,2014
+T01384,Modern Vichar Weekly,Bengali,Magazine,2002
+T01385,Mumbai Awaaz,Gujarati,Magazine,2024
+T01386,Mumbai Bhaskar,Punjabi,Newspaper,2004
+T01387,Mumbai Dainik Namaskar,Hindi,Magazine,2014
+T01388,Mumbai Darpan,Kannada,Periodical,2013
+T01389,Mumbai Darpan Daily,Hindi,Bulletin,2011
+T01390,Mumbai Darpan Monthly,Gujarati,Journal,2009
+T01391,Mumbai Darpan Today,Kannada,Periodical,2003
+T01392,Mumbai Darpan Weekly,Hindi,Magazine,2021
+T01393,Mumbai Express,Bengali,Digest,2022
+T01394,Mumbai Express Daily,Punjabi,Newspaper,2006
+T01395,Mumbai Express Monthly,Tamil,Magazine,2002
+T01396,Mumbai Express Today,Gujarati,Periodical,2012
+T01397,Mumbai Express Weekly,Malayalam,Newspaper,2021
+T01398,Mumbai Herald,Bengali,Periodical,2005
+T01399,Mumbai Herald Daily,English,Journal,2014
+T01400,Mumbai Herald Monthly,Malayalam,Digest,2017
+T01401,Mumbai Herald Today,Gujarati,Newspaper,2014
+T01402,Mumbai Herald Weekly,Hindi,Magazine,2003
+T01403,Mumbai Indian Express,English,Newspaper,2024
+T01404,Mumbai Jagran,Gujarati,Magazine,2006
+T01405,Mumbai Kesari,Telugu,Periodical,2021
+T01406,Mumbai News,Urdu,Digest,2002
+T01407,Mumbai News Daily,Punjabi,Bulletin,2008
+T01408,Mumbai News Monthly,Hindi,Newspaper,2002
+T01409,Mumbai News Today,Gujarati,Digest,2014
+T01410,Mumbai News Weekly,Marathi,Newspaper,2010
+T01411,Mumbai Patrika,Hindi,Newspaper,2014
+T01412,Mumbai Post,English,Magazine,2018
+T01413,Mumbai Post Daily,Telugu,Digest,2012
+T01414,Mumbai Post Monthly,Kannada,Newspaper,2012
+T01415,Mumbai Post Today,Urdu,Journal,2005
+T01416,Mumbai Post Weekly,Tamil,Magazine,2005
+T01417,Mumbai Prabhat,Bengali,Periodical,2014
+T01418,Mumbai Prakash,Marathi,Newspaper,2019
+T01419,Mumbai Pratidin Sandhya,Punjabi,Bulletin,2007
+T01420,Mumbai Samachar,Urdu,Periodical,2015
+T01421,Mumbai Samachar Daily,Telugu,Bulletin,2015
+T01422,Mumbai Samachar Monthly,English,Newspaper,2008
+T01423,Mumbai Samachar Today,Telugu,Magazine,2013
+T01424,Mumbai Samachar Weekly,Gujarati,Digest,2016
+T01425,Mumbai Sandesh,Gujarati,Digest,2017
+T01426,Mumbai Sandesh Daily,English,Journal,2022
+T01427,Mumbai Sandesh Monthly,Tamil,Journal,2017
+T01428,Mumbai Sandesh Today,Kannada,Periodical,2018
+T01429,Mumbai Sandesh Weekly,Malayalam,Periodical,2012
+T01430,Mumbai Sandhya,Bengali,Magazine,2000
+T01431,Mumbai The Hindu,Tamil,Bulletin,2007
+T01432,Mumbai Times,English,Periodical,2001
+T01433,Mumbai Times Daily,Kannada,Bulletin,2011
+T01434,Mumbai Times Monthly,Punjabi,Magazine,2005
+T01435,Mumbai Times Today,Hindi,Magazine,2021
+T01436,Mumbai Times Weekly,Gujarati,Periodical,2017
+T01437,Mumbai Tribune,English,Magazine,2018
+T01438,Mumbai Tribune Daily,Telugu,Periodical,2005
+T01439,Mumbai Tribune Monthly,Marathi,Magazine,2018
+T01440,Mumbai Tribune Today,Tamil,Digest,2022
+T01441,Mumbai Tribune Weekly,Tamil,Bulletin,2000
+T01442,Mumbai Vartha,Tamil,Bulletin,2018
+T01443,Mumbai Vichar,Marathi,Bulletin,2006
+T01444,Mumbai Vichar Daily,Kannada,Bulletin,2009
+T01445,Mumbai Vichar Monthly,Marathi,Journal,2001
+T01446,Mumbai Vichar Today,Hindi,Newspaper,2007
+T01447,Mumbai Vichar Weekly,Punjabi,Magazine,2000
+T01448,Nagar Awaaz,Malayalam,Journal,2000
+T01449,Nagar Awaaz Bulletin,Tamil,Bulletin,2006
+T01450,Nagar Awaaz Daily,Marathi,Periodical,2022
+T01451,Nagar Awaaz Journal,Marathi,Periodical,2001
+T01452,Nagar Awaaz Live,English,Magazine,2018
+T01453,Nagar Awaaz Monthly,Marathi,Newspaper,2016
+T01454,Nagar Awaaz Report,Tamil,Newspaper,2011
+T01455,Nagar Awaaz Today,Urdu,Journal,2018
+T01456,Nagar Awaaz Update,Hindi,Periodical,2009
+T01457,Nagar Awaaz Weekly,Tamil,Magazine,2005
+T01458,Nagar Bhaskar,Telugu,Digest,2015
+T01459,Nagar Bhaskar Bulletin,Urdu,Periodical,2005
+T01460,Nagar Bhaskar Daily,Malayalam,Digest,2019
+T01461,Nagar Bhaskar Journal,Tamil,Magazine,2021
+T01462,Nagar Bhaskar Live,Punjabi,Magazine,2012
+T01463,Nagar Bhaskar Monthly,Bengali,Digest,2022
+T01464,Nagar Bhaskar Report,Bengali,Magazine,2005
+T01465,Nagar Bhaskar Today,English,Digest,2018
+T01466,Nagar Bhaskar Update,Telugu,Bulletin,2001
+T01467,Nagar Bhaskar Weekly,Marathi,Bulletin,2010
+T01468,Nagar Dainik Namaskar,Punjabi,Magazine,2020
+T01469,Nagar Dainik Namaskar Bulletin,Punjabi,Newspaper,2015
+T01470,Nagar Dainik Namaskar Daily,Marathi,Periodical,2023
+T01471,Nagar Dainik Namaskar Journal,Hindi,Magazine,2011
+T01472,Nagar Dainik Namaskar Live,Tamil,Magazine,2020
+T01473,Nagar Dainik Namaskar Monthly,Hindi,Digest,2021
+T01474,Nagar Dainik Namaskar Report,Urdu,Digest,2010
+T01475,Nagar Dainik Namaskar Today,Kannada,Newspaper,2008
+T01476,Nagar Dainik Namaskar Update,Gujarati,Magazine,2022
+T01477,Nagar Dainik Namaskar Weekly,Hindi,Periodical,2008
+T01478,Nagar Darpan,Hindi,Digest,2000
+T01479,Nagar Darpan Bulletin,English,Journal,2014
+T01480,Nagar Darpan Daily,Telugu,Magazine,2013
+T01481,Nagar Darpan Journal,Kannada,Journal,2011
+T01482,Nagar Darpan Live,Malayalam,Journal,2003
+T01483,Nagar Darpan Monthly,Kannada,Bulletin,2020
+T01484,Nagar Darpan Report,Urdu,Magazine,2005
+T01485,Nagar Darpan Today,Kannada,Newspaper,2001
+T01486,Nagar Darpan Update,Bengali,Newspaper,2010
+T01487,Nagar Darpan Weekly,Bengali,Newspaper,2002
+T01488,Nagar Express,Tamil,Magazine,2012
+T01489,Nagar Express Bulletin,Marathi,Digest,2002
+T01490,Nagar Express Daily,Malayalam,Newspaper,2010
+T01491,Nagar Express Journal,Punjabi,Bulletin,2015
+T01492,Nagar Express Live,English,Journal,2020
+T01493,Nagar Express Monthly,Marathi,Bulletin,2013
+T01494,Nagar Express Report,Marathi,Newspaper,2003
+T01495,Nagar Express Today,Tamil,Magazine,2006
+T01496,Nagar Express Update,Telugu,Digest,2017
+T01497,Nagar Express Weekly,Malayalam,Periodical,2021
+T01498,Nagar Herald,Bengali,Periodical,2007
+T01499,Nagar Herald Bulletin,Hindi,Newspaper,2012
+T01500,Nagar Herald Daily,Punjabi,Bulletin,2015
+T01501,Nagar Herald Journal,Marathi,Newspaper,2011
+T01502,Nagar Herald Live,English,Journal,2002
+T01503,Nagar Herald Monthly,Bengali,Digest,2020
+T01504,Nagar Herald Report,Punjabi,Journal,2006
+T01505,Nagar Herald Today,Hindi,Newspaper,2006
+T01506,Nagar Herald Update,Marathi,Digest,2009
+T01507,Nagar Herald Weekly,Hindi,Journal,2003
+T01508,Nagar Indian Express,Bengali,Journal,2015
+T01509,Nagar Indian Express Bulletin,Kannada,Digest,2008
+T01510,Nagar Indian Express Daily,Hindi,Digest,2017
+T01511,Nagar Indian Express Journal,Telugu,Magazine,2011
+T01512,Nagar Indian Express Live,Telugu,Periodical,2005
+T01513,Nagar Indian Express Monthly,Kannada,Newspaper,2008
+T01514,Nagar Indian Express Report,Kannada,Journal,2008
+T01515,Nagar Indian Express Today,Gujarati,Periodical,2018
+T01516,Nagar Indian Express Update,English,Magazine,2024
+T01517,Nagar Indian Express Weekly,Urdu,Newspaper,2002
+T01518,Nagar Jagran,Urdu,Periodical,2017
+T01519,Nagar Jagran Bulletin,Telugu,Bulletin,2007
+T01520,Nagar Jagran Daily,Malayalam,Newspaper,2012
+T01521,Nagar Jagran Journal,Malayalam,Journal,2017
+T01522,Nagar Jagran Live,Urdu,Journal,2018
+T01523,Nagar Jagran Monthly,Gujarati,Journal,2009
+T01524,Nagar Jagran Report,Hindi,Journal,2022
+T01525,Nagar Jagran Today,English,Bulletin,2018
+T01526,Nagar Jagran Update,Malayalam,Bulletin,2021
+T01527,Nagar Jagran Weekly,Punjabi,Magazine,2003
+T01528,Nagar Kesari,Kannada,Magazine,2005
+T01529,Nagar Kesari Bulletin,Gujarati,Magazine,2004
+T01530,Nagar Kesari Daily,English,Journal,2002
+T01531,Nagar Kesari Journal,Urdu,Journal,2006
+T01532,Nagar Kesari Live,Urdu,Magazine,2019
+T01533,Nagar Kesari Monthly,Bengali,Periodical,2023
+T01534,Nagar Kesari Report,Hindi,Newspaper,2012
+T01535,Nagar Kesari Today,Malayalam,Journal,2017
+T01536,Nagar Kesari Update,Tamil,Periodical,2016
+T01537,Nagar Kesari Weekly,Kannada,Newspaper,2022
+T01538,Nagar News,Punjabi,Bulletin,2016
+T01539,Nagar News Bulletin,Telugu,Newspaper,2013
+T01540,Nagar News Daily,Marathi,Magazine,2018
+T01541,Nagar News Journal,Punjabi,Bulletin,2024
+T01542,Nagar News Live,Hindi,Newspaper,2018
+T01543,Nagar News Monthly,Hindi,Periodical,2017
+T01544,Nagar News Report,Tamil,Journal,2008
+T01545,Nagar News Today,Telugu,Digest,2015
+T01546,Nagar News Update,Punjabi,Bulletin,2015
+T01547,Nagar News Weekly,English,Magazine,2008
+T01548,Nagar Patrika,Telugu,Magazine,2019
+T01549,Nagar Patrika Bulletin,Punjabi,Digest,2022
+T01550,Nagar Patrika Daily,Telugu,Newspaper,2012
+T01551,Nagar Patrika Journal,Tamil,Digest,2007
+T01552,Nagar Patrika Live,English,Digest,2015
+T01553,Nagar Patrika Monthly,Bengali,Periodical,2000
+T01554,Nagar Patrika Report,Tamil,Periodical,2009
+T01555,Nagar Patrika Today,Bengali,Journal,2022
+T01556,Nagar Patrika Update,Urdu,Newspaper,2007
+T01557,Nagar Patrika Weekly,Marathi,Periodical,2023
+T01558,Nagar Post,Kannada,Periodical,2008
+T01559,Nagar Post Bulletin,Telugu,Bulletin,2020
+T01560,Nagar Post Daily,Hindi,Magazine,2014
+T01561,Nagar Post Journal,Gujarati,Journal,2023
+T01562,Nagar Post Live,Kannada,Bulletin,2011
+T01563,Nagar Post Monthly,English,Bulletin,2005
+T01564,Nagar Post Report,Hindi,Periodical,2022
+T01565,Nagar Post Today,Malayalam,Journal,2004
+T01566,Nagar Post Update,Malayalam,Bulletin,2000
+T01567,Nagar Post Weekly,Marathi,Magazine,2006
+T01568,Nagar Prabhat,English,Magazine,2001
+T01569,Nagar Prabhat Bulletin,Kannada,Newspaper,2011
+T01570,Nagar Prabhat Daily,Gujarati,Periodical,2011
+T01571,Nagar Prabhat Journal,Kannada,Bulletin,2012
+T01572,Nagar Prabhat Live,Urdu,Newspaper,2021
+T01573,Nagar Prabhat Monthly,English,Magazine,2011
+T01574,Nagar Prabhat Report,Kannada,Bulletin,2014
+T01575,Nagar Prabhat Today,Marathi,Journal,2018
+T01576,Nagar Prabhat Update,Malayalam,Periodical,2011
+T01577,Nagar Prabhat Weekly,Marathi,Periodical,2023
+T01578,Nagar Prakash,Hindi,Periodical,2000
+T01579,Nagar Prakash Bulletin,Telugu,Newspaper,2005
+T01580,Nagar Prakash Daily,Punjabi,Magazine,2007
+T01581,Nagar Prakash Journal,Urdu,Magazine,2021
+T01582,Nagar Prakash Live,Gujarati,Periodical,2020
+T01583,Nagar Prakash Monthly,Telugu,Bulletin,2000
+T01584,Nagar Prakash Report,Urdu,Newspaper,2015
+T01585,Nagar Prakash Today,Marathi,Digest,2005
+T01586,Nagar Prakash Update,Punjabi,Newspaper,2007
+T01587,Nagar Prakash Weekly,Bengali,Bulletin,2009
+T01588,Nagar Pratidin Sandhya,Urdu,Periodical,2013
+T01589,Nagar Pratidin Sandhya Bulletin,Telugu,Periodical,2014
+T01590,Nagar Pratidin Sandhya Daily,Bengali,Magazine,2014
+T01591,Nagar Pratidin Sandhya Journal,Bengali,Digest,2016
+T01592,Nagar Pratidin Sandhya Live,Punjabi,Journal,2018
+T01593,Nagar Pratidin Sandhya Monthly,Hindi,Newspaper,2016
+T01594,Nagar Pratidin Sandhya Report,Urdu,Periodical,2017
+T01595,Nagar Pratidin Sandhya Today,Urdu,Bulletin,2019
+T01596,Nagar Pratidin Sandhya Update,Bengali,Periodical,2021
+T01597,Nagar Pratidin Sandhya Weekly,Hindi,Journal,2002
+T01598,Nagar Samachar,Tamil,Periodical,2020
+T01599,Nagar Samachar Bulletin,Tamil,Periodical,2008
+T01600,Nagar Samachar Daily,Urdu,Digest,2020
+T01601,Nagar Samachar Journal,Bengali,Magazine,2004
+T01602,Nagar Samachar Live,Malayalam,Magazine,2001
+T01603,Nagar Samachar Monthly,Punjabi,Journal,2021
+T01604,Nagar Samachar Report,Tamil,Digest,2004
+T01605,Nagar Samachar Today,English,Digest,2015
+T01606,Nagar Samachar Update,Bengali,Periodical,2013
+T01607,Nagar Samachar Weekly,Telugu,Journal,2023
+T01608,Nagar Sandesh,English,Bulletin,2022
+T01609,Nagar Sandesh Bulletin,Punjabi,Magazine,2010
+T01610,Nagar Sandesh Daily,Gujarati,Digest,2017
+T01611,Nagar Sandesh Journal,Urdu,Journal,2021
+T01612,Nagar Sandesh Live,Tamil,Bulletin,2009
+T01613,Nagar Sandesh Monthly,Marathi,Digest,2017
+T01614,Nagar Sandesh Report,Marathi,Periodical,2003
+T01615,Nagar Sandesh Today,Kannada,Magazine,2023
+T01616,Nagar Sandesh Update,Bengali,Digest,2017
+T01617,Nagar Sandesh Weekly,Marathi,Digest,2010
+T01618,Nagar Sandhya,Urdu,Newspaper,2007
+T01619,Nagar Sandhya Bulletin,Tamil,Magazine,2023
+T01620,Nagar Sandhya Daily,Bengali,Journal,2010
+T01621,Nagar Sandhya Journal,Tamil,Periodical,2018
+T01622,Nagar Sandhya Live,Bengali,Journal,2003
+T01623,Nagar Sandhya Monthly,Kannada,Newspaper,2020
+T01624,Nagar Sandhya Report,Punjabi,Bulletin,2019
+T01625,Nagar Sandhya Today,Hindi,Journal,2006
+T01626,Nagar Sandhya Update,Malayalam,Newspaper,2021
+T01627,Nagar Sandhya Weekly,Telugu,Bulletin,2009
+T01628,Nagar The Hindu,Telugu,Newspaper,2004
+T01629,Nagar The Hindu Bulletin,Marathi,Magazine,2010
+T01630,Nagar The Hindu Daily,Telugu,Bulletin,2014
+T01631,Nagar The Hindu Journal,Marathi,Periodical,2022
+T01632,Nagar The Hindu Live,Marathi,Newspaper,2015
+T01633,Nagar The Hindu Monthly,Tamil,Digest,2005
+T01634,Nagar The Hindu Report,Tamil,Digest,2001
+T01635,Nagar The Hindu Today,English,Journal,2008
+T01636,Nagar The Hindu Update,Gujarati,Magazine,2018
+T01637,Nagar The Hindu Weekly,Marathi,Journal,2024
+T01638,Nagar Times,Hindi,Magazine,2019
+T01639,Nagar Times Bulletin,Telugu,Digest,2013
+T01640,Nagar Times Daily,Telugu,Journal,2015
+T01641,Nagar Times Journal,Telugu,Newspaper,2001
+T01642,Nagar Times Live,Malayalam,Magazine,2023
+T01643,Nagar Times Monthly,Tamil,Newspaper,2010
+T01644,Nagar Times Report,Malayalam,Magazine,2000
+T01645,Nagar Times Today,Urdu,Newspaper,2020
+T01646,Nagar Times Update,Gujarati,Magazine,2022
+T01647,Nagar Times Weekly,Tamil,Periodical,2004
+T01648,Nagar Tribune,Hindi,Journal,2016
+T01649,Nagar Tribune Bulletin,Punjabi,Periodical,2005
+T01650,Nagar Tribune Daily,Hindi,Newspaper,2009
+T01651,Nagar Tribune Journal,Bengali,Journal,2023
+T01652,Nagar Tribune Live,Malayalam,Bulletin,2016
+T01653,Nagar Tribune Monthly,Tamil,Journal,2021
+T01654,Nagar Tribune Report,Marathi,Periodical,2015
+T01655,Nagar Tribune Today,Tamil,Magazine,2005
+T01656,Nagar Tribune Update,Telugu,Newspaper,2007
+T01657,Nagar Tribune Weekly,Gujarati,Digest,2004
+T01658,Nagar Vartha,Gujarati,Digest,2000
+T01659,Nagar Vartha Bulletin,Punjabi,Bulletin,2005
+T01660,Nagar Vartha Daily,Hindi,Periodical,2022
+T01661,Nagar Vartha Journal,Urdu,Newspaper,2012
+T01662,Nagar Vartha Live,Urdu,Periodical,2024
+T01663,Nagar Vartha Monthly,Malayalam,Bulletin,2001
+T01664,Nagar Vartha Report,Punjabi,Newspaper,2021
+T01665,Nagar Vartha Today,Hindi,Digest,2000
+T01666,Nagar Vartha Update,English,Digest,2003
+T01667,Nagar Vartha Weekly,Telugu,Journal,2012
+T01668,Nagar Vichar,Hindi,Bulletin,2008
+T01669,Nagar Vichar Bulletin,Kannada,Digest,2004
+T01670,Nagar Vichar Daily,Gujarati,Digest,2021
+T01671,Nagar Vichar Journal,Urdu,Newspaper,2009
+T01672,Nagar Vichar Live,Telugu,Digest,2003
+T01673,Nagar Vichar Monthly,Urdu,Bulletin,2008
+T01674,Nagar Vichar Report,Punjabi,Bulletin,2022
+T01675,Nagar Vichar Today,Marathi,Journal,2003
+T01676,Nagar Vichar Update,Malayalam,Digest,2019
+T01677,Nagar Vichar Weekly,Hindi,Periodical,2003
+T01678,National Awaaz,Hindi,Journal,2006
+T01679,National Awaaz Bulletin,Punjabi,Magazine,2024
+T01680,National Awaaz Daily,Bengali,Bulletin,2006
+T01681,National Awaaz Journal,Tamil,Digest,2013
+T01682,National Awaaz Live,Bengali,Magazine,2001
+T01683,National Awaaz Monthly,Malayalam,Journal,2006
+T01684,National Awaaz Report,Kannada,Periodical,2007
+T01685,National Awaaz Today,English,Newspaper,2021
+T01686,National Awaaz Update,Hindi,Newspaper,2018
+T01687,National Awaaz Weekly,Urdu,Journal,2004
+T01688,National Bhaskar,Hindi,Bulletin,2002
+T01689,National Bhaskar Bulletin,Hindi,Periodical,2020
+T01690,National Bhaskar Daily,Gujarati,Journal,2009
+T01691,National Bhaskar Journal,Bengali,Journal,2001
+T01692,National Bhaskar Live,Hindi,Magazine,2001
+T01693,National Bhaskar Monthly,Bengali,Periodical,2021
+T01694,National Bhaskar Report,Tamil,Journal,2023
+T01695,National Bhaskar Today,Hindi,Newspaper,2024
+T01696,National Bhaskar Update,English,Newspaper,2004
+T01697,National Bhaskar Weekly,Urdu,Digest,2005
+T01698,National Dainik Namaskar,Tamil,Periodical,2014
+T01699,National Dainik Namaskar Bulletin,Punjabi,Periodical,2023
+T01700,National Dainik Namaskar Daily,Hindi,Periodical,2010
+T01701,National Dainik Namaskar Journal,Marathi,Newspaper,2012
+T01702,National Dainik Namaskar Live,Telugu,Journal,2008
+T01703,National Dainik Namaskar Monthly,Telugu,Digest,2015
+T01704,National Dainik Namaskar Report,Telugu,Digest,2005
+T01705,National Dainik Namaskar Today,Hindi,Magazine,2022
+T01706,National Dainik Namaskar Update,English,Magazine,2003
+T01707,National Dainik Namaskar Weekly,Telugu,Bulletin,2015
+T01708,National Darpan,Punjabi,Digest,2014
+T01709,National Darpan Bulletin,Marathi,Bulletin,2012
+T01710,National Darpan Daily,Tamil,Bulletin,2000
+T01711,National Darpan Journal,Urdu,Digest,2004
+T01712,National Darpan Live,Kannada,Journal,2003
+T01713,National Darpan Monthly,Telugu,Journal,2001
+T01714,National Darpan Report,Hindi,Periodical,2020
+T01715,National Darpan Today,Tamil,Newspaper,2022
+T01716,National Darpan Update,Urdu,Bulletin,2024
+T01717,National Darpan Weekly,Punjabi,Digest,2018
+T01718,National Express,Gujarati,Digest,2010
+T01719,National Express Bulletin,Malayalam,Bulletin,2022
+T01720,National Express Daily,Punjabi,Newspaper,2013
+T01721,National Express Journal,Urdu,Digest,2007
+T01722,National Express Live,Kannada,Periodical,2021
+T01723,National Express Monthly,Urdu,Digest,2012
+T01724,National Express Report,Marathi,Bulletin,2019
+T01725,National Express Today,English,Newspaper,2020
+T01726,National Express Update,Marathi,Bulletin,2015
+T01727,National Express Weekly,Kannada,Magazine,2002
+T01728,National Herald,Kannada,Periodical,2007
+T01729,National Herald Bulletin,Tamil,Periodical,2001
+T01730,National Herald Daily,Malayalam,Magazine,2017
+T01731,National Herald Journal,Urdu,Journal,2012
+T01732,National Herald Live,Gujarati,Newspaper,2014
+T01733,National Herald Monthly,Kannada,Bulletin,2014
+T01734,National Herald Report,Hindi,Journal,2014
+T01735,National Herald Today,Tamil,Newspaper,2015
+T01736,National Herald Update,Urdu,Newspaper,2003
+T01737,National Herald Weekly,Telugu,Journal,2001
+T01738,National Indian Express,Malayalam,Bulletin,2000
+T01739,National Indian Express Bulletin,Hindi,Bulletin,2019
+T01740,National Indian Express Daily,Urdu,Periodical,2016
+T01741,National Indian Express Journal,Malayalam,Magazine,2020
+T01742,National Indian Express Live,Urdu,Journal,2010
+T01743,National Indian Express Monthly,Tamil,Newspaper,2007
+T01744,National Indian Express Report,Kannada,Periodical,2017
+T01745,National Indian Express Today,Punjabi,Bulletin,2015
+T01746,National Indian Express Update,Urdu,Periodical,2022
+T01747,National Indian Express Weekly,Kannada,Newspaper,2003
+T01748,National Jagran,Urdu,Magazine,2000
+T01749,National Jagran Bulletin,Tamil,Periodical,2020
+T01750,National Jagran Daily,Bengali,Bulletin,2016
+T01751,National Jagran Journal,Tamil,Digest,2003
+T01752,National Jagran Live,English,Magazine,2015
+T01753,National Jagran Monthly,Marathi,Digest,2023
+T01754,National Jagran Report,Telugu,Newspaper,2008
+T01755,National Jagran Today,Punjabi,Magazine,2006
+T01756,National Jagran Update,Hindi,Journal,2006
+T01757,National Jagran Weekly,Kannada,Magazine,2022
+T01758,National Kesari,Tamil,Newspaper,2024
+T01759,National Kesari Bulletin,Telugu,Newspaper,2020
+T01760,National Kesari Daily,Urdu,Bulletin,2003
+T01761,National Kesari Journal,Kannada,Journal,2021
+T01762,National Kesari Live,Punjabi,Bulletin,2004
+T01763,National Kesari Monthly,Kannada,Newspaper,2016
+T01764,National Kesari Report,English,Bulletin,2013
+T01765,National Kesari Today,Punjabi,Journal,2016
+T01766,National Kesari Update,Marathi,Digest,2018
+T01767,National Kesari Weekly,Marathi,Digest,2004
+T01768,National News,Hindi,Journal,2021
+T01769,National News Bulletin,Punjabi,Bulletin,2010
+T01770,National News Daily,Malayalam,Journal,2013
+T01771,National News Journal,Punjabi,Digest,2024
+T01772,National News Live,Gujarati,Periodical,2012
+T01773,National News Monthly,Tamil,Periodical,2014
+T01774,National News Report,Marathi,Magazine,2013
+T01775,National News Today,Punjabi,Digest,2023
+T01776,National News Update,Malayalam,Periodical,2022
+T01777,National News Weekly,Malayalam,Periodical,2022
+T01778,National Patrika,Malayalam,Digest,2006
+T01779,National Patrika Bulletin,Gujarati,Magazine,2019
+T01780,National Patrika Daily,Bengali,Digest,2011
+T01781,National Patrika Journal,Urdu,Magazine,2022
+T01782,National Patrika Live,Urdu,Magazine,2016
+T01783,National Patrika Monthly,Malayalam,Digest,2020
+T01784,National Patrika Report,Tamil,Digest,2003
+T01785,National Patrika Today,Tamil,Bulletin,2015
+T01786,National Patrika Update,Punjabi,Bulletin,2021
+T01787,National Patrika Weekly,Telugu,Digest,2023
+T01788,National Post,Malayalam,Periodical,2013
+T01789,National Post Bulletin,English,Bulletin,2003
+T01790,National Post Daily,English,Journal,2004
+T01791,National Post Journal,English,Digest,2001
+T01792,National Post Live,Gujarati,Periodical,2024
+T01793,National Post Monthly,Marathi,Periodical,2021
+T01794,National Post Report,Bengali,Magazine,2001
+T01795,National Post Today,Bengali,Magazine,2024
+T01796,National Post Update,Malayalam,Newspaper,2011
+T01797,National Post Weekly,Kannada,Newspaper,2019
+T01798,National Prabhat,Urdu,Digest,2017
+T01799,National Prabhat Bulletin,Gujarati,Digest,2020
+T01800,National Prabhat Daily,Malayalam,Journal,2007
+T01801,National Prabhat Journal,Malayalam,Digest,2009
+T01802,National Prabhat Live,Urdu,Newspaper,2012
+T01803,National Prabhat Monthly,Telugu,Journal,2021
+T01804,National Prabhat Report,Tamil,Bulletin,2001
+T01805,National Prabhat Today,English,Digest,2008
+T01806,National Prabhat Update,Gujarati,Bulletin,2024
+T01807,National Prabhat Weekly,Kannada,Magazine,2020
+T01808,National Prakash,Urdu,Periodical,2024
+T01809,National Prakash Bulletin,Punjabi,Bulletin,2023
+T01810,National Prakash Daily,Punjabi,Magazine,2024
+T01811,National Prakash Journal,Gujarati,Periodical,2014
+T01812,National Prakash Live,Marathi,Digest,2002
+T01813,National Prakash Monthly,Marathi,Magazine,2023
+T01814,National Prakash Report,Malayalam,Newspaper,2012
+T01815,National Prakash Today,English,Journal,2008
+T01816,National Prakash Update,Malayalam,Periodical,2004
+T01817,National Prakash Weekly,Marathi,Bulletin,2008
+T01818,National Pratidin Sandhya,English,Periodical,2014
+T01819,National Pratidin Sandhya Bulletin,Marathi,Newspaper,2004
+T01820,National Pratidin Sandhya Daily,Tamil,Bulletin,2001
+T01821,National Pratidin Sandhya Journal,Urdu,Bulletin,2021
+T01822,National Pratidin Sandhya Live,Bengali,Journal,2018
+T01823,National Pratidin Sandhya Monthly,Malayalam,Periodical,2002
+T01824,National Pratidin Sandhya Report,Tamil,Bulletin,2007
+T01825,National Pratidin Sandhya Today,Marathi,Bulletin,2002
+T01826,National Pratidin Sandhya Update,Malayalam,Magazine,2013
+T01827,National Pratidin Sandhya Weekly,Malayalam,Bulletin,2012
+T01828,National Samachar,Hindi,Periodical,2007
+T01829,National Samachar Bulletin,Gujarati,Digest,2010
+T01830,National Samachar Daily,Tamil,Periodical,2009
+T01831,National Samachar Journal,Gujarati,Bulletin,2016
+T01832,National Samachar Live,Kannada,Bulletin,2024
+T01833,National Samachar Monthly,Urdu,Newspaper,2003
+T01834,National Samachar Report,Urdu,Periodical,2014
+T01835,National Samachar Today,Gujarati,Digest,2019
+T01836,National Samachar Update,Punjabi,Magazine,2001
+T01837,National Samachar Weekly,Urdu,Periodical,2012
+T01838,National Sandesh,Hindi,Journal,2008
+T01839,National Sandesh Bulletin,Malayalam,Digest,2009
+T01840,National Sandesh Daily,English,Bulletin,2024
+T01841,National Sandesh Journal,Tamil,Bulletin,2016
+T01842,National Sandesh Live,Kannada,Journal,2001
+T01843,National Sandesh Monthly,Bengali,Digest,2006
+T01844,National Sandesh Report,Tamil,Bulletin,2002
+T01845,National Sandesh Today,Hindi,Magazine,2024
+T01846,National Sandesh Update,Malayalam,Bulletin,2000
+T01847,National Sandesh Weekly,Urdu,Newspaper,2006
+T01848,National Sandhya,Urdu,Digest,2024
+T01849,National Sandhya Bulletin,Gujarati,Digest,2013
+T01850,National Sandhya Daily,Hindi,Magazine,2017
+T01851,National Sandhya Journal,Telugu,Digest,2002
+T01852,National Sandhya Live,Urdu,Magazine,2000
+T01853,National Sandhya Monthly,Kannada,Digest,2010
+T01854,National Sandhya Report,English,Newspaper,2002
+T01855,National Sandhya Today,English,Magazine,2008
+T01856,National Sandhya Update,Malayalam,Newspaper,2018
+T01857,National Sandhya Weekly,Gujarati,Periodical,2013
+T01858,National The Hindu,Telugu,Journal,2020
+T01859,National The Hindu Bulletin,Telugu,Journal,2010
+T01860,National The Hindu Daily,English,Journal,2021
+T01861,National The Hindu Journal,Hindi,Bulletin,2000
+T01862,National The Hindu Live,Urdu,Digest,2019
+T01863,National The Hindu Monthly,Hindi,Digest,2018
+T01864,National The Hindu Report,English,Digest,2002
+T01865,National The Hindu Today,Tamil,Bulletin,2003
+T01866,National The Hindu Update,Bengali,Digest,2009
+T01867,National The Hindu Weekly,Punjabi,Newspaper,2009
+T01868,National Times,Kannada,Journal,2012
+T01869,National Times Bulletin,Urdu,Newspaper,2015
+T01870,National Times Daily,Marathi,Bulletin,2007
+T01871,National Times Journal,Marathi,Digest,2012
+T01872,National Times Live,Malayalam,Periodical,2020
+T01873,National Times Monthly,Marathi,Periodical,2021
+T01874,National Times Report,Urdu,Periodical,2000
+T01875,National Times Today,Malayalam,Bulletin,2004
+T01876,National Times Update,Hindi,Newspaper,2000
+T01877,National Times Weekly,Punjabi,Bulletin,2012
+T01878,National Tribune,Malayalam,Bulletin,2002
+T01879,National Tribune Bulletin,Bengali,Magazine,2023
+T01880,National Tribune Daily,Tamil,Magazine,2013
+T01881,National Tribune Journal,Urdu,Bulletin,2004
+T01882,National Tribune Live,Marathi,Magazine,2007
+T01883,National Tribune Monthly,Punjabi,Periodical,2006
+T01884,National Tribune Report,Hindi,Magazine,2021
+T01885,National Tribune Today,Punjabi,Newspaper,2024
+T01886,National Tribune Update,Malayalam,Journal,2020
+T01887,National Tribune Weekly,Malayalam,Newspaper,2009
+T01888,National Vartha,Urdu,Newspaper,2008
+T01889,National Vartha Bulletin,Hindi,Magazine,2023
+T01890,National Vartha Daily,Punjabi,Journal,2010
+T01891,National Vartha Journal,Tamil,Magazine,2021
+T01892,National Vartha Live,Urdu,Magazine,2003
+T01893,National Vartha Monthly,Bengali,Bulletin,2002
+T01894,National Vartha Report,Gujarati,Periodical,2015
+T01895,National Vartha Today,Kannada,Periodical,2019
+T01896,National Vartha Update,Urdu,Periodical,2022
+T01897,National Vartha Weekly,Punjabi,Magazine,2018
+T01898,National Vichar,Punjabi,Periodical,2010
+T01899,National Vichar Bulletin,Telugu,Magazine,2000
+T01900,National Vichar Daily,Tamil,Magazine,2007
+T01901,National Vichar Journal,Urdu,Journal,2008
+T01902,National Vichar Live,Tamil,Magazine,2021
+T01903,National Vichar Monthly,Tamil,Journal,2014
+T01904,National Vichar Report,Kannada,Periodical,2024
+T01905,National Vichar Today,Bengali,Journal,2017
+T01906,National Vichar Update,Hindi,Magazine,2020
+T01907,National Vichar Weekly,Punjabi,Newspaper,2008
+T01908,Navbharat,Marathi,Bulletin,2006
+T01909,New Awaaz,Bengali,Digest,2020
+T01910,New Awaaz Bulletin,Hindi,Digest,2002
+T01911,New Awaaz Daily,English,Bulletin,2020
+T01912,New Awaaz Journal,English,Bulletin,2018
+T01913,New Awaaz Live,Telugu,Bulletin,2006
+T01914,New Awaaz Monthly,English,Bulletin,2008
+T01915,New Awaaz Report,Malayalam,Bulletin,2015
+T01916,New Awaaz Today,Urdu,Magazine,2011
+T01917,New Awaaz Update,Telugu,Magazine,2024
+T01918,New Awaaz Weekly,Punjabi,Digest,2009
+T01919,New Bhaskar,Marathi,Journal,2016
+T01920,New Bhaskar Bulletin,Malayalam,Newspaper,2012
+T01921,New Bhaskar Daily,Tamil,Bulletin,2000
+T01922,New Bhaskar Journal,Urdu,Magazine,2019
+T01923,New Bhaskar Live,Urdu,Magazine,2024
+T01924,New Bhaskar Monthly,Malayalam,Magazine,2014
+T01925,New Bhaskar Report,Marathi,Magazine,2018
+T01926,New Bhaskar Today,Punjabi,Digest,2004
+T01927,New Bhaskar Update,Kannada,Periodical,2001
+T01928,New Bhaskar Weekly,Gujarati,Journal,2007
+T01929,New Dainik Namaskar,Hindi,Periodical,2011
+T01930,New Dainik Namaskar Bulletin,Gujarati,Newspaper,2021
+T01931,New Dainik Namaskar Daily,Gujarati,Bulletin,2011
+T01932,New Dainik Namaskar Journal,Telugu,Journal,2014
+T01933,New Dainik Namaskar Live,English,Newspaper,2020
+T01934,New Dainik Namaskar Monthly,Tamil,Newspaper,2022
+T01935,New Dainik Namaskar Report,Malayalam,Digest,2008
+T01936,New Dainik Namaskar Today,Bengali,Bulletin,2017
+T01937,New Dainik Namaskar Update,Punjabi,Magazine,2012
+T01938,New Dainik Namaskar Weekly,Urdu,Journal,2011
+T01939,New Darpan,Punjabi,Digest,2002
+T01940,New Darpan Bulletin,Malayalam,Periodical,2012
+T01941,New Darpan Daily,Gujarati,Bulletin,2012
+T01942,New Darpan Journal,Tamil,Periodical,2015
+T01943,New Darpan Live,Kannada,Bulletin,2000
+T01944,New Darpan Monthly,Malayalam,Magazine,2014
+T01945,New Darpan Report,Marathi,Magazine,2002
+T01946,New Darpan Today,Malayalam,Digest,2008
+T01947,New Darpan Update,Gujarati,Magazine,2005
+T01948,New Darpan Weekly,Marathi,Periodical,2019
+T01949,New Express,Hindi,Digest,2007
+T01950,New Express Bulletin,Telugu,Periodical,2023
+T01951,New Express Daily,Hindi,Journal,2021
+T01952,New Express Journal,Kannada,Journal,2006
+T01953,New Express Live,Punjabi,Magazine,2020
+T01954,New Express Monthly,Telugu,Newspaper,2007
+T01955,New Express Report,English,Magazine,2018
+T01956,New Express Today,Punjabi,Magazine,2004
+T01957,New Express Update,Urdu,Bulletin,2001
+T01958,New Express Weekly,Punjabi,Magazine,2001
+T01959,New Herald,Marathi,Periodical,2005
+T01960,New Herald Bulletin,Malayalam,Journal,2019
+T01961,New Herald Daily,Punjabi,Digest,2000
+T01962,New Herald Journal,Urdu,Periodical,2002
+T01963,New Herald Live,Gujarati,Journal,2019
+T01964,New Herald Monthly,Kannada,Journal,2005
+T01965,New Herald Report,Gujarati,Journal,2019
+T01966,New Herald Today,Marathi,Bulletin,2024
+T01967,New Herald Update,Marathi,Bulletin,2021
+T01968,New Herald Weekly,Malayalam,Periodical,2005
+T01969,New Indian Express,Urdu,Periodical,2014
+T01970,New Indian Express Bulletin,Punjabi,Bulletin,2002
+T01971,New Indian Express Daily,Gujarati,Journal,2012
+T01972,New Indian Express Journal,Marathi,Newspaper,2000
+T01973,New Indian Express Live,Gujarati,Bulletin,2016
+T01974,New Indian Express Monthly,Urdu,Journal,2004
+T01975,New Indian Express Report,Punjabi,Newspaper,2005
+T01976,New Indian Express Today,Kannada,Bulletin,2019
+T01977,New Indian Express Update,English,Bulletin,2016
+T01978,New Indian Express Weekly,Hindi,Newspaper,2015
+T01979,New Jagran,Urdu,Magazine,2019
+T01980,New Jagran Bulletin,Malayalam,Newspaper,2024
+T01981,New Jagran Daily,Urdu,Digest,2013
+T01982,New Jagran Journal,Malayalam,Journal,2011
+T01983,New Jagran Live,English,Digest,2016
+T01984,New Jagran Monthly,Telugu,Magazine,2015
+T01985,New Jagran Report,Telugu,Periodical,2018
+T01986,New Jagran Today,Punjabi,Newspaper,2013
+T01987,New Jagran Update,Marathi,Periodical,2015
+T01988,New Jagran Weekly,Gujarati,Newspaper,2009
+T01989,New Kesari,Punjabi,Bulletin,2013
+T01990,New Kesari Bulletin,Bengali,Magazine,2000
+T01991,New Kesari Daily,English,Bulletin,2016
+T01992,New Kesari Journal,Hindi,Bulletin,2000
+T01993,New Kesari Live,Telugu,Digest,2006
+T01994,New Kesari Monthly,Tamil,Journal,2011
+T01995,New Kesari Report,Hindi,Magazine,2013
+T01996,New Kesari Today,Urdu,Bulletin,2008
+T01997,New Kesari Update,Bengali,Bulletin,2013
+T01998,New Kesari Weekly,Punjabi,Periodical,2019
+T01999,New News,Bengali,Digest,2012
+T02000,New News Bulletin,Gujarati,Journal,2017
+T02001,New News Daily,Malayalam,Journal,2005
+T02002,New News Journal,Tamil,Bulletin,2017
+T02003,New News Live,Kannada,Periodical,2009
+T02004,New News Monthly,Punjabi,Periodical,2024
+T02005,New News Report,Telugu,Digest,2004
+T02006,New News Today,Urdu,Newspaper,2023
+T02007,New News Update,Gujarati,Journal,2022
+T02008,New News Weekly,Marathi,Newspaper,2006
+T02009,New Patrika,Malayalam,Journal,2010
+T02010,New Patrika Bulletin,Malayalam,Bulletin,2022
+T02011,New Patrika Daily,Urdu,Digest,2001
+T02012,New Patrika Journal,Marathi,Journal,2020
+T02013,New Patrika Live,English,Newspaper,2004
+T02014,New Patrika Monthly,Kannada,Bulletin,2013
+T02015,New Patrika Report,Hindi,Newspaper,2008
+T02016,New Patrika Today,Gujarati,Periodical,2002
+T02017,New Patrika Update,Punjabi,Newspaper,2023
+T02018,New Patrika Weekly,Telugu,Journal,2019
+T02019,New Post,Urdu,Bulletin,2009
+T02020,New Post Bulletin,Punjabi,Newspaper,2024
+T02021,New Post Daily,Marathi,Digest,2015
+T02022,New Post Journal,Kannada,Newspaper,2006
+T02023,New Post Live,Urdu,Bulletin,2009
+T02024,New Post Monthly,Gujarati,Newspaper,2019
+T02025,New Post Report,Malayalam,Bulletin,2022
+T02026,New Post Today,Gujarati,Bulletin,2005
+T02027,New Post Update,Urdu,Newspaper,2011
+T02028,New Post Weekly,Gujarati,Digest,2000
+T02029,New Prabhat,Marathi,Newspaper,2008
+T02030,New Prabhat Bulletin,Telugu,Periodical,2021
+T02031,New Prabhat Daily,Telugu,Journal,2018
+T02032,New Prabhat Journal,Gujarati,Bulletin,2000
+T02033,New Prabhat Live,Hindi,Newspaper,2017
+T02034,New Prabhat Monthly,Bengali,Digest,2017
+T02035,New Prabhat Report,Punjabi,Periodical,2011
+T02036,New Prabhat Today,Bengali,Magazine,2019
+T02037,New Prabhat Update,Gujarati,Journal,2012
+T02038,New Prabhat Weekly,Punjabi,Newspaper,2008
+T02039,New Prakash,Marathi,Journal,2016
+T02040,New Prakash Bulletin,Hindi,Bulletin,2002
+T02041,New Prakash Daily,Malayalam,Periodical,2010
+T02042,New Prakash Journal,Hindi,Bulletin,2008
+T02043,New Prakash Live,Malayalam,Bulletin,2008
+T02044,New Prakash Monthly,Kannada,Journal,2018
+T02045,New Prakash Report,Kannada,Magazine,2024
+T02046,New Prakash Today,Tamil,Journal,2021
+T02047,New Prakash Update,Kannada,Bulletin,2000
+T02048,New Prakash Weekly,Kannada,Newspaper,2008
+T02049,New Pratidin Sandhya,Hindi,Journal,2020
+T02050,New Pratidin Sandhya Bulletin,Gujarati,Digest,2022
+T02051,New Pratidin Sandhya Daily,Gujarati,Periodical,2013
+T02052,New Pratidin Sandhya Journal,Tamil,Bulletin,2017
+T02053,New Pratidin Sandhya Live,English,Digest,2008
+T02054,New Pratidin Sandhya Monthly,Gujarati,Periodical,2002
+T02055,New Pratidin Sandhya Report,Telugu,Digest,2023
+T02056,New Pratidin Sandhya Today,Tamil,Newspaper,2017
+T02057,New Pratidin Sandhya Update,Marathi,Journal,2010
+T02058,New Pratidin Sandhya Weekly,Tamil,Magazine,2018
+T02059,New Samachar,Bengali,Magazine,2023
+T02060,New Samachar Bulletin,Urdu,Magazine,2015
+T02061,New Samachar Daily,Gujarati,Magazine,2023
+T02062,New Samachar Journal,Gujarati,Periodical,2006
+T02063,New Samachar Live,Gujarati,Magazine,2007
+T02064,New Samachar Monthly,Punjabi,Periodical,2004
+T02065,New Samachar Report,Hindi,Newspaper,2002
+T02066,New Samachar Today,Urdu,Digest,2015
+T02067,New Samachar Update,Punjabi,Newspaper,2024
+T02068,New Samachar Weekly,Malayalam,Newspaper,2015
+T02069,New Sandesh,Tamil,Bulletin,2010
+T02070,New Sandesh Bulletin,Kannada,Bulletin,2008
+T02071,New Sandesh Daily,Kannada,Magazine,2024
+T02072,New Sandesh Journal,Malayalam,Periodical,2012
+T02073,New Sandesh Live,Gujarati,Bulletin,2004
+T02074,New Sandesh Monthly,English,Bulletin,2013
+T02075,New Sandesh Report,Kannada,Bulletin,2001
+T02076,New Sandesh Today,Malayalam,Periodical,2012
+T02077,New Sandesh Update,Urdu,Magazine,2014
+T02078,New Sandesh Weekly,Hindi,Digest,2016
+T02079,New Sandhya,Kannada,Periodical,2022
+T02080,New Sandhya Bulletin,English,Newspaper,2021
+T02081,New Sandhya Daily,Gujarati,Journal,2018
+T02082,New Sandhya Journal,Hindi,Periodical,2011
+T02083,New Sandhya Live,Punjabi,Periodical,2005
+T02084,New Sandhya Monthly,Malayalam,Periodical,2007
+T02085,New Sandhya Report,Bengali,Journal,2019
+T02086,New Sandhya Today,Tamil,Periodical,2005
+T02087,New Sandhya Update,Kannada,Journal,2006
+T02088,New Sandhya Weekly,Telugu,Digest,2024
+T02089,New The Hindu,Tamil,Periodical,2012
+T02090,New The Hindu Bulletin,Bengali,Journal,2005
+T02091,New The Hindu Daily,Punjabi,Magazine,2018
+T02092,New The Hindu Journal,Urdu,Magazine,2003
+T02093,New The Hindu Live,Bengali,Magazine,2017
+T02094,New The Hindu Monthly,Telugu,Journal,2006
+T02095,New The Hindu Report,Marathi,Digest,2004
+T02096,New The Hindu Today,Kannada,Newspaper,2005
+T02097,New The Hindu Update,Telugu,Journal,2004
+T02098,New The Hindu Weekly,Urdu,Bulletin,2017
+T02099,New Times,Tamil,Journal,2009
+T02100,New Times Bulletin,Bengali,Bulletin,2018
+T02101,New Times Daily,English,Journal,2003
+T02102,New Times Journal,Marathi,Newspaper,2006
+T02103,New Times Live,Bengali,Journal,2020
+T02104,New Times Monthly,Hindi,Journal,2023
+T02105,New Times Report,Tamil,Periodical,2011
+T02106,New Times Today,Tamil,Bulletin,2017
+T02107,New Times Update,Bengali,Periodical,2000
+T02108,New Times Weekly,Telugu,Newspaper,2011
+T02109,New Tribune,Urdu,Bulletin,2006
+T02110,New Tribune Bulletin,Punjabi,Bulletin,2020
+T02111,New Tribune Daily,Urdu,Bulletin,2005
+T02112,New Tribune Journal,Bengali,Periodical,2010
+T02113,New Tribune Live,Urdu,Bulletin,2015
+T02114,New Tribune Monthly,Kannada,Newspaper,2012
+T02115,New Tribune Report,Punjabi,Periodical,2014
+T02116,New Tribune Today,Urdu,Magazine,2005
+T02117,New Tribune Update,Urdu,Periodical,2013
+T02118,New Tribune Weekly,Urdu,Bulletin,2018
+T02119,New Vartha,Telugu,Newspaper,2002
+T02120,New Vartha Bulletin,Marathi,Periodical,2007
+T02121,New Vartha Daily,Tamil,Periodical,2020
+T02122,New Vartha Journal,Bengali,Digest,2008
+T02123,New Vartha Live,Punjabi,Digest,2012
+T02124,New Vartha Monthly,Bengali,Journal,2024
+T02125,New Vartha Report,Tamil,Digest,2018
+T02126,New Vartha Today,Malayalam,Journal,2013
+T02127,New Vartha Update,Marathi,Magazine,2000
+T02128,New Vartha Weekly,Marathi,Digest,2007
+T02129,New Vichar,Urdu,Periodical,2023
+T02130,New Vichar Bulletin,Hindi,Magazine,2005
+T02131,New Vichar Daily,Telugu,Newspaper,2003
+T02132,New Vichar Journal,Hindi,Journal,2017
+T02133,New Vichar Live,English,Newspaper,2024
+T02134,New Vichar Monthly,Telugu,Bulletin,2024
+T02135,New Vichar Report,Hindi,Newspaper,2008
+T02136,New Vichar Today,Punjabi,Magazine,2002
+T02137,New Vichar Update,Urdu,Journal,2009
+T02138,New Vichar Weekly,Gujarati,Magazine,2023
+T02139,News,Bengali,Journal,2020
+T02140,News Bulletin,Marathi,Magazine,2016
+T02141,News Daily,Marathi,Newspaper,2001
+T02142,News Journal,Urdu,Periodical,2010
+T02143,News Live,Kannada,Journal,2017
+T02144,News Monthly,Bengali,Bulletin,2014
+T02145,News Report,Marathi,Digest,2017
+T02146,News Today,Marathi,Bulletin,2019
+T02147,News Update,Kannada,Digest,2023
+T02148,News Weekly,Urdu,Bulletin,2013
+T02149,Patna Awaaz,Malayalam,Digest,2020
+T02150,Patna Bhaskar,Malayalam,Periodical,2011
+T02151,Patna Dainik Namaskar,Kannada,Bulletin,2007
+T02152,Patna Darpan,Hindi,Journal,2009
+T02153,Patna Express,Tamil,Journal,2008
+T02154,Patna Herald,Marathi,Periodical,2000
+T02155,Patna Indian Express,English,Bulletin,2024
+T02156,Patna Jagran,Marathi,Periodical,2009
+T02157,Patna Kesari,Kannada,Bulletin,2000
+T02158,Patna News,Kannada,Journal,2009
+T02159,Patna Patrika,English,Journal,2009
+T02160,Patna Post,Punjabi,Magazine,2000
+T02161,Patna Prabhat,Malayalam,Periodical,2006
+T02162,Patna Prakash,Telugu,Bulletin,2013
+T02163,Patna Pratidin Sandhya,Telugu,Magazine,2005
+T02164,Patna Samachar,Urdu,Journal,2012
+T02165,Patna Sandesh,Gujarati,Periodical,2002
+T02166,Patna Sandhya,Telugu,Digest,2007
+T02167,Patna The Hindu,Malayalam,Bulletin,2022
+T02168,Patna Times,Urdu,Periodical,2009
+T02169,Patna Tribune,Urdu,Digest,2017
+T02170,Patna Vartha,Bengali,Journal,2006
+T02171,Patna Vichar,Hindi,Magazine,2004
+T02172,Patrika,Bengali,Newspaper,2020
+T02173,Patrika Bulletin,Kannada,Bulletin,2014
+T02174,Patrika Daily,Bengali,Digest,2019
+T02175,Patrika Journal,Kannada,Magazine,2010
+T02176,Patrika Live,English,Magazine,2001
+T02177,Patrika Monthly,Malayalam,Newspaper,2005
+T02178,Patrika Report,Hindi,Periodical,2008
+T02179,Patrika Today,Marathi,Digest,2014
+T02180,Patrika Update,English,Magazine,2002
+T02181,Patrika Weekly,Marathi,Newspaper,2015
+T02182,Post,Gujarati,Periodical,2013
+T02183,Post Bulletin,Bengali,Journal,2011
+T02184,Post Daily,Kannada,Digest,2001
+T02185,Post Journal,Tamil,Newspaper,2024
+T02186,Post Live,Marathi,Newspaper,2008
+T02187,Post Monthly,Telugu,Newspaper,2017
+T02188,Post Report,Kannada,Magazine,2006
+T02189,Post Today,Bengali,Journal,2000
+T02190,Post Update,Hindi,Digest,2007
+T02191,Post Weekly,Telugu,Journal,2007
+T02192,Prabhat,English,Magazine,2014
+T02193,Prabhat Bulletin,Hindi,Bulletin,2021
+T02194,Prabhat Daily,Gujarati,Journal,2012
+T02195,Prabhat Journal,Urdu,Periodical,2010
+T02196,Prabhat Live,Marathi,Digest,2023
+T02197,Prabhat Monthly,English,Digest,2017
+T02198,Prabhat Report,Malayalam,Newspaper,2008
+T02199,Prabhat Today,Kannada,Digest,2009
+T02200,Prabhat Update,Gujarati,Periodical,2001
+T02201,Prabhat Weekly,Urdu,Magazine,2003
+T02202,Pradesh Awaaz,Gujarati,Digest,2013
+T02203,Pradesh Awaaz Bulletin,Tamil,Newspaper,2005
+T02204,Pradesh Awaaz Daily,Bengali,Bulletin,2003
+T02205,Pradesh Awaaz Journal,Telugu,Magazine,2000
+T02206,Pradesh Awaaz Live,English,Bulletin,2022
+T02207,Pradesh Awaaz Monthly,Kannada,Digest,2019
+T02208,Pradesh Awaaz Report,Marathi,Periodical,2024
+T02209,Pradesh Awaaz Today,Hindi,Magazine,2005
+T02210,Pradesh Awaaz Update,Kannada,Newspaper,2021
+T02211,Pradesh Awaaz Weekly,Punjabi,Periodical,2024
+T02212,Pradesh Bhaskar,Urdu,Newspaper,2001
+T02213,Pradesh Bhaskar Bulletin,Tamil,Digest,2004
+T02214,Pradesh Bhaskar Daily,Malayalam,Newspaper,2004
+T02215,Pradesh Bhaskar Journal,Kannada,Magazine,2010
+T02216,Pradesh Bhaskar Live,Malayalam,Digest,2024
+T02217,Pradesh Bhaskar Monthly,Tamil,Journal,2023
+T02218,Pradesh Bhaskar Report,Gujarati,Newspaper,2022
+T02219,Pradesh Bhaskar Today,Telugu,Periodical,2023
+T02220,Pradesh Bhaskar Update,Marathi,Periodical,2001
+T02221,Pradesh Bhaskar Weekly,Kannada,Digest,2014
+T02222,Pradesh Dainik Namaskar,Malayalam,Periodical,2017
+T02223,Pradesh Dainik Namaskar Bulletin,Kannada,Magazine,2018
+T02224,Pradesh Dainik Namaskar Daily,Marathi,Bulletin,2011
+T02225,Pradesh Dainik Namaskar Journal,Tamil,Digest,2014
+T02226,Pradesh Dainik Namaskar Live,Bengali,Bulletin,2017
+T02227,Pradesh Dainik Namaskar Monthly,Marathi,Newspaper,2016
+T02228,Pradesh Dainik Namaskar Report,Marathi,Journal,2009
+T02229,Pradesh Dainik Namaskar Today,Bengali,Bulletin,2011
+T02230,Pradesh Dainik Namaskar Update,Kannada,Newspaper,2024
+T02231,Pradesh Dainik Namaskar Weekly,Urdu,Bulletin,2012
+T02232,Pradesh Darpan,Marathi,Newspaper,2019
+T02233,Pradesh Darpan Bulletin,Tamil,Bulletin,2007
+T02234,Pradesh Darpan Daily,Tamil,Digest,2002
+T02235,Pradesh Darpan Journal,Urdu,Bulletin,2012
+T02236,Pradesh Darpan Live,Gujarati,Bulletin,2021
+T02237,Pradesh Darpan Monthly,Kannada,Bulletin,2004
+T02238,Pradesh Darpan Report,Punjabi,Periodical,2010
+T02239,Pradesh Darpan Today,Telugu,Digest,2010
+T02240,Pradesh Darpan Update,Hindi,Newspaper,2016
+T02241,Pradesh Darpan Weekly,Urdu,Newspaper,2001
+T02242,Pradesh Express,Marathi,Magazine,2001
+T02243,Pradesh Express Bulletin,Gujarati,Newspaper,2015
+T02244,Pradesh Express Daily,Gujarati,Newspaper,2001
+T02245,Pradesh Express Journal,Punjabi,Digest,2012
+T02246,Pradesh Express Live,Urdu,Journal,2016
+T02247,Pradesh Express Monthly,Punjabi,Digest,2018
+T02248,Pradesh Express Report,Bengali,Newspaper,2011
+T02249,Pradesh Express Today,Gujarati,Bulletin,2022
+T02250,Pradesh Express Update,Hindi,Newspaper,2006
+T02251,Pradesh Express Weekly,Urdu,Journal,2002
+T02252,Pradesh Herald,Kannada,Digest,2001
+T02253,Pradesh Herald Bulletin,Tamil,Bulletin,2023
+T02254,Pradesh Herald Daily,Telugu,Periodical,2022
+T02255,Pradesh Herald Journal,English,Bulletin,2008
+T02256,Pradesh Herald Live,Malayalam,Newspaper,2023
+T02257,Pradesh Herald Monthly,Hindi,Periodical,2002
+T02258,Pradesh Herald Report,Gujarati,Bulletin,2003
+T02259,Pradesh Herald Today,Hindi,Digest,2007
+T02260,Pradesh Herald Update,Malayalam,Journal,2006
+T02261,Pradesh Herald Weekly,Gujarati,Bulletin,2021
+T02262,Pradesh Indian Express,Gujarati,Bulletin,2020
+T02263,Pradesh Indian Express Bulletin,Marathi,Bulletin,2023
+T02264,Pradesh Indian Express Daily,Malayalam,Journal,2023
+T02265,Pradesh Indian Express Journal,Hindi,Digest,2018
+T02266,Pradesh Indian Express Live,Tamil,Digest,2014
+T02267,Pradesh Indian Express Monthly,Urdu,Journal,2003
+T02268,Pradesh Indian Express Report,Marathi,Magazine,2017
+T02269,Pradesh Indian Express Today,Telugu,Bulletin,2010
+T02270,Pradesh Indian Express Update,Urdu,Magazine,2017
+T02271,Pradesh Indian Express Weekly,Punjabi,Journal,2011
+T02272,Pradesh Jagran,Tamil,Bulletin,2010
+T02273,Pradesh Jagran Bulletin,Tamil,Journal,2024
+T02274,Pradesh Jagran Daily,Urdu,Journal,2023
+T02275,Pradesh Jagran Journal,Tamil,Bulletin,2007
+T02276,Pradesh Jagran Live,Punjabi,Bulletin,2006
+T02277,Pradesh Jagran Monthly,Telugu,Bulletin,2023
+T02278,Pradesh Jagran Report,Bengali,Periodical,2014
+T02279,Pradesh Jagran Today,Kannada,Journal,2000
+T02280,Pradesh Jagran Update,English,Periodical,2019
+T02281,Pradesh Jagran Weekly,English,Bulletin,2004
+T02282,Pradesh Kesari,Bengali,Newspaper,2009
+T02283,Pradesh Kesari Bulletin,Gujarati,Magazine,2010
+T02284,Pradesh Kesari Daily,English,Digest,2008
+T02285,Pradesh Kesari Journal,Malayalam,Bulletin,2017
+T02286,Pradesh Kesari Live,Punjabi,Bulletin,2004
+T02287,Pradesh Kesari Monthly,Hindi,Newspaper,2014
+T02288,Pradesh Kesari Report,Tamil,Magazine,2004
+T02289,Pradesh Kesari Today,Bengali,Periodical,2018
+T02290,Pradesh Kesari Update,Gujarati,Magazine,2008
+T02291,Pradesh Kesari Weekly,Bengali,Newspaper,2018
+T02292,Pradesh News,Telugu,Bulletin,2006
+T02293,Pradesh News Bulletin,Hindi,Digest,2010
+T02294,Pradesh News Daily,Kannada,Magazine,2015
+T02295,Pradesh News Journal,Punjabi,Newspaper,2019
+T02296,Pradesh News Live,Urdu,Periodical,2001
+T02297,Pradesh News Monthly,Punjabi,Journal,2002
+T02298,Pradesh News Report,English,Periodical,2011
+T02299,Pradesh News Today,Telugu,Journal,2003
+T02300,Pradesh News Update,Gujarati,Digest,2020
+T02301,Pradesh News Weekly,Punjabi,Newspaper,2020
+T02302,Pradesh Patrika,Urdu,Journal,2001
+T02303,Pradesh Patrika Bulletin,Bengali,Bulletin,2001
+T02304,Pradesh Patrika Daily,Tamil,Bulletin,2018
+T02305,Pradesh Patrika Journal,Marathi,Periodical,2016
+T02306,Pradesh Patrika Live,Gujarati,Magazine,2001
+T02307,Pradesh Patrika Monthly,Urdu,Digest,2012
+T02308,Pradesh Patrika Report,Kannada,Bulletin,2018
+T02309,Pradesh Patrika Today,Malayalam,Newspaper,2007
+T02310,Pradesh Patrika Update,Telugu,Periodical,2012
+T02311,Pradesh Patrika Weekly,Marathi,Magazine,2010
+T02312,Pradesh Post,Hindi,Journal,2018
+T02313,Pradesh Post Bulletin,English,Bulletin,2012
+T02314,Pradesh Post Daily,Bengali,Newspaper,2012
+T02315,Pradesh Post Journal,Malayalam,Journal,2024
+T02316,Pradesh Post Live,Marathi,Magazine,2015
+T02317,Pradesh Post Monthly,Malayalam,Magazine,2015
+T02318,Pradesh Post Report,Telugu,Digest,2018
+T02319,Pradesh Post Today,Gujarati,Bulletin,2019
+T02320,Pradesh Post Update,Malayalam,Magazine,2007
+T02321,Pradesh Post Weekly,Hindi,Periodical,2024
+T02322,Pradesh Prabhat,Telugu,Periodical,2021
+T02323,Pradesh Prabhat Bulletin,Punjabi,Newspaper,2003
+T02324,Pradesh Prabhat Daily,Urdu,Journal,2013
+T02325,Pradesh Prabhat Journal,Tamil,Periodical,2006
+T02326,Pradesh Prabhat Live,Tamil,Periodical,2019
+T02327,Pradesh Prabhat Monthly,Urdu,Newspaper,2024
+T02328,Pradesh Prabhat Report,Bengali,Magazine,2011
+T02329,Pradesh Prabhat Today,Punjabi,Journal,2019
+T02330,Pradesh Prabhat Update,Marathi,Journal,2001
+T02331,Pradesh Prabhat Weekly,Gujarati,Magazine,2021
+T02332,Pradesh Prakash,Tamil,Magazine,2024
+T02333,Pradesh Prakash Bulletin,Hindi,Newspaper,2023
+T02334,Pradesh Prakash Daily,English,Magazine,2019
+T02335,Pradesh Prakash Journal,Marathi,Periodical,2000
+T02336,Pradesh Prakash Live,Tamil,Digest,2003
+T02337,Pradesh Prakash Monthly,Bengali,Journal,2015
+T02338,Pradesh Prakash Report,English,Periodical,2006
+T02339,Pradesh Prakash Today,Malayalam,Magazine,2006
+T02340,Pradesh Prakash Update,Malayalam,Bulletin,2024
+T02341,Pradesh Prakash Weekly,Bengali,Bulletin,2015
+T02342,Pradesh Pratidin Sandhya,Punjabi,Digest,2004
+T02343,Pradesh Pratidin Sandhya Bulletin,Urdu,Newspaper,2012
+T02344,Pradesh Pratidin Sandhya Daily,Punjabi,Digest,2016
+T02345,Pradesh Pratidin Sandhya Journal,English,Periodical,2005
+T02346,Pradesh Pratidin Sandhya Live,English,Periodical,2006
+T02347,Pradesh Pratidin Sandhya Monthly,Punjabi,Periodical,2001
+T02348,Pradesh Pratidin Sandhya Report,Kannada,Digest,2000
+T02349,Pradesh Pratidin Sandhya Today,Hindi,Journal,2021
+T02350,Pradesh Pratidin Sandhya Update,Bengali,Digest,2021
+T02351,Pradesh Pratidin Sandhya Weekly,Tamil,Newspaper,2000
+T02352,Pradesh Samachar,Bengali,Digest,2012
+T02353,Pradesh Samachar Bulletin,Gujarati,Journal,2016
+T02354,Pradesh Samachar Daily,Hindi,Periodical,2015
+T02355,Pradesh Samachar Journal,Punjabi,Bulletin,2002
+T02356,Pradesh Samachar Live,Marathi,Magazine,2016
+T02357,Pradesh Samachar Monthly,Kannada,Bulletin,2022
+T02358,Pradesh Samachar Report,English,Newspaper,2007
+T02359,Pradesh Samachar Today,Malayalam,Periodical,2010
+T02360,Pradesh Samachar Update,Kannada,Journal,2023
+T02361,Pradesh Samachar Weekly,Marathi,Newspaper,2011
+T02362,Pradesh Sandesh,Urdu,Periodical,2011
+T02363,Pradesh Sandesh Bulletin,Urdu,Periodical,2007
+T02364,Pradesh Sandesh Daily,Malayalam,Periodical,2001
+T02365,Pradesh Sandesh Journal,Urdu,Periodical,2012
+T02366,Pradesh Sandesh Live,English,Bulletin,2008
+T02367,Pradesh Sandesh Monthly,Gujarati,Magazine,2010
+T02368,Pradesh Sandesh Report,Telugu,Digest,2004
+T02369,Pradesh Sandesh Today,Hindi,Digest,2012
+T02370,Pradesh Sandesh Update,Malayalam,Digest,2019
+T02371,Pradesh Sandesh Weekly,Urdu,Digest,2007
+T02372,Pradesh Sandhya,Telugu,Magazine,2018
+T02373,Pradesh Sandhya Bulletin,Marathi,Journal,2009
+T02374,Pradesh Sandhya Daily,Punjabi,Periodical,2014
+T02375,Pradesh Sandhya Journal,Malayalam,Magazine,2006
+T02376,Pradesh Sandhya Live,Urdu,Magazine,2018
+T02377,Pradesh Sandhya Monthly,Malayalam,Digest,2006
+T02378,Pradesh Sandhya Report,Marathi,Periodical,2022
+T02379,Pradesh Sandhya Today,Malayalam,Magazine,2013
+T02380,Pradesh Sandhya Update,Marathi,Digest,2018
+T02381,Pradesh Sandhya Weekly,Marathi,Periodical,2002
+T02382,Pradesh The Hindu,Malayalam,Bulletin,2023
+T02383,Pradesh The Hindu Bulletin,Hindi,Magazine,2010
+T02384,Pradesh The Hindu Daily,Marathi,Digest,2000
+T02385,Pradesh The Hindu Journal,Tamil,Journal,2013
+T02386,Pradesh The Hindu Live,Bengali,Journal,2023
+T02387,Pradesh The Hindu Monthly,Urdu,Digest,2008
+T02388,Pradesh The Hindu Report,Marathi,Magazine,2003
+T02389,Pradesh The Hindu Today,Marathi,Magazine,2000
+T02390,Pradesh The Hindu Update,Punjabi,Bulletin,2008
+T02391,Pradesh The Hindu Weekly,Punjabi,Bulletin,2019
+T02392,Pradesh Times,Gujarati,Bulletin,2007
+T02393,Pradesh Times Bulletin,Gujarati,Digest,2000
+T02394,Pradesh Times Daily,Tamil,Newspaper,2022
+T02395,Pradesh Times Journal,Kannada,Magazine,2016
+T02396,Pradesh Times Live,Punjabi,Journal,2022
+T02397,Pradesh Times Monthly,Urdu,Periodical,2005
+T02398,Pradesh Times Report,Telugu,Journal,2015
+T02399,Pradesh Times Today,Marathi,Magazine,2006
+T02400,Pradesh Times Update,Gujarati,Newspaper,2013
+T02401,Pradesh Times Weekly,English,Periodical,2013
+T02402,Pradesh Tribune,Gujarati,Digest,2021
+T02403,Pradesh Tribune Bulletin,Gujarati,Magazine,2002
+T02404,Pradesh Tribune Daily,Marathi,Journal,2019
+T02405,Pradesh Tribune Journal,Kannada,Digest,2010
+T02406,Pradesh Tribune Live,Kannada,Magazine,2013
+T02407,Pradesh Tribune Monthly,Telugu,Newspaper,2019
+T02408,Pradesh Tribune Report,Telugu,Digest,2010
+T02409,Pradesh Tribune Today,Telugu,Bulletin,2023
+T02410,Pradesh Tribune Update,Punjabi,Bulletin,2017
+T02411,Pradesh Tribune Weekly,Malayalam,Digest,2022
+T02412,Pradesh Vartha,English,Bulletin,2003
+T02413,Pradesh Vartha Bulletin,Kannada,Journal,2001
+T02414,Pradesh Vartha Daily,Gujarati,Bulletin,2017
+T02415,Pradesh Vartha Journal,Telugu,Digest,2001
+T02416,Pradesh Vartha Live,Malayalam,Journal,2016
+T02417,Pradesh Vartha Monthly,Urdu,Newspaper,2006
+T02418,Pradesh Vartha Report,Bengali,Journal,2012
+T02419,Pradesh Vartha Today,Bengali,Periodical,2014
+T02420,Pradesh Vartha Update,Marathi,Journal,2009
+T02421,Pradesh Vartha Weekly,Punjabi,Newspaper,2022
+T02422,Pradesh Vichar,Malayalam,Magazine,2014
+T02423,Pradesh Vichar Bulletin,Urdu,Journal,2002
+T02424,Pradesh Vichar Daily,Malayalam,Newspaper,2005
+T02425,Pradesh Vichar Journal,Punjabi,Digest,2017
+T02426,Pradesh Vichar Live,Marathi,Journal,2013
+T02427,Pradesh Vichar Monthly,Tamil,Journal,2000
+T02428,Pradesh Vichar Report,Marathi,Journal,2018
+T02429,Pradesh Vichar Today,Gujarati,Journal,2002
+T02430,Pradesh Vichar Update,Bengali,Periodical,2022
+T02431,Pradesh Vichar Weekly,Urdu,Digest,2005
+T02432,Prakash,Hindi,Newspaper,2003
+T02433,Prakash Bulletin,Kannada,Digest,2011
+T02434,Prakash Daily,Hindi,Bulletin,2022
+T02435,Prakash Journal,Telugu,Digest,2016
+T02436,Prakash Live,Punjabi,Magazine,2012
+T02437,Prakash Monthly,Malayalam,Journal,2001
+T02438,Prakash Report,Marathi,Periodical,2018
+T02439,Prakash Today,Urdu,Magazine,2005
+T02440,Prakash Update,Marathi,Magazine,2024
+T02441,Prakash Weekly,English,Journal,2009
+T02442,Pratidin Sandhya,Bengali,Digest,2024
+T02443,Pratidin Sandhya Bulletin,Kannada,Periodical,2020
+T02444,Pratidin Sandhya Daily,Marathi,Newspaper,2004
+T02445,Pratidin Sandhya Journal,Gujarati,Newspaper,2019
+T02446,Pratidin Sandhya Live,Bengali,Newspaper,2014
+T02447,Pratidin Sandhya Monthly,Kannada,Journal,2017
+T02448,Pratidin Sandhya Report,English,Bulletin,2015
+T02449,Pratidin Sandhya Today,Gujarati,Magazine,2018
+T02450,Pratidin Sandhya Update,Urdu,Journal,2014
+T02451,Pratidin Sandhya Weekly,Telugu,Journal,2002
+T02452,Pune Awaaz,Punjabi,Bulletin,2000
+T02453,Pune Bhaskar,Gujarati,Bulletin,2008
+T02454,Pune Dainik Namaskar,Punjabi,Digest,2017
+T02455,Pune Darpan,Gujarati,Newspaper,2005
+T02456,Pune Darpan Daily,Marathi,Newspaper,2020
+T02457,Pune Darpan Monthly,Tamil,Newspaper,2004
+T02458,Pune Darpan Today,English,Digest,2018
+T02459,Pune Darpan Weekly,Punjabi,Periodical,2010
+T02460,Pune Express,Hindi,Newspaper,2003
+T02461,Pune Express Daily,Telugu,Magazine,2005
+T02462,Pune Express Monthly,Urdu,Periodical,2019
+T02463,Pune Express Today,Urdu,Digest,2022
+T02464,Pune Express Weekly,Punjabi,Bulletin,2017
+T02465,Pune Herald,Marathi,Journal,2023
+T02466,Pune Herald Daily,Punjabi,Periodical,2001
+T02467,Pune Herald Monthly,Hindi,Periodical,2010
+T02468,Pune Herald Today,Tamil,Journal,2002
+T02469,Pune Herald Weekly,Telugu,Bulletin,2002
+T02470,Pune Indian Express,Bengali,Journal,2004
+T02471,Pune Jagran,Hindi,Digest,2008
+T02472,Pune Kesari,Tamil,Bulletin,2013
+T02473,Pune News,Malayalam,Magazine,2022
+T02474,Pune News Daily,Gujarati,Bulletin,2001
+T02475,Pune News Monthly,Hindi,Bulletin,2023
+T02476,Pune News Today,Urdu,Bulletin,2002
+T02477,Pune News Weekly,Kannada,Digest,2022
+T02478,Pune Patrika,Punjabi,Digest,2009
+T02479,Pune Post,Telugu,Bulletin,2010
+T02480,Pune Post Daily,Bengali,Bulletin,2018
+T02481,Pune Post Monthly,Punjabi,Periodical,2004
+T02482,Pune Post Today,Punjabi,Bulletin,2015
+T02483,Pune Post Weekly,Malayalam,Digest,2020
+T02484,Pune Prabhat,Kannada,Journal,2005
+T02485,Pune Prakash,Punjabi,Magazine,2022
+T02486,Pune Pratidin Sandhya,Bengali,Magazine,2000
+T02487,Pune Samachar,Hindi,Newspaper,2014
+T02488,Pune Samachar Daily,Urdu,Newspaper,2023
+T02489,Pune Samachar Monthly,Gujarati,Bulletin,2013
+T02490,Pune Samachar Today,Telugu,Newspaper,2010
+T02491,Pune Samachar Weekly,Tamil,Bulletin,2020
+T02492,Pune Sandesh,Gujarati,Newspaper,2020
+T02493,Pune Sandesh Daily,Gujarati,Digest,2009
+T02494,Pune Sandesh Monthly,Bengali,Newspaper,2009
+T02495,Pune Sandesh Today,Bengali,Bulletin,2017
+T02496,Pune Sandesh Weekly,Tamil,Newspaper,2003
+T02497,Pune Sandhya,Urdu,Periodical,2010
+T02498,Pune The Hindu,Telugu,Digest,2018
+T02499,Pune Times,Punjabi,Newspaper,2005
+T02500,Pune Times Daily,Gujarati,Periodical,2010
+T02501,Pune Times Monthly,Urdu,Journal,2015
+T02502,Pune Times Today,English,Digest,2004
+T02503,Pune Times Weekly,Kannada,Magazine,2020
+T02504,Pune Tribune,Kannada,Bulletin,2010
+T02505,Pune Tribune Daily,Kannada,Journal,2023
+T02506,Pune Tribune Monthly,English,Bulletin,2009
+T02507,Pune Tribune Today,Punjabi,Digest,2021
+T02508,Pune Tribune Weekly,Tamil,Bulletin,2017
+T02509,Pune Vartha,English,Magazine,2018
+T02510,Pune Vichar,Urdu,Periodical,2011
+T02511,Pune Vichar Daily,Hindi,Magazine,2008
+T02512,Pune Vichar Monthly,English,Periodical,2012
+T02513,Pune Vichar Today,Urdu,Bulletin,2005
+T02514,Pune Vichar Weekly,Punjabi,Bulletin,2012
+T02515,Ranchi Awaaz,Marathi,Bulletin,2003
+T02516,Ranchi Bhaskar,Bengali,Digest,2010
+T02517,Ranchi Dainik Namaskar,English,Periodical,2013
+T02518,Ranchi Darpan,Hindi,Journal,2007
+T02519,Ranchi Express,Tamil,Journal,2009
+T02520,Ranchi Herald,Gujarati,Bulletin,2009
+T02521,Ranchi Indian Express,Marathi,Newspaper,2011
+T02522,Ranchi Jagran,English,Magazine,2002
+T02523,Ranchi Kesari,Kannada,Bulletin,2000
+T02524,Ranchi News,Kannada,Bulletin,2004
+T02525,Ranchi Patrika,Gujarati,Periodical,2015
+T02526,Ranchi Post,Malayalam,Periodical,2024
+T02527,Ranchi Prabhat,Tamil,Magazine,2024
+T02528,Ranchi Prakash,Hindi,Bulletin,2021
+T02529,Ranchi Pratidin Sandhya,Marathi,Magazine,2023
+T02530,Ranchi Samachar,English,Journal,2012
+T02531,Ranchi Sandesh,Malayalam,Newspaper,2000
+T02532,Ranchi Sandhya,Bengali,Newspaper,2021
+T02533,Ranchi The Hindu,Punjabi,Newspaper,2010
+T02534,Ranchi Times,Kannada,Newspaper,2003
+T02535,Ranchi Tribune,Malayalam,Digest,2023
+T02536,Ranchi Vartha,Bengali,Newspaper,2018
+T02537,Ranchi Vichar,Bengali,Digest,2006
+T02538,Rashtriya Awaaz,Tamil,Magazine,2006
+T02539,Rashtriya Awaaz Bulletin,Bengali,Periodical,2017
+T02540,Rashtriya Awaaz Daily,Tamil,Journal,2021
+T02541,Rashtriya Awaaz Journal,Hindi,Periodical,2004
+T02542,Rashtriya Awaaz Live,Marathi,Periodical,2003
+T02543,Rashtriya Awaaz Monthly,English,Bulletin,2017
+T02544,Rashtriya Awaaz Report,Malayalam,Newspaper,2006
+T02545,Rashtriya Awaaz Today,Malayalam,Periodical,2017
+T02546,Rashtriya Awaaz Update,Tamil,Periodical,2004
+T02547,Rashtriya Awaaz Weekly,Bengali,Bulletin,2007
+T02548,Rashtriya Bhaskar,Marathi,Newspaper,2009
+T02549,Rashtriya Bhaskar Bulletin,Punjabi,Periodical,2017
+T02550,Rashtriya Bhaskar Daily,Kannada,Newspaper,2004
+T02551,Rashtriya Bhaskar Journal,English,Journal,2021
+T02552,Rashtriya Bhaskar Live,English,Newspaper,2012
+T02553,Rashtriya Bhaskar Monthly,English,Newspaper,2013
+T02554,Rashtriya Bhaskar Report,Telugu,Magazine,2022
+T02555,Rashtriya Bhaskar Today,Punjabi,Bulletin,2020
+T02556,Rashtriya Bhaskar Update,Kannada,Bulletin,2011
+T02557,Rashtriya Bhaskar Weekly,Bengali,Periodical,2006
+T02558,Rashtriya Dainik Namaskar,Urdu,Bulletin,2002
+T02559,Rashtriya Dainik Namaskar Bulletin,Kannada,Bulletin,2004
+T02560,Rashtriya Dainik Namaskar Daily,Hindi,Digest,2014
+T02561,Rashtriya Dainik Namaskar Journal,Hindi,Journal,2009
+T02562,Rashtriya Dainik Namaskar Live,Urdu,Digest,2022
+T02563,Rashtriya Dainik Namaskar Monthly,Kannada,Journal,2007
+T02564,Rashtriya Dainik Namaskar Report,Gujarati,Magazine,2019
+T02565,Rashtriya Dainik Namaskar Today,Bengali,Periodical,2012
+T02566,Rashtriya Dainik Namaskar Update,Marathi,Digest,2021
+T02567,Rashtriya Dainik Namaskar Weekly,Tamil,Periodical,2014
+T02568,Rashtriya Darpan,Kannada,Newspaper,2002
+T02569,Rashtriya Darpan Bulletin,Kannada,Newspaper,2011
+T02570,Rashtriya Darpan Daily,Kannada,Journal,2005
+T02571,Rashtriya Darpan Journal,Bengali,Periodical,2019
+T02572,Rashtriya Darpan Live,Punjabi,Magazine,2016
+T02573,Rashtriya Darpan Monthly,Hindi,Journal,2022
+T02574,Rashtriya Darpan Report,Hindi,Periodical,2017
+T02575,Rashtriya Darpan Today,Urdu,Newspaper,2009
+T02576,Rashtriya Darpan Update,Malayalam,Journal,2012
+T02577,Rashtriya Darpan Weekly,Punjabi,Journal,2007
+T02578,Rashtriya Express,Punjabi,Magazine,2017
+T02579,Rashtriya Express Bulletin,Marathi,Journal,2012
+T02580,Rashtriya Express Daily,Hindi,Periodical,2006
+T02581,Rashtriya Express Journal,Punjabi,Journal,2013
+T02582,Rashtriya Express Live,Punjabi,Periodical,2017
+T02583,Rashtriya Express Monthly,Gujarati,Magazine,2021
+T02584,Rashtriya Express Report,Urdu,Newspaper,2023
+T02585,Rashtriya Express Today,Punjabi,Journal,2003
+T02586,Rashtriya Express Update,Punjabi,Bulletin,2014
+T02587,Rashtriya Express Weekly,Tamil,Bulletin,2003
+T02588,Rashtriya Herald,Kannada,Magazine,2009
+T02589,Rashtriya Herald Bulletin,Telugu,Newspaper,2019
+T02590,Rashtriya Herald Daily,Hindi,Digest,2019
+T02591,Rashtriya Herald Journal,Telugu,Periodical,2015
+T02592,Rashtriya Herald Live,Urdu,Digest,2001
+T02593,Rashtriya Herald Monthly,Hindi,Magazine,2004
+T02594,Rashtriya Herald Report,Punjabi,Digest,2000
+T02595,Rashtriya Herald Today,Marathi,Digest,2004
+T02596,Rashtriya Herald Update,Kannada,Bulletin,2009
+T02597,Rashtriya Herald Weekly,Telugu,Bulletin,2018
+T02598,Rashtriya Indian Express,Kannada,Magazine,2006
+T02599,Rashtriya Indian Express Bulletin,Urdu,Periodical,2009
+T02600,Rashtriya Indian Express Daily,Punjabi,Digest,2009
+T02601,Rashtriya Indian Express Journal,Telugu,Digest,2011
+T02602,Rashtriya Indian Express Live,Hindi,Bulletin,2000
+T02603,Rashtriya Indian Express Monthly,Punjabi,Bulletin,2012
+T02604,Rashtriya Indian Express Report,Marathi,Periodical,2001
+T02605,Rashtriya Indian Express Today,Tamil,Bulletin,2001
+T02606,Rashtriya Indian Express Update,English,Digest,2017
+T02607,Rashtriya Indian Express Weekly,Tamil,Newspaper,2009
+T02608,Rashtriya Jagran,English,Magazine,2013
+T02609,Rashtriya Jagran Bulletin,Punjabi,Journal,2020
+T02610,Rashtriya Jagran Daily,Tamil,Digest,2012
+T02611,Rashtriya Jagran Journal,Telugu,Journal,2013
+T02612,Rashtriya Jagran Live,Malayalam,Magazine,2021
+T02613,Rashtriya Jagran Monthly,Marathi,Journal,2004
+T02614,Rashtriya Jagran Report,Gujarati,Bulletin,2012
+T02615,Rashtriya Jagran Today,Tamil,Journal,2004
+T02616,Rashtriya Jagran Update,Bengali,Digest,2004
+T02617,Rashtriya Jagran Weekly,Marathi,Newspaper,2002
+T02618,Rashtriya Kesari,Urdu,Newspaper,2004
+T02619,Rashtriya Kesari Bulletin,Kannada,Digest,2013
+T02620,Rashtriya Kesari Daily,Marathi,Newspaper,2004
+T02621,Rashtriya Kesari Journal,Urdu,Journal,2014
+T02622,Rashtriya Kesari Live,Punjabi,Journal,2019
+T02623,Rashtriya Kesari Monthly,Marathi,Journal,2016
+T02624,Rashtriya Kesari Report,Telugu,Bulletin,2014
+T02625,Rashtriya Kesari Today,Telugu,Periodical,2007
+T02626,Rashtriya Kesari Update,Marathi,Journal,2019
+T02627,Rashtriya Kesari Weekly,English,Bulletin,2015
+T02628,Rashtriya News,Gujarati,Digest,2016
+T02629,Rashtriya News Bulletin,Bengali,Journal,2017
+T02630,Rashtriya News Daily,Punjabi,Periodical,2001
+T02631,Rashtriya News Journal,English,Bulletin,2015
+T02632,Rashtriya News Live,Tamil,Newspaper,2018
+T02633,Rashtriya News Monthly,Kannada,Digest,2002
+T02634,Rashtriya News Report,Marathi,Digest,2023
+T02635,Rashtriya News Today,Malayalam,Periodical,2014
+T02636,Rashtriya News Update,Malayalam,Newspaper,2016
+T02637,Rashtriya News Weekly,Punjabi,Newspaper,2007
+T02638,Rashtriya Patrika,Kannada,Digest,2023
+T02639,Rashtriya Patrika Bulletin,Urdu,Digest,2002
+T02640,Rashtriya Patrika Daily,Urdu,Digest,2017
+T02641,Rashtriya Patrika Journal,Punjabi,Periodical,2019
+T02642,Rashtriya Patrika Live,English,Periodical,2017
+T02643,Rashtriya Patrika Monthly,English,Journal,2014
+T02644,Rashtriya Patrika Report,Malayalam,Journal,2018
+T02645,Rashtriya Patrika Today,Tamil,Journal,2011
+T02646,Rashtriya Patrika Update,Bengali,Periodical,2005
+T02647,Rashtriya Patrika Weekly,English,Digest,2019
+T02648,Rashtriya Post,Bengali,Digest,2018
+T02649,Rashtriya Post Bulletin,Bengali,Newspaper,2020
+T02650,Rashtriya Post Daily,Kannada,Bulletin,2005
+T02651,Rashtriya Post Journal,Punjabi,Newspaper,2021
+T02652,Rashtriya Post Live,Bengali,Digest,2019
+T02653,Rashtriya Post Monthly,English,Periodical,2015
+T02654,Rashtriya Post Report,Hindi,Magazine,2016
+T02655,Rashtriya Post Today,Hindi,Periodical,2008
+T02656,Rashtriya Post Update,Marathi,Bulletin,2008
+T02657,Rashtriya Post Weekly,Bengali,Periodical,2000
+T02658,Rashtriya Prabhat,Hindi,Bulletin,2005
+T02659,Rashtriya Prabhat Bulletin,Punjabi,Digest,2004
+T02660,Rashtriya Prabhat Daily,Urdu,Journal,2011
+T02661,Rashtriya Prabhat Journal,Marathi,Periodical,2022
+T02662,Rashtriya Prabhat Live,Gujarati,Journal,2005
+T02663,Rashtriya Prabhat Monthly,Malayalam,Newspaper,2010
+T02664,Rashtriya Prabhat Report,Hindi,Magazine,2019
+T02665,Rashtriya Prabhat Today,Marathi,Journal,2024
+T02666,Rashtriya Prabhat Update,Telugu,Journal,2007
+T02667,Rashtriya Prabhat Weekly,Urdu,Journal,2023
+T02668,Rashtriya Prakash,Urdu,Magazine,2006
+T02669,Rashtriya Prakash Bulletin,Punjabi,Digest,2011
+T02670,Rashtriya Prakash Daily,English,Digest,2008
+T02671,Rashtriya Prakash Journal,Hindi,Newspaper,2005
+T02672,Rashtriya Prakash Live,Kannada,Journal,2015
+T02673,Rashtriya Prakash Monthly,Bengali,Journal,2023
+T02674,Rashtriya Prakash Report,Malayalam,Magazine,2012
+T02675,Rashtriya Prakash Today,Urdu,Digest,2012
+T02676,Rashtriya Prakash Update,Kannada,Periodical,2004
+T02677,Rashtriya Prakash Weekly,Malayalam,Journal,2000
+T02678,Rashtriya Pratidin Sandhya,Bengali,Journal,2012
+T02679,Rashtriya Pratidin Sandhya Bulletin,Urdu,Periodical,2016
+T02680,Rashtriya Pratidin Sandhya Daily,Urdu,Newspaper,2003
+T02681,Rashtriya Pratidin Sandhya Journal,Malayalam,Digest,2011
+T02682,Rashtriya Pratidin Sandhya Live,Telugu,Bulletin,2020
+T02683,Rashtriya Pratidin Sandhya Monthly,Bengali,Periodical,2008
+T02684,Rashtriya Pratidin Sandhya Report,Bengali,Newspaper,2008
+T02685,Rashtriya Pratidin Sandhya Today,Urdu,Bulletin,2012
+T02686,Rashtriya Pratidin Sandhya Update,Kannada,Digest,2023
+T02687,Rashtriya Pratidin Sandhya Weekly,Gujarati,Digest,2021
+T02688,Rashtriya Samachar,Punjabi,Magazine,2016
+T02689,Rashtriya Samachar Bulletin,Tamil,Digest,2022
+T02690,Rashtriya Samachar Daily,Marathi,Periodical,2017
+T02691,Rashtriya Samachar Journal,English,Digest,2000
+T02692,Rashtriya Samachar Live,Hindi,Newspaper,2013
+T02693,Rashtriya Samachar Monthly,Hindi,Bulletin,2003
+T02694,Rashtriya Samachar Report,Urdu,Journal,2011
+T02695,Rashtriya Samachar Today,Gujarati,Digest,2009
+T02696,Rashtriya Samachar Update,Bengali,Magazine,2001
+T02697,Rashtriya Samachar Weekly,English,Bulletin,2002
+T02698,Rashtriya Sandesh,English,Bulletin,2021
+T02699,Rashtriya Sandesh Bulletin,Gujarati,Bulletin,2020
+T02700,Rashtriya Sandesh Daily,Hindi,Digest,2003
+T02701,Rashtriya Sandesh Journal,Hindi,Bulletin,2004
+T02702,Rashtriya Sandesh Live,Telugu,Digest,2024
+T02703,Rashtriya Sandesh Monthly,Urdu,Bulletin,2005
+T02704,Rashtriya Sandesh Report,Hindi,Digest,2005
+T02705,Rashtriya Sandesh Today,Bengali,Periodical,2014
+T02706,Rashtriya Sandesh Update,Urdu,Newspaper,2020
+T02707,Rashtriya Sandesh Weekly,Kannada,Periodical,2024
+T02708,Rashtriya Sandhya,Telugu,Digest,2021
+T02709,Rashtriya Sandhya Bulletin,Tamil,Periodical,2005
+T02710,Rashtriya Sandhya Daily,Hindi,Periodical,2024
+T02711,Rashtriya Sandhya Journal,English,Journal,2012
+T02712,Rashtriya Sandhya Live,Tamil,Newspaper,2008
+T02713,Rashtriya Sandhya Monthly,Bengali,Magazine,2014
+T02714,Rashtriya Sandhya Report,Hindi,Journal,2006
+T02715,Rashtriya Sandhya Today,Punjabi,Journal,2005
+T02716,Rashtriya Sandhya Update,Urdu,Journal,2003
+T02717,Rashtriya Sandhya Weekly,Marathi,Bulletin,2024
+T02718,Rashtriya The Hindu,Telugu,Magazine,2019
+T02719,Rashtriya The Hindu Bulletin,Urdu,Newspaper,2014
+T02720,Rashtriya The Hindu Daily,Bengali,Newspaper,2001
+T02721,Rashtriya The Hindu Journal,Hindi,Newspaper,2018
+T02722,Rashtriya The Hindu Live,Bengali,Journal,2000
+T02723,Rashtriya The Hindu Monthly,Kannada,Magazine,2020
+T02724,Rashtriya The Hindu Report,Urdu,Newspaper,2001
+T02725,Rashtriya The Hindu Today,Urdu,Journal,2008
+T02726,Rashtriya The Hindu Update,Marathi,Digest,2010
+T02727,Rashtriya The Hindu Weekly,Telugu,Bulletin,2000
+T02728,Rashtriya Times,Malayalam,Digest,2024
+T02729,Rashtriya Times Bulletin,Kannada,Journal,2013
+T02730,Rashtriya Times Daily,Telugu,Digest,2024
+T02731,Rashtriya Times Journal,Hindi,Bulletin,2007
+T02732,Rashtriya Times Live,English,Journal,2022
+T02733,Rashtriya Times Monthly,Kannada,Newspaper,2018
+T02734,Rashtriya Times Report,Malayalam,Periodical,2010
+T02735,Rashtriya Times Today,Urdu,Periodical,2012
+T02736,Rashtriya Times Update,English,Digest,2020
+T02737,Rashtriya Times Weekly,Hindi,Periodical,2017
+T02738,Rashtriya Tribune,Tamil,Newspaper,2014
+T02739,Rashtriya Tribune Bulletin,Bengali,Digest,2006
+T02740,Rashtriya Tribune Daily,Marathi,Bulletin,2001
+T02741,Rashtriya Tribune Journal,Telugu,Digest,2006
+T02742,Rashtriya Tribune Live,Bengali,Digest,2012
+T02743,Rashtriya Tribune Monthly,Hindi,Digest,2022
+T02744,Rashtriya Tribune Report,Tamil,Journal,2002
+T02745,Rashtriya Tribune Today,Urdu,Journal,2023
+T02746,Rashtriya Tribune Update,Gujarati,Magazine,2001
+T02747,Rashtriya Tribune Weekly,Gujarati,Newspaper,2023
+T02748,Rashtriya Vartha,Punjabi,Magazine,2015
+T02749,Rashtriya Vartha Bulletin,Telugu,Newspaper,2017
+T02750,Rashtriya Vartha Daily,Urdu,Periodical,2015
+T02751,Rashtriya Vartha Journal,Malayalam,Journal,2000
+T02752,Rashtriya Vartha Live,English,Periodical,2001
+T02753,Rashtriya Vartha Monthly,Tamil,Digest,2001
+T02754,Rashtriya Vartha Report,Telugu,Newspaper,2006
+T02755,Rashtriya Vartha Today,Urdu,Digest,2016
+T02756,Rashtriya Vartha Update,Kannada,Digest,2017
+T02757,Rashtriya Vartha Weekly,Marathi,Digest,2018
+T02758,Rashtriya Vichar,Gujarati,Newspaper,2001
+T02759,Rashtriya Vichar Bulletin,Marathi,Journal,2020
+T02760,Rashtriya Vichar Daily,English,Journal,2019
+T02761,Rashtriya Vichar Journal,English,Magazine,2022
+T02762,Rashtriya Vichar Live,Urdu,Magazine,2000
+T02763,Rashtriya Vichar Monthly,Marathi,Digest,2001
+T02764,Rashtriya Vichar Report,Bengali,Newspaper,2014
+T02765,Rashtriya Vichar Today,Punjabi,Magazine,2018
+T02766,Rashtriya Vichar Update,Hindi,Newspaper,2003
+T02767,Rashtriya Vichar Weekly,Kannada,Bulletin,2019
+T02768,Samachar,Gujarati,Newspaper,2006
+T02769,Samachar Bulletin,Telugu,Periodical,2023
+T02770,Samachar Daily,Urdu,Journal,2010
+T02771,Samachar Journal,Hindi,Digest,2018
+T02772,Samachar Live,Malayalam,Magazine,2010
+T02773,Samachar Monthly,Gujarati,Newspaper,2018
+T02774,Samachar Report,Marathi,Periodical,2002
+T02775,Samachar Today,Hindi,Periodical,2004
+T02776,Samachar Update,Telugu,Magazine,2022
+T02777,Samachar Weekly,Tamil,Bulletin,2005
+T02778,Sandesh,Kannada,Magazine,2018
+T02779,Sandesh Bulletin,English,Magazine,2003
+T02780,Sandesh Daily,Urdu,Bulletin,2012
+T02781,Sandesh Journal,Marathi,Newspaper,2015
+T02782,Sandesh Live,Hindi,Newspaper,2000
+T02783,Sandesh Monthly,Marathi,Newspaper,2022
+T02784,Sandesh Report,Urdu,Bulletin,2009
+T02785,Sandesh Today,Telugu,Digest,2024
+T02786,Sandesh Update,Kannada,Digest,2004
+T02787,Sandesh Weekly,Gujarati,Magazine,2020
+T02788,Sandhya,Bengali,Bulletin,2014
+T02789,Sandhya Bulletin,Telugu,Magazine,2005
+T02790,Sandhya Daily,Punjabi,Digest,2001
+T02791,Sandhya Journal,Punjabi,Magazine,2022
+T02792,Sandhya Live,Kannada,Bulletin,2002
+T02793,Sandhya Monthly,Urdu,Periodical,2011
+T02794,Sandhya Report,Telugu,Newspaper,2017
+T02795,Sandhya Today,Gujarati,Magazine,2003
+T02796,Sandhya Update,Malayalam,Newspaper,2019
+T02797,Sandhya Weekly,Tamil,Bulletin,2016
+T02798,The Awaaz,Gujarati,Journal,2024
+T02799,The Awaaz Bulletin,Urdu,Digest,2006
+T02800,The Awaaz Daily,Bengali,Newspaper,2006
+T02801,The Awaaz Journal,Hindi,Magazine,2021
+T02802,The Awaaz Live,Kannada,Journal,2005
+T02803,The Awaaz Monthly,Marathi,Digest,2001
+T02804,The Awaaz Report,English,Digest,2011
+T02805,The Awaaz Today,Bengali,Magazine,2013
+T02806,The Awaaz Update,Bengali,Periodical,2019
+T02807,The Awaaz Weekly,Kannada,Newspaper,2003
+T02808,The Bhaskar,English,Bulletin,2005
+T02809,The Bhaskar Bulletin,Marathi,Newspaper,2015
+T02810,The Bhaskar Daily,Malayalam,Newspaper,2002
+T02811,The Bhaskar Journal,Gujarati,Digest,2014
+T02812,The Bhaskar Live,Punjabi,Bulletin,2010
+T02813,The Bhaskar Monthly,Telugu,Magazine,2023
+T02814,The Bhaskar Report,Urdu,Periodical,2007
+T02815,The Bhaskar Today,Hindi,Periodical,2007
+T02816,The Bhaskar Update,Hindi,Magazine,2023
+T02817,The Bhaskar Weekly,Telugu,Magazine,2012
+T02818,The Dainik Namaskar,Gujarati,Newspaper,2015
+T02819,The Dainik Namaskar Bulletin,Punjabi,Journal,2001
+T02820,The Dainik Namaskar Daily,Telugu,Magazine,2006
+T02821,The Dainik Namaskar Journal,Punjabi,Journal,2005
+T02822,The Dainik Namaskar Live,Telugu,Periodical,2004
+T02823,The Dainik Namaskar Monthly,Kannada,Digest,2006
+T02824,The Dainik Namaskar Report,Urdu,Periodical,2008
+T02825,The Dainik Namaskar Today,Gujarati,Periodical,2004
+T02826,The Dainik Namaskar Update,English,Digest,2018
+T02827,The Dainik Namaskar Weekly,English,Periodical,2004
+T02828,The Darpan,Hindi,Journal,2014
+T02829,The Darpan Bulletin,Telugu,Magazine,2024
+T02830,The Darpan Daily,Tamil,Magazine,2009
+T02831,The Darpan Journal,Punjabi,Magazine,2020
+T02832,The Darpan Live,Punjabi,Magazine,2018
+T02833,The Darpan Monthly,Malayalam,Magazine,2002
+T02834,The Darpan Report,Telugu,Bulletin,2015
+T02835,The Darpan Today,Gujarati,Bulletin,2015
+T02836,The Darpan Update,Kannada,Periodical,2000
+T02837,The Darpan Weekly,Telugu,Digest,2007
+T02838,The Express,Gujarati,Periodical,2013
+T02839,The Express Bulletin,Punjabi,Magazine,2018
+T02840,The Express Daily,Marathi,Bulletin,2000
+T02841,The Express Journal,Telugu,Newspaper,2001
+T02842,The Express Live,Kannada,Digest,2024
+T02843,The Express Monthly,Malayalam,Newspaper,2013
+T02844,The Express Report,Malayalam,Journal,2015
+T02845,The Express Today,Hindi,Journal,2015
+T02846,The Express Update,Gujarati,Newspaper,2017
+T02847,The Express Weekly,English,Digest,2023
+T02848,The Herald,Telugu,Magazine,2004
+T02849,The Herald Bulletin,Tamil,Periodical,2007
+T02850,The Herald Daily,Urdu,Newspaper,2000
+T02851,The Herald Journal,Kannada,Digest,2009
+T02852,The Herald Live,Marathi,Digest,2014
+T02853,The Herald Monthly,Punjabi,Digest,2018
+T02854,The Herald Report,English,Journal,2014
+T02855,The Herald Today,Marathi,Digest,2012
+T02856,The Herald Update,Marathi,Periodical,2020
+T02857,The Herald Weekly,Kannada,Digest,2020
+T02858,The Hindu,English,Digest,2002
+T02859,The Hindu Bulletin,Telugu,Digest,2010
+T02860,The Hindu Daily,Malayalam,Newspaper,2009
+T02861,The Hindu Journal,Telugu,Periodical,2022
+T02862,The Hindu Live,Punjabi,Bulletin,2018
+T02863,The Hindu Monthly,Gujarati,Digest,2002
+T02864,The Hindu Report,Punjabi,Periodical,2023
+T02865,The Hindu Today,English,Bulletin,2021
+T02866,The Hindu Update,Tamil,Newspaper,2003
+T02867,The Hindu Weekly,Telugu,Periodical,2014
+T02868,The Indian Express,Punjabi,Newspaper,2011
+T02869,The Indian Express Bulletin,Tamil,Magazine,2020
+T02870,The Indian Express Daily,Malayalam,Digest,2002
+T02871,The Indian Express Journal,Malayalam,Digest,2024
+T02872,The Indian Express Live,Gujarati,Magazine,2010
+T02873,The Indian Express Monthly,Gujarati,Bulletin,2003
+T02874,The Indian Express Report,Urdu,Journal,2023
+T02875,The Indian Express Today,Punjabi,Digest,2006
+T02876,The Indian Express Update,Gujarati,Periodical,2011
+T02877,The Indian Express Weekly,Bengali,Bulletin,2021
+T02878,The Jagran,Telugu,Periodical,2001
+T02879,The Jagran Bulletin,Hindi,Periodical,2011
+T02880,The Jagran Daily,Kannada,Journal,2016
+T02881,The Jagran Journal,Malayalam,Newspaper,2015
+T02882,The Jagran Live,Malayalam,Digest,2017
+T02883,The Jagran Monthly,Bengali,Journal,2019
+T02884,The Jagran Report,Tamil,Digest,2022
+T02885,The Jagran Today,Hindi,Magazine,2014
+T02886,The Jagran Update,Hindi,Newspaper,2012
+T02887,The Jagran Weekly,Marathi,Periodical,2002
+T02888,The Kesari,Hindi,Magazine,2008
+T02889,The Kesari Bulletin,Hindi,Digest,2004
+T02890,The Kesari Daily,Kannada,Magazine,2006
+T02891,The Kesari Journal,Malayalam,Digest,2000
+T02892,The Kesari Live,Bengali,Journal,2021
+T02893,The Kesari Monthly,Malayalam,Magazine,2015
+T02894,The Kesari Report,Tamil,Journal,2014
+T02895,The Kesari Today,Urdu,Newspaper,2009
+T02896,The Kesari Update,Gujarati,Newspaper,2000
+T02897,The Kesari Weekly,Gujarati,Bulletin,2020
+T02898,The News,Tamil,Journal,2018
+T02899,The News Bulletin,Tamil,Digest,2020
+T02900,The News Daily,Tamil,Journal,2018
+T02901,The News Journal,Urdu,Digest,2016
+T02902,The News Live,Malayalam,Journal,2014
+T02903,The News Monthly,Bengali,Bulletin,2004
+T02904,The News Report,Bengali,Magazine,2008
+T02905,The News Today,Gujarati,Journal,2011
+T02906,The News Update,Bengali,Newspaper,2004
+T02907,The News Weekly,Tamil,Periodical,2014
+T02908,The Patrika,Marathi,Bulletin,2005
+T02909,The Patrika Bulletin,Malayalam,Periodical,2005
+T02910,The Patrika Daily,Marathi,Digest,2022
+T02911,The Patrika Journal,Urdu,Magazine,2005
+T02912,The Patrika Live,Gujarati,Newspaper,2001
+T02913,The Patrika Monthly,Tamil,Bulletin,2004
+T02914,The Patrika Report,Kannada,Periodical,2011
+T02915,The Patrika Today,Marathi,Magazine,2017
+T02916,The Patrika Update,English,Digest,2010
+T02917,The Patrika Weekly,Tamil,Magazine,2011
+T02918,The Post,Kannada,Bulletin,2005
+T02919,The Post Bulletin,Malayalam,Periodical,2003
+T02920,The Post Daily,English,Journal,2015
+T02921,The Post Journal,Marathi,Journal,2010
+T02922,The Post Live,Marathi,Newspaper,2023
+T02923,The Post Monthly,Malayalam,Bulletin,2010
+T02924,The Post Report,Urdu,Digest,2009
+T02925,The Post Today,Kannada,Periodical,2024
+T02926,The Post Update,Punjabi,Digest,2004
+T02927,The Post Weekly,Punjabi,Digest,2014
+T02928,The Prabhat,Tamil,Digest,2003
+T02929,The Prabhat Bulletin,Kannada,Newspaper,2004
+T02930,The Prabhat Daily,Urdu,Bulletin,2003
+T02931,The Prabhat Journal,Bengali,Newspaper,2012
+T02932,The Prabhat Live,Punjabi,Magazine,2014
+T02933,The Prabhat Monthly,Tamil,Newspaper,2010
+T02934,The Prabhat Report,English,Bulletin,2020
+T02935,The Prabhat Today,Gujarati,Bulletin,2016
+T02936,The Prabhat Update,Gujarati,Periodical,2006
+T02937,The Prabhat Weekly,English,Newspaper,2017
+T02938,The Prakash,Kannada,Digest,2021
+T02939,The Prakash Bulletin,Hindi,Bulletin,2012
+T02940,The Prakash Daily,Gujarati,Journal,2010
+T02941,The Prakash Journal,Punjabi,Bulletin,2016
+T02942,The Prakash Live,English,Digest,2011
+T02943,The Prakash Monthly,Telugu,Magazine,2022
+T02944,The Prakash Report,Telugu,Periodical,2012
+T02945,The Prakash Today,Tamil,Newspaper,2009
+T02946,The Prakash Update,Tamil,Periodical,2009
+T02947,The Prakash Weekly,Kannada,Bulletin,2002
+T02948,The Pratidin Sandhya,Gujarati,Digest,2014
+T02949,The Pratidin Sandhya Bulletin,Telugu,Journal,2009
+T02950,The Pratidin Sandhya Daily,Marathi,Digest,2013
+T02951,The Pratidin Sandhya Journal,Telugu,Magazine,2018
+T02952,The Pratidin Sandhya Live,Punjabi,Newspaper,2004
+T02953,The Pratidin Sandhya Monthly,Gujarati,Periodical,2015
+T02954,The Pratidin Sandhya Report,Malayalam,Periodical,2002
+T02955,The Pratidin Sandhya Today,Punjabi,Journal,2002
+T02956,The Pratidin Sandhya Update,English,Journal,2020
+T02957,The Pratidin Sandhya Weekly,Bengali,Journal,2005
+T02958,The Samachar,Malayalam,Journal,2022
+T02959,The Samachar Bulletin,Punjabi,Magazine,2006
+T02960,The Samachar Daily,Marathi,Journal,2009
+T02961,The Samachar Journal,Malayalam,Journal,2001
+T02962,The Samachar Live,Bengali,Bulletin,2009
+T02963,The Samachar Monthly,Kannada,Bulletin,2023
+T02964,The Samachar Report,Kannada,Magazine,2000
+T02965,The Samachar Today,English,Magazine,2008
+T02966,The Samachar Update,Bengali,Digest,2020
+T02967,The Samachar Weekly,Kannada,Newspaper,2020
+T02968,The Sandesh,Urdu,Periodical,2013
+T02969,The Sandesh Bulletin,Marathi,Journal,2022
+T02970,The Sandesh Daily,Urdu,Magazine,2000
+T02971,The Sandesh Journal,Hindi,Periodical,2015
+T02972,The Sandesh Live,Hindi,Bulletin,2023
+T02973,The Sandesh Monthly,Tamil,Bulletin,2015
+T02974,The Sandesh Report,Punjabi,Journal,2008
+T02975,The Sandesh Today,Urdu,Digest,2015
+T02976,The Sandesh Update,Hindi,Periodical,2016
+T02977,The Sandesh Weekly,Punjabi,Newspaper,2008
+T02978,The Sandhya,Marathi,Bulletin,2001
+T02979,The Sandhya Bulletin,Marathi,Periodical,2014
+T02980,The Sandhya Daily,Marathi,Periodical,2005
+T02981,The Sandhya Journal,English,Periodical,2011
+T02982,The Sandhya Live,Telugu,Digest,2011
+T02983,The Sandhya Monthly,English,Periodical,2009
+T02984,The Sandhya Report,Malayalam,Digest,2002
+T02985,The Sandhya Today,Malayalam,Magazine,2024
+T02986,The Sandhya Update,Urdu,Magazine,2024
+T02987,The Sandhya Weekly,Hindi,Bulletin,2024
+T02988,The The Hindu,Marathi,Bulletin,2010
+T02989,The The Hindu Bulletin,Tamil,Digest,2009
+T02990,The The Hindu Daily,Bengali,Digest,2022
+T02991,The The Hindu Journal,Tamil,Newspaper,2017
+T02992,The The Hindu Live,Punjabi,Periodical,2004
+T02993,The The Hindu Monthly,English,Magazine,2016
+T02994,The The Hindu Report,Bengali,Periodical,2024
+T02995,The The Hindu Today,Kannada,Journal,2010
+T02996,The The Hindu Update,Marathi,Newspaper,2006
+T02997,The The Hindu Weekly,Marathi,Bulletin,2007
+T02998,The Times,Gujarati,Bulletin,2019
+T02999,The Times Bulletin,Malayalam,Bulletin,2022
+T03000,The Times Daily,Malayalam,Digest,2024
+T03001,The Times Journal,Hindi,Journal,2014
+T03002,The Times Live,Hindi,Newspaper,2004
+T03003,The Times Monthly,English,Journal,2011
+T03004,The Times Report,Bengali,Digest,2011
+T03005,The Times Today,Marathi,Journal,2019
+T03006,The Times Update,Malayalam,Periodical,2005
+T03007,The Times Weekly,Bengali,Newspaper,2023
+T03008,The Tribune,Hindi,Magazine,2004
+T03009,The Tribune Bulletin,Marathi,Digest,2007
+T03010,The Tribune Daily,Bengali,Magazine,2006
+T03011,The Tribune Journal,Marathi,Newspaper,2013
+T03012,The Tribune Live,Hindi,Newspaper,2000
+T03013,The Tribune Monthly,Kannada,Journal,2001
+T03014,The Tribune Report,Gujarati,Newspaper,2001
+T03015,The Tribune Today,Urdu,Bulletin,2018
+T03016,The Tribune Update,English,Journal,2003
+T03017,The Tribune Weekly,Bengali,Newspaper,2002
+T03018,The Vartha,Bengali,Digest,2000
+T03019,The Vartha Bulletin,Hindi,Newspaper,2019
+T03020,The Vartha Daily,Gujarati,Bulletin,2006
+T03021,The Vartha Journal,Marathi,Digest,2011
+T03022,The Vartha Live,English,Newspaper,2004
+T03023,The Vartha Monthly,Bengali,Bulletin,2011
+T03024,The Vartha Report,Tamil,Magazine,2016
+T03025,The Vartha Today,Punjabi,Magazine,2016
+T03026,The Vartha Update,Punjabi,Newspaper,2003
+T03027,The Vartha Weekly,Punjabi,Newspaper,2016
+T03028,The Vichar,Gujarati,Digest,2006
+T03029,The Vichar Bulletin,Bengali,Magazine,2024
+T03030,The Vichar Daily,Malayalam,Newspaper,2023
+T03031,The Vichar Journal,Hindi,Magazine,2016
+T03032,The Vichar Live,Kannada,Periodical,2022
+T03033,The Vichar Monthly,Punjabi,Magazine,2014
+T03034,The Vichar Report,Urdu,Newspaper,2005
+T03035,The Vichar Today,Tamil,Journal,2013
+T03036,The Vichar Update,Gujarati,Bulletin,2007
+T03037,The Vichar Weekly,Telugu,Newspaper,2024
+T03038,Times,Tamil,Newspaper,2014
+T03039,Times Bulletin,Hindi,Bulletin,2004
+T03040,Times Daily,Kannada,Periodical,2022
+T03041,Times Journal,Bengali,Bulletin,2023
+T03042,Times Live,English,Newspaper,2010
+T03043,Times Monthly,Kannada,Newspaper,2012
+T03044,Times Report,Bengali,Journal,2019
+T03045,Times Today,Bengali,Digest,2014
+T03046,Times Update,Gujarati,Bulletin,2013
+T03047,Times Weekly,Bengali,Journal,2006
+T03048,Times of India,Hindi,Journal,2021
+T03049,Tribune,Tamil,Magazine,2000
+T03050,Tribune Bulletin,Urdu,Journal,2021
+T03051,Tribune Daily,Hindi,Journal,2014
+T03052,Tribune Journal,Malayalam,Digest,2021
+T03053,Tribune Live,Hindi,Newspaper,2004
+T03054,Tribune Monthly,Telugu,Journal,2022
+T03055,Tribune Report,Punjabi,Newspaper,2023
+T03056,Tribune Today,Marathi,Newspaper,2011
+T03057,Tribune Update,Gujarati,Periodical,2006
+T03058,Tribune Weekly,Punjabi,Journal,2003
+T03059,Vartha,Gujarati,Journal,2023
+T03060,Vartha Bulletin,Kannada,Periodical,2024
+T03061,Vartha Daily,Punjabi,Bulletin,2008
+T03062,Vartha Journal,Urdu,Journal,2011
+T03063,Vartha Live,Kannada,Digest,2019
+T03064,Vartha Monthly,Telugu,Journal,2016
+T03065,Vartha Report,Bengali,Magazine,2024
+T03066,Vartha Today,Kannada,Newspaper,2003
+T03067,Vartha Update,Bengali,Journal,2015
+T03068,Vartha Weekly,Gujarati,Digest,2004
+T03069,Vichar,English,Newspaper,2023
+T03070,Vichar Bulletin,English,Newspaper,2015
+T03071,Vichar Daily,Urdu,Newspaper,2005
+T03072,Vichar Journal,Telugu,Bulletin,2021
+T03073,Vichar Live,Tamil,Magazine,2009
+T03074,Vichar Monthly,Punjabi,Bulletin,2003
+T03075,Vichar Report,Hindi,Digest,2024
+T03076,Vichar Today,Malayalam,Journal,2014
+T03077,Vichar Update,Gujarati,Periodical,2021
+T03078,Vichar Weekly,Kannada,Journal,2016

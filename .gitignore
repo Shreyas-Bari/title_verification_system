@@ -15,6 +15,9 @@ torch_cache/
 # Streamlit temporary data
 .streamlit/
 
+# Dev/scratch scripts (not part of deliverable)
+validate_tests.py
+
 # Internal Requirements (Hidden from Git)
 ProjectRequirements.md
 

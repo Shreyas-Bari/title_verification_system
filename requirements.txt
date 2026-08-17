@@ -1,0 +1,6 @@
+streamlit>=1.30.0
+pandas>=2.0.0
+rapidfuzz>=3.6.0
+jellyfish>=1.0.0
+torch>=2.0.0
+sentence-transformers>=2.3.0
