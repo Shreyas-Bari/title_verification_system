@@ -412,9 +412,12 @@ class TitleVerifier:
         results = []
         for i, existing_title in enumerate(self.titles):
             # --- Fuzzy score via Token Sort Ratio ---
-            # token_sort_ratio normalizes token order and computes
-            # Levenshtein-based similarity as a percentage (0–100).
-            raw_fuzzy_score = fuzz.token_sort_ratio(candidate, existing_title)
+            # --- Fuzzy score via Token Sort + Token Set Ratio ---
+            # token_sort_ratio normalizes word order.
+            # token_set_ratio catches subsets/permutations (e.g., "Sumit news" vs "Sumit ke news").
+            raw_sort = fuzz.token_sort_ratio(candidate, existing_title)
+            raw_set = fuzz.token_set_ratio(candidate, existing_title)
+            raw_fuzzy_score = max(raw_sort, raw_set)
 
             # --- Length-ratio dampening ---
             # Prevents single common words in longer titles from
@@ -501,29 +504,51 @@ class TitleVerifier:
     # -------------------------------------------------------------------
     # Stage 7: Composite Scoring
     # -------------------------------------------------------------------
-    @staticmethod
-    def _compute_combined_scores(match_results: list[MatchResult]) -> list[MatchResult]:
+    def _compute_combined_scores(
+        self, candidate: str, match_results: list[MatchResult]
+    ) -> list[MatchResult]:
         """
         Compute the final combined score for each title match.
 
-        Formula:
-            combined_score = max(lexical_score, semantic_score × 100)
+        Semantic Calibration:
+            Multilingual sentence embeddings (e.g. paraphrase-multilingual-MiniLM-L12-v2)
+            exhibit an ambient baseline cosine similarity around 0.50–0.55 in high-dimensional
+            space between unrelated texts. An arbitrary unique word (like "Shreyas")
+            naturally has a 0.55–0.60 raw cosine similarity with many random database entries.
 
-        This ensures that EITHER a high lexical OR a high semantic
-        match will flag the title. The max operation means neither
-        signal can mask the other.
+            To prevent false positive rejections of novel titles:
+            1. Calibrate raw cosine: only scores above the baseline noise floor (0.55)
+               represent meaningful semantic relatedness:
+                   calibrated = ((raw_cosine − 0.55) / 0.45) × 100.0
+            2. Apply length-ratio dampening: prevents single common words in a longer title
+               from dominating the embedding similarity against short 1-word titles.
+
+        Formula:
+            combined_score = max(lexical_score, calibrated_semantic_score)
 
         Args:
-            match_results: List of MatchResult with fuzzy, phonetic,
-                           and semantic scores already computed.
+            candidate    : The proposed title string.
+            match_results: List of MatchResult with lexical & raw semantic scores.
 
         Returns:
             The same list with combined_score updated.
         """
+        cand_words = max(1, len(candidate.split()))
+
         for result in match_results:
-            lexical_score = result.combined_score  # Already = min(100, fuzzy+bonus)
-            semantic_contribution = result.semantic_score * 100.0
-            result.combined_score = max(lexical_score, semantic_contribution)
+            lexical_score = result.combined_score  # Already min(100, fuzzy + phonetic_bonus)
+            raw_semantic = result.semantic_score  # 0.0 – 1.0
+
+            if raw_semantic > 0.55:
+                scaled_semantic = ((raw_semantic - 0.55) / 0.45) * 100.0
+                match_words = max(1, len(result.title.split()))
+                length_ratio = min(cand_words, match_words) / max(cand_words, match_words)
+                dampening = 0.4 + 0.6 * length_ratio
+                calibrated_semantic = scaled_semantic * dampening
+            else:
+                calibrated_semantic = 0.0
+
+            result.combined_score = round(max(lexical_score, calibrated_semantic), 2)
 
         return match_results
 
@@ -576,7 +601,7 @@ class TitleVerifier:
         match_results = self._compute_semantic_scores(candidate, match_results)
 
         # ── Stage 7: Composite Scoring ────────────────────────────────
-        match_results = self._compute_combined_scores(match_results)
+        match_results = self._compute_combined_scores(candidate, match_results)
 
         # Sort by combined score (descending) and take the top 5
         match_results.sort(key=lambda r: r.combined_score, reverse=True)
@@ -597,8 +622,9 @@ class TitleVerifier:
             verification_probability = max(0.0, 100.0 - s_max)
 
         # ── Final Approval Decision ───────────────────────────────────
-        # Approved ONLY if probability ≥ 50% AND zero rule flags raised
-        is_approved = (verification_probability >= 50.0) and (len(issues) == 0)
+        # Approved if zero compliance rule flags AND similarity is below
+        # the collision threshold (S_max < 65.0%)
+        is_approved = (highest_similarity < 65.0) and (len(issues) == 0)
 
         return VerificationResult(
             is_approved=is_approved,

@@ -82,27 +82,6 @@ st.markdown("""
         color: #f4f4f5;
         margin: 0;
     }
-    .status-pill {
-        display: inline-flex;
-        align-items: center;
-        gap: 8px;
-        padding: 6px 14px;
-        background: rgba(16, 185, 129, 0.1);
-        border: 1px solid rgba(16, 185, 129, 0.25);
-        border-radius: 9999px;
-        font-size: 0.75rem;
-        font-weight: 600;
-        letter-spacing: 0.04em;
-        color: #10b981;
-        text-transform: uppercase;
-    }
-    .status-dot {
-        width: 7px;
-        height: 7px;
-        background-color: #10b981;
-        border-radius: 50%;
-        box-shadow: 0 0 8px #10b981;
-    }
 
     /* ── Input Card ──────────────────────────────────────────── */
     .input-card {
@@ -224,64 +203,6 @@ st.markdown("""
         font-weight: 500;
     }
 
-    /* ── Custom Styled Table ─────────────────────────────────── */
-    .stitch-table-container {
-        background: #121216;
-        border: 1px solid #27272a;
-        border-radius: 10px;
-        overflow: hidden;
-        margin-top: 1rem;
-    }
-    table.stitch-table {
-        width: 100%;
-        border-collapse: collapse;
-        text-align: left;
-        font-size: 0.875rem;
-    }
-    table.stitch-table th {
-        background: #18181b;
-        color: #a1a1aa;
-        font-size: 0.75rem;
-        font-weight: 600;
-        text-transform: uppercase;
-        letter-spacing: 0.05em;
-        padding: 12px 18px;
-        border-bottom: 1px solid #27272a;
-    }
-    table.stitch-table td {
-        padding: 14px 18px;
-        color: #f4f4f5;
-        border-bottom: 1px solid #1f1f23;
-    }
-    table.stitch-table tr:last-child td {
-        border-bottom: none;
-    }
-    table.stitch-table tr:hover {
-        background: #18181b;
-    }
-    .badge-pill {
-        display: inline-block;
-        padding: 2px 8px;
-        border-radius: 9999px;
-        font-size: 0.72rem;
-        font-weight: 600;
-        font-family: 'JetBrains Mono', monospace;
-    }
-    .badge-no {
-        background: rgba(113, 113, 122, 0.18);
-        color: #a1a1aa;
-        border: 1px solid #3f3f46;
-    }
-    .badge-yes {
-        background: rgba(239, 68, 68, 0.18);
-        color: #f87171;
-        border: 1px solid rgba(239, 68, 68, 0.35);
-    }
-    .mono-val {
-        font-family: 'JetBrains Mono', monospace;
-        font-weight: 500;
-    }
-
     /* ── Checklist Card ──────────────────────────────────────── */
     .check-card {
         background: #18181b;
@@ -367,12 +288,12 @@ st.markdown("""
 # ═══════════════════════════════════════════════════════════════════════════
 
 @st.cache_resource
-def get_verifier() -> TitleVerifier:
+def get_verifier(version: str = "v3_calibrated_matcher") -> TitleVerifier:
     base_dir = os.path.dirname(os.path.abspath(__file__))
     csv_path = os.path.join(base_dir, "dataset", "titles_dataset.csv")
     return TitleVerifier(csv_path)
 
-verifier = get_verifier()
+verifier = get_verifier("v3_calibrated_matcher")
 
 # ═══════════════════════════════════════════════════════════════════════════
 # Header / App Bar
@@ -392,31 +313,43 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # ═══════════════════════════════════════════════════════════════════════════
+# ═══════════════════════════════════════════════════════════════════════════
 # Input Form Section
 # ═══════════════════════════════════════════════════════════════════════════
 
-candidate_title = st.text_input(
-    "PROPOSED PUBLICATION TITLE",
-    placeholder="e.g., Daily Hindustan, Sumit ke news, The Quantum Herald",
-    help="Type the newspaper or periodical title you wish to evaluate.",
-)
+with st.form("title_verification_form", clear_on_submit=False):
+    candidate_title = st.text_input(
+        "PROPOSED PUBLICATION TITLE",
+        placeholder="e.g., Daily Hindustan, Sumit ke news, The Quantum Herald",
+        help="Type the newspaper or periodical title you wish to evaluate and press Enter or click Verify.",
+        key="candidate_title_input",
+    )
 
-# Centered large trigger button
-col_b1, col_b2, col_b3 = st.columns([1, 2, 1])
-with col_b2:
-    verify_button = st.button("Verify Title", type="primary", use_container_width=True)
+    # Centered large trigger button
+    col_b1, col_b2, col_b3 = st.columns([1, 2, 1])
+    with col_b2:
+        verify_submitted = st.form_submit_button("Verify Title", type="primary", use_container_width=True)
+
+# Process new verification submission
+if verify_submitted:
+    if candidate_title and candidate_title.strip():
+        with st.spinner("Running 7-stage verification pipeline..."):
+            result: VerificationResult = verifier.verify(candidate_title.strip())
+        st.session_state["last_result"] = result
+        st.session_state["last_candidate"] = candidate_title.strip()
+        st.session_state.pop("registration_msg", None)
+    else:
+        st.warning("Please enter a proposed publication title before clicking Verify.")
+        st.session_state.pop("last_result", None)
+        st.session_state.pop("last_candidate", None)
 
 # ═══════════════════════════════════════════════════════════════════════════
 # Verification Results & Analysis
 # ═══════════════════════════════════════════════════════════════════════════
 
-if verify_button and candidate_title.strip():
-    with st.spinner("Running 7-stage verification pipeline..."):
-        result: VerificationResult = verifier.verify(candidate_title.strip())
-
-    # Save to session state
-    st.session_state["last_result"] = result
-    st.session_state["last_candidate"] = candidate_title.strip()
+if "last_result" in st.session_state and "last_candidate" in st.session_state:
+    result: VerificationResult = st.session_state["last_result"]
+    current_title: str = st.session_state["last_candidate"]
 
     # ── Verdict Banner ─────────────────────────────────────────────
     if result.is_approved:
@@ -424,7 +357,7 @@ if verify_button and candidate_title.strip():
         <div class="verdict-approved">
             <div>
                 <p class="verdict-title" style="color: #34d399;">
-                    VERIFIED — "{candidate_title.strip()}" is eligible for registration
+                    VERIFIED — "{current_title}" is eligible for registration
                 </p>
                 <p style="color: #6ee7b7; font-size: 0.85rem; margin: 4px 0 0 0;">
                     Meets PRGI similarity and anti-collision compliance guidelines.
@@ -438,7 +371,7 @@ if verify_button and candidate_title.strip():
         <div class="verdict-rejected">
             <div>
                 <p class="verdict-title" style="color: #f87171;">
-                    REJECTED — "{candidate_title.strip()}" cannot be registered
+                    REJECTED — "{current_title}" cannot be registered
                 </p>
                 <p style="color: #fca5a5; font-size: 0.85rem; margin: 4px 0 0 0;">
                     Conflicts detected with existing publications or regulatory guidelines.
@@ -455,8 +388,8 @@ if verify_button and candidate_title.strip():
     sim = result.highest_similarity
     issue_count = len(result.issues)
 
-    prob_color = "#10b981" if prob >= 50 else "#ef4444"
-    sim_color = "#ef4444" if sim >= 60 else ("#f59e0b" if sim >= 40 else "#10b981")
+    prob_color = "#10b981" if result.is_approved else "#ef4444"
+    sim_color = "#ef4444" if sim >= 65 else ("#f59e0b" if sim >= 45 else "#10b981")
     issues_color = "#ef4444" if issue_count > 0 else "#10b981"
 
     with stat_col1:
@@ -577,12 +510,10 @@ if verify_button and candidate_title.strip():
     if result.is_approved:
         col_r1, col_r2, col_r3 = st.columns([1, 2, 1])
         with col_r2:
-            if st.button("Register this Title to Database", type="primary", use_container_width=True):
-                verifier.register_title(candidate_title.strip())
-                st.success(
-                    f"Successfully registered \"{candidate_title.strip()}\"! "
-                    f"Database now contains {len(verifier.df):,} titles."
-                )
+            if st.button("Register this Title to Database", type="primary", use_container_width=True, key="register_button"):
+                verifier.register_title(current_title)
+                st.session_state["registration_msg"] = f"Successfully registered \"{current_title}\"! Database now contains {len(verifier.df):,} titles."
+                st.rerun()
 
-elif verify_button:
-    st.warning("Please enter a proposed publication title before clicking Verify.")
+    if "registration_msg" in st.session_state:
+        st.success(st.session_state["registration_msg"])
