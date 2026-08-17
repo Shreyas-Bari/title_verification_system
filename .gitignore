@@ -17,6 +17,7 @@ torch_cache/
 
 # Dev/scratch scripts (not part of deliverable)
 validate_tests.py
+generate_dataset.py
 
 # Internal Requirements (Hidden from Git)
 ProjectRequirements.md
