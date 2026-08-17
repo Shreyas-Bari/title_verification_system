@@ -1,0 +1,23 @@
+# Python environment & cache
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# PyTorch & HuggingFace Model Cache
+.cache/
+torch_cache/
+*.bin
+*.pt
+
+# Streamlit temporary data
+.streamlit/
+
+# Internal Requirements (Hidden from Git)
+ProjectRequirements.md
+
+# OS specific files
+.DS_Store
+Thumbs.db
